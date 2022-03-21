@@ -1,0 +1,3 @@
+[ZoneTransfer]
+ZoneId=3
+HostUrl=https://s3.us-west-2.amazonaws.com/temporary.notion-static.com/Export-afb3918f-308d-468a-9253-490ed7a8fc3e/Planificacin_Proyecto.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220316T130645Z&X-Amz-Expires=604800&X-Amz-Signature=e804ecd07fccb86414a0a2f79a75ece9fbfe233a25efb884f750525918c837d5&X-Amz-SignedHeaders=host&x-id=GetObject

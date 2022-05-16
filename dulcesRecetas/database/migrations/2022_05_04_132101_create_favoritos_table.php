@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamps();
             $table->foreignId('user_id')->references('id')->on('users');
             $table->bigInteger('recetas_id');
-            $table->bigInteger('recetas_nombre');
-            $table->bigInteger('recetas_img');
+            $table->string('recetas_nombre');
+            $table->string('recetas_img');
         });
     }
 

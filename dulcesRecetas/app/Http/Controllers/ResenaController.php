@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 // añadir inertia 
 use Inertia\Inertia;
 
+// obtener reseñas de la receta
+use Illuminate\Support\Facades\DB;
+// redirecciones a rutas
+use Illuminate\Support\Facades\Redirect;
+
+
 class ResenaController extends Controller
 {
     /**
@@ -19,7 +25,6 @@ class ResenaController extends Controller
     {
         // reseñas del usuario autenticado
         $resenas = auth()->user()->resenas;
-
         return Inertia::render('Resena/Index', ['resenas' => $resenas] );
     }
 
@@ -32,7 +37,6 @@ class ResenaController extends Controller
     {
         $user = auth()->user();
        
-
         return Inertia::render('Resena/Create', ['user' => $user] );
     }
 
@@ -44,9 +48,8 @@ class ResenaController extends Controller
      */
     public function store(Request $request)
     {
-        // recibo reseña del componente create
-        // valido e inserto nueva reseña
-        
+        // recibo reseña del componente Create valido e inserto
+
         $data = $request->validate([
             'user_id'=>'required|integer',
             'recetas_id'=>'required|integer',
@@ -65,8 +68,14 @@ class ResenaController extends Controller
         ]);
 
         $id = $request['recetas_id'];
-        
-        return Inertia::render("Receta/Show/$id" );
+
+        $resenasDeLaReceta = DB::table('resenas')->where( "recetas_id", '=', $id)->get();
+    
+        $ar = [];
+        $ar[0] = $request['receta'][0];
+        $ar[1] = $resenasDeLaReceta;
+
+        return Inertia::render('Receta/Show',  ['receta' => $ar] );
 
     }
 
@@ -89,7 +98,7 @@ class ResenaController extends Controller
      */
     public function edit(Resena $resena)
     {
-        //
+        return Inertia::render('Resena/Edit',  ['resena' => $resena] );
     }
 
     /**
@@ -101,7 +110,15 @@ class ResenaController extends Controller
      */
     public function update(Request $request, Resena $resena)
     {
-        //
+        // reglas de validacion para cada input 
+        $data = $request->validate([
+            'descripcion'=>'nullable|string', 
+            'estrellas'=>'nullable|integer',
+        ]);
+
+        $resena->update( $data );
+
+        return Redirect::route('resenas.index');
     }
 
     /**
@@ -112,6 +129,7 @@ class ResenaController extends Controller
      */
     public function destroy(Resena $resena)
     {
-        //
+        $resena->delete();
+        return Redirect::route('resenas.index');
     }
 }

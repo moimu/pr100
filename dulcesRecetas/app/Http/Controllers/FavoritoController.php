@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 // añadir inertia 
 use Inertia\Inertia;
 
+// redirecciones a rutas
+use Illuminate\Support\Facades\Redirect;
+// obtener reseñas de la receta
+use Illuminate\Support\Facades\DB;
+
 class FavoritoController extends Controller
 {
     /**
@@ -29,7 +34,9 @@ class FavoritoController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Favorito/Create');
+        $user = auth()->user();
+
+        return Inertia::render('Favorito/Create', ['user' => $user]);
     }
 
     /**
@@ -40,7 +47,38 @@ class FavoritoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // recibo reseña del componente Create valido e inserto
+
+        $data = $request->validate([
+            'user_id'=>'required|integer',
+            'recetas_id'=>'required|integer',
+            'recetas_nombre'=>'required|string',
+            'recetas_img'=>'required|string',
+
+        ]);
+
+        $idreceta = $request['recetas_id'];
+        $favorito = DB::table('favoritos')->where( "recetas_id", '=', $idreceta )->first();
+
+        // dd($favorito);
+        if( !isset($favorito) ){
+
+            Favorito::create([
+                'user_id' => $request['user_id'],
+                'recetas_id' => $request['recetas_id'],
+                'recetas_nombre' => $request['recetas_nombre'],
+                'recetas_img' => $request['recetas_img'],
+            ]);
+
+        }
+        
+        $resenasDeLaReceta = DB::table('resenas')->where( "recetas_id", '=', $idreceta)->get();
+        $ar = [];
+        $ar[0] = $request['receta'];
+        $ar[1] = $resenasDeLaReceta;
+
+        return Inertia::render('Receta/Show',  ['receta' => $ar] );
+        
     }
 
     /**
@@ -85,6 +123,7 @@ class FavoritoController extends Controller
      */
     public function destroy(Favorito $favorito)
     {
-        //
+        $favorito->delete();
+        return Redirect::route('resenas.index');
     }
 }

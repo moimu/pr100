@@ -13,7 +13,10 @@ class Favorito extends Model
     use HasFactory;
 
     protected $fillable = [
-	    'id_receta',
+	    'user_id',
+		'recetas_id',
+		'recetas_nombre',
+		'recetas_img',
 	];
 
 	// retorna el usuario propietario del favorito

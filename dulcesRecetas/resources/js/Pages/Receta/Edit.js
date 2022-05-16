@@ -15,13 +15,12 @@ const Edit = () => {
         alergenos: receta.alergenos || "",
         dificultad: receta.dificultad || "",
         tiempo: receta.tiempo || "",
-        calorias: receta.calorias || "", 
+        calorias: receta.calorias || "",
         npersonas: receta.npersonas || "",
         ingreCantidad: receta.ingreCantidad || "",
         procedimiento: receta.procedimiento || "",
         detalles: receta.detalles || ""
     });
-    console.log(data);
     function handleSubmit(e) {
         e.preventDefault();
         put(route("recetas.update", receta.id));
@@ -34,24 +33,23 @@ const Edit = () => {
     return (
         <div className="">
             <div className="containerEditoCreate mx-auto">
-                <div>
-                    <h1 className="mb-8 text-3xl font-bold hunoindex">
-                        <InertiaLink
-                            href={route("recetas.index")}
-                            className="text-indigo-600 hover:text-indigo-700"
-                        >
-                            recetas
-                        </InertiaLink>
-                        <span className="font-medium text-indigo-600"> /</span>
-                        Edición de Receta
-                    </h1>
+
+                <h1 className="mb-8 text-3xl font-bold hunoindex"> Edición de {data.nombre} </h1>
+
+                <div className="flex items-center justify-between mb-6 navedit">
+                    <InertiaLink
+                        className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
+
+                        href={route("recetas.show", receta.id)}
+                    > Receta
+                    </InertiaLink>
                 </div>
 
                 <div className="max-w-3xl p-8 bg-white rounded shadow contenedorForm">
                     <form name="createForm" onSubmit={handleSubmit}>
                         <div className="flex flex-col">
 
-                        <div className="mb-4">
+                            <div className="mb-4">
                                 <label className="">Nombre</label>
                                 <input
                                     type="text"
@@ -109,7 +107,7 @@ const Edit = () => {
                                     <option value="América del Norte">América del Norte</option>
                                     <option value="Europa">Europa</option>
                                     <option value="Oceanía">Asia</option>
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.continente}
                                 </span>
@@ -142,11 +140,11 @@ const Edit = () => {
                                     name="alergenos"
                                     errors={errors.alergenos}
                                     value={data.alergenos}
-                                    
+
                                     onChange={(e) =>
                                         setData("alergenos", e.target.value)
                                     }
-                                    
+
                                 >
                                     <option value="" default> Sin alérgenos </option>
                                     <option value="Leche"> Leche </option>
@@ -158,12 +156,12 @@ const Edit = () => {
                                     <option value="Pescado"> Trigo </option>
                                     <option value="Mariscos"> Soya </option>
 
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.alergenos}
                                 </span>
                             </div>
-                            
+
                             <div className="mb-0">
                                 <label className=""> Dificultad </label>
                                 <select
@@ -182,7 +180,7 @@ const Edit = () => {
                                     <option value="Intermedio"> intermedio </option>
                                     <option value="Avanzado"> avanzado </option>
 
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.dificultad}
                                 </span>
@@ -195,8 +193,8 @@ const Edit = () => {
                                     className="w-full px-4 py-2"
                                     label="tiempo"
                                     name="tiempo"
-                                    value={data.tiempo }
-                                    placeholder="Duración en minutos" 
+                                    value={data.tiempo}
+                                    placeholder="Duración en minutos"
                                     required
                                     onChange={(e) =>
                                         setData("tiempo", e.target.value)
@@ -209,7 +207,7 @@ const Edit = () => {
 
                             <div className="mb-4">
                                 <label className=""> Calorías </label>
-                                <input   
+                                <input
                                     type="number"
                                     className="w-full px-4 py-2"
                                     label="calorias"
@@ -290,7 +288,7 @@ const Edit = () => {
                                     name="detalles"
                                     errors={errors.detalles}
                                     value={data.detalles}
-                                    
+
                                     onChange={(e) =>
                                         setData("detalles", e.target.value)
                                     }

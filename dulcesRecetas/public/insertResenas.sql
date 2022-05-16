@@ -1,5 +1,5 @@
 
--- necesario 1 user y 2 recetas creadas bd
+-- necesario en bd 1 user y 2 recetas
 
 INSERT INTO dulcesrecetas.resenas (created_at, updated_at, user_id, recetas_id, estrellas, descripcion )
 VALUES

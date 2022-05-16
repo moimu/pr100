@@ -3,14 +3,24 @@ import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
 import '../../../css//receta.css'
-import Resena from "../Resena/Create.js";
+import ResenaCreate from "../Resena/Create.js";
+import FavoritoCreate from "../Favorito/Create.js";
+
+import imageFavorito from './favorito.png';
+
 
 const Show = () => {
     const data = usePage().props;
-    const receta = data.receta[0];
-    const resenas = data.receta[1];
     
-    console.log(receta);
+    const urlImgUser = data.auth.user.imguser;
+    // Datos de la receta
+    const receta = data.receta[0];
+
+    // Reseñas de la receta a mostrar
+    const resenas = data.receta[1];
+
+    // console.log(receta);
+    // console.log(resenas); 
     console.log(resenas);
 
     function listado(cadena) {
@@ -22,35 +32,38 @@ const Show = () => {
     function tarjetasResenas(resenas) {
 
         const lista = resenas.map(function (resena) {
-
             let numeroEstrellas = resena.estrellas;
-            let img=[];
-            while( numeroEstrellas>0 ){
-                img.push(  <img scr="no lo consigo"  className="estrella"/> );
+            let img = [];
+            while (numeroEstrellas > 0) {
+                img.push(<img src={imageFavorito} alt="imgfavorito" className="imgfav" />);
                 numeroEstrellas--;
             }
-            return (<div className="tarjetaRes">
-                        <a href=""> <img src="" /> </a>
-                        <section className="tarjetaResContent">
-                            <header>
-                                <span>{resena.nombre}</span>
-                                <div>   { img }  </div>
-                            </header>
-                            <main>
-                                {resena.descripcion}
-                            </main>
-                        </section>
-                    </div>);
+            return (
+
+                <section className="tarjetaResena">
+                    <header>
+                        <img src={urlImgUser} alt="imguser" className="imguser" />
+                        <span>{resena.user_nombre}</span>
+                    </header>
+                    <main>
+                        {resena.descripcion}
+                    </main>
+                    <footer>
+                        {img}
+                    </footer>
+                    
+                </section>
+            );
         });
         return lista;
     }
-    // /home/moi/proyectos/pr100/dulcesRecetas/storage/app/public/icons/favorito.png
+
     return (
 
         <div>
-            <div className="container mx-auto">
+            <div className="containerRecetaShow mx-auto">
 
-                <h1 className="text-3xl font-bold text-center hunoshow"> Recetas </h1>
+                <h1 className="text-3xl font-bold text-center hunoshow"> Receta </h1>
 
                 <div className="flex items-center justify-between mb-6 navshow">
                     <InertiaLink
@@ -66,6 +79,8 @@ const Show = () => {
                     >
                         Editar
                     </InertiaLink>
+                    {/* Create de favoritos  */}
+                    <FavoritoCreate receta={receta} />
                 </div>
 
                 <div className="overflow-x-auto bg-white rounded shadow contenarticuloshow">
@@ -157,8 +172,10 @@ const Show = () => {
                 </div>
 
                 <div className="overflow-x-auto bg-white rounded shadow resenasShow">
-                
-                    <Resena receta_id={receta.id}/>
+
+                    {/* Create de reseñas + total reseñas de la receta */}
+
+                    <ResenaCreate receta_id={receta.id} />
                     {tarjetasResenas(resenas)}
 
                 </div>

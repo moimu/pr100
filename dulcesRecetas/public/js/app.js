@@ -5535,39 +5535,237 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Resena_Index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Resena/Index.js */ "./resources/js/Pages/Resena/Index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
+
+ // Para ver la reseñas del user autenticado
 
 
 
 
 function Dashboard(props) {
-  console.log("Dashboard");
   console.log(props);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
     errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
       className: "font-semibold text-xl text-gray-800 leading-tight",
-      children: "Dashboard"
+      children: " Mi zona "
     }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      title: "Dashboard"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("title", {
+        children: " dulces recetas "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("meta", {
+        "head-key": "description",
+        name: "description",
+        content: "recetario de dulces, postres, tartas, panes"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("link", {
+        rel: "icon",
+        type: "",
+        href: "/images/favicon.ico"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: "You're logged in!"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
+              href: route("recetas.index"),
+              children: "Recetas"
+            })
+          })
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "p-6 bg-white border-b border-gray-200",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              className: "px-6 py-2 text-white bg-yellow-500 rounded-md focus:outline-none",
+              href: route("favoritos.index"),
+              children: "Recetas favoritas"
+            })
+          })
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "p-6 bg-white border-b border-gray-200",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none",
+              href: route("resenas.index"),
+              children: "Recetas rese\xF1adas"
+            })
           })
         })
       })
     })]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Favorito/Create.js":
+/*!***********************************************!*\
+  !*** ./resources/js/Pages/Favorito/Create.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_favorito_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//favorito.css */ "./resources/css/favorito.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Create() {
+  var datos = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
+    user_id: datos.auth.user.id,
+    recetas_id: datos.receta[0].id,
+    recetas_nombre: datos.receta[0].nombre,
+    recetas_img: datos.receta[0].img,
+    receta: datos.receta[0]
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      errors = _useForm.errors,
+      post = _useForm.post;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    post(route("favoritos.store"));
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+    name: "createForm",
+    onSubmit: handleSubmit,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      type: "submit",
+      className: "px-6 py-2 font-bold text-white bg-yellow-500 rounded btn btn-warning",
+      children: "A\xF1adir favorito"
+    })
+  });
+}
+
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Create);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Favorito/Edit.js":
+/*!*********************************************!*\
+  !*** ./resources/js/Pages/Favorito/Edit.js ***!
+  \*********************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Favorito/Index.js":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Favorito/Index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_favorito_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//favorito.css */ "./resources/css/favorito.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Index = function Index() {
+  var favoritos = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
+  var data = favoritos.favoritos;
+  console.log(data);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    className: "container mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      className: "text-3xl font-bold text-center hunoindex",
+      children: " Favoritos "
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "flex items-center justify-between navindex",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
+        href: route("dashboard"),
+        children: "Mi zona"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "overflow-x-auto bg-white contenedorFavoritos",
+      children: [data.map(function (_ref) {
+        var user_id = _ref.user_id,
+            recetas_id = _ref.recetas_id,
+            recetas_nombre = _ref.recetas_nombre,
+            recetas_img = _ref.recetas_img;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("article", {
+          className: "articleFavoritoIndex",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              tabIndex: "1",
+              className: "flex items-center",
+              href: route("recetas.show", recetas_id),
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+                src: recetas_img,
+                className: "imgrecetaindex",
+                alt: recetas_nombre,
+                loading: "lazy"
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+              className: "nombrerecetaindex",
+              children: recetas_nombre
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+              children: " Minutos"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {})
+          })]
+        });
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: " No existen Favoritos."
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 /***/ }),
 
@@ -5623,17 +5821,15 @@ var Create = function Create() {
     className: "",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "containerEditoCreate mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
-          className: "mb-8 text-3xl font-bold hunoindex",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-            href: route("recetas.index"),
-            className: "text-indigo-600 hover:text-indigo-700",
-            children: "Todas las recetas"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "font-medium text-indigo-600",
-            children: " / "
-          }), "Nueva receta"]
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+        className: "mb-8 text-3xl font-bold hunoindex",
+        children: " Nueva receta "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "flex items-center justify-between mb-6 navedit",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
+          href: route("recetas.index"),
+          children: " Recetas"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "max-w-6xl p-8 bg-white rounded shadow contenedorForm",
@@ -6008,8 +6204,6 @@ var Edit = function Edit() {
       put = _useForm.put,
       errors = _useForm.errors;
 
-  console.log(data);
-
   function handleSubmit(e) {
     e.preventDefault();
     put(route("recetas.update", receta.id));
@@ -6025,17 +6219,15 @@ var Edit = function Edit() {
     className: "",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "containerEditoCreate mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
-          className: "mb-8 text-3xl font-bold hunoindex",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-            href: route("recetas.index"),
-            className: "text-indigo-600 hover:text-indigo-700",
-            children: "recetas"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "font-medium text-indigo-600",
-            children: " /"
-          }), "Edici\xF3n de Receta"]
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
+        className: "mb-8 text-3xl font-bold hunoindex",
+        children: [" Edici\xF3n de ", data.nombre, " "]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "flex items-center justify-between mb-6 navedit",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
+          href: route("recetas.show", receta.id),
+          children: " Receta"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
@@ -6383,13 +6575,17 @@ var Index = function Index() {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
         className: "text-3xl font-bold text-center hunoindex",
         children: " Recetas "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "flex items-center justify-between navindex",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "flex items-center justify-between navIndexRecetas",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+          className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
+          href: route("dashboard"),
+          children: "Mi zona"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
           className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
           href: route("recetas.create"),
           children: "Nueva receta"
-        })
+        })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "overflow-x-auto bg-white contenedorrecetas",
         children: [data.map(function (_ref) {
@@ -6453,7 +6649,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
 /* harmony import */ var _Resena_Create_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Resena/Create.js */ "./resources/js/Pages/Resena/Create.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Favorito_Create_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Favorito/Create.js */ "./resources/js/Pages/Favorito/Create.js");
+/* harmony import */ var _favorito_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./favorito.png */ "./resources/js/Pages/Receta/favorito.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -6464,15 +6664,19 @@ __webpack_require__.r(__webpack_exports__);
 
 var Show = function Show() {
   var data = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
-  var receta = data.receta[0];
-  var resenas = data.receta[1];
-  console.log(receta);
+  var urlImgUser = data.auth.user.imguser; // Datos de la receta
+
+  var receta = data.receta[0]; // Reseñas de la receta a mostrar
+
+  var resenas = data.receta[1]; // console.log(receta);
+  // console.log(resenas); 
+
   console.log(resenas);
 
   function listado(cadena) {
     var array = cadena.split(',');
     var lista = array.map(function (element) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("li", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("li", {
         children: [" ", element, " "]
       });
     });
@@ -6485,162 +6689,160 @@ var Show = function Show() {
       var img = [];
 
       while (numeroEstrellas > 0) {
-        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          scr: "no lo consigo",
-          className: "estrella"
+        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+          src: _favorito_png__WEBPACK_IMPORTED_MODULE_6__["default"],
+          alt: "imgfavorito",
+          className: "imgfav"
         }));
         numeroEstrellas--;
       }
 
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "tarjetaRes",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
-          href: "",
-          children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-            src: ""
-          }), " "]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-          className: "tarjetaResContent",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
-              children: resena.nombre
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-              children: ["   ", img, "  "]
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("main", {
-            children: resena.descripcion
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
+        className: "tarjetaResena",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("header", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+            src: urlImgUser,
+            alt: "imguser",
+            className: "imguser"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+            children: resena.user_nombre
           })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("main", {
+          children: resena.descripcion
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
+          children: img
         })]
       });
     });
     return lista;
-  } // /home/moi/proyectos/pr100/dulcesRecetas/storage/app/public/icons/favorito.png
+  }
 
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-      className: "container mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "containerRecetaShow mx-auto",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
         className: "text-3xl font-bold text-center hunoshow",
-        children: " Recetas "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        children: " Receta "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "flex items-center justify-between mb-6 navshow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
           className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
           href: route("recetas.index"),
           children: "Recetas"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
           tabIndex: "1",
           className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none",
           href: route("recetas.edit", receta.id),
           children: "Editar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Favorito_Create_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          receta: receta
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "overflow-x-auto bg-white rounded shadow contenarticuloshow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
           className: "espaciador"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("article", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("article", {
           className: "articlerecetashow",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("header", {
             "class": "headershow",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
               src: receta.img,
               className: "imgshow",
               alt: receta.nombre,
               loading: "lazy"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
               "class": "sectionheader",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
                 children: receta.nombre
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                 "class": "datostagshow",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Origen "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.continente
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Alergenos "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.alergenos
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Nivel "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.dificultad
                     })]
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Calor\xEDas "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.calorias
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Comensales "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.npersonas
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                     "class": "itemtagshow",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h4", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
                       children: " Minutos "
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                       children: receta.tiempo
                     })]
                   })]
                 })]
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "separador",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("hr", {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
                 children: " Descripci\xF3n "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                 children: receta.descripcion
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
                 children: " Ingredientes "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("ul", {
                 children: listado(receta.ingreCantidad)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
                 children: " Procedimiento "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("ul", {
                 children: listado(receta.procedimiento)
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
                 children: "Detalles"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
                 children: receta.detalles
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ol", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("ol", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {})
               })
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "overflow-x-auto bg-white rounded shadow resenasShow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Resena_Create_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Resena_Create_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
           receta_id: receta.id
         }), tarjetasResenas(resenas)]
       })]
@@ -6683,15 +6885,13 @@ function Create() {
     recetas_id: datos.receta[0].id,
     descripcion: "",
     estrellas: "",
-    user_nombre: datos.auth.user.name
+    user_nombre: datos.auth.user.name,
+    receta: datos.receta
   }),
       data = _useForm.data,
       setData = _useForm.setData,
       errors = _useForm.errors,
-      post = _useForm.post; // console.log('oyeee');
-  // console.log(eee);
-  // console.log(data);
-
+      post = _useForm.post;
 
   function handleSubmit(e) {
     e.preventDefault(); // envio datos del formulario a esta ruta
@@ -6715,15 +6915,13 @@ function Create() {
           className: "tarjetaResContent",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "mb-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-              className: "",
-              children: " Comentario "
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
               type: "text",
               className: "w-full px-4 py-2",
               label: "descripcion",
               name: "descripcion",
               value: data.descripcion,
+              placeholder: " Comentario ",
               required: true,
               onChange: function onChange(e) {
                 return setData("descripcion", e.target.value);
@@ -6734,10 +6932,7 @@ function Create() {
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "mb-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-              className: "",
-              children: " Estrellas "
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
               type: "number",
               className: "w-full px-4 py-2",
               label: "estrellas",
@@ -6745,7 +6940,7 @@ function Create() {
               value: data.estrellas,
               min: "0",
               max: "5",
-              placeholder: "m\xE1ximo 5",
+              placeholder: " Estrellas m\xE1x 5 ",
               required: true,
               onChange: function onChange(e) {
                 return setData("estrellas", e.target.value);
@@ -6770,6 +6965,235 @@ function Create() {
 
 ;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Create);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Resena/Edit.js":
+/*!*******************************************!*\
+  !*** ./resources/js/Pages/Resena/Edit.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Edit = function Edit() {
+  var resena = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.resena;
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
+    descripcion: resena.descripcion || "",
+    estrellas: resena.estrellas || ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      put = _useForm.put,
+      errors = _useForm.errors;
+
+  console.log(data);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    put(route("resenas.update", resena.id));
+  }
+
+  function destroy() {
+    if (confirm("Seguro que quieres borrar este receta?")) {
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("resenas.destroy", resena.id));
+    }
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "containerEditoCreate mx-auto",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
+          className: "mb-8 text-3xl font-bold hunoindex",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+            href: route("resenas.index"),
+            className: "text-indigo-600 hover:text-indigo-700",
+            children: "Rese\xF1as"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "font-medium text-indigo-600",
+            children: " /"
+          }), "Edici\xF3n Rese\xF1a"]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+          name: "createForm",
+          onSubmit: handleSubmit,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "flex flex-col",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                className: "",
+                children: " Descripci\xF3n "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                type: "text",
+                className: "w-full px-4 py-2",
+                label: "descripcion",
+                name: "descripcion",
+                value: data.descripcion,
+                required: true,
+                onChange: function onChange(e) {
+                  return setData("descripcion", e.target.value);
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                className: "text-red-600",
+                children: errors.descripcion
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                className: "",
+                children: " Estrellas "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+                type: "number",
+                className: "w-full px-4 py-2",
+                label: "estrellas",
+                name: "estrellas",
+                value: data.estrellas,
+                required: true,
+                onChange: function onChange(e) {
+                  return setData("estrellas", e.target.value);
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                className: "text-red-600",
+                children: errors.estrellas
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "flex justify-between",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              type: "submit",
+              className: "px-4 py-2 text-white bg-green-500 rounded",
+              children: "Actualizar"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+              onClick: destroy,
+              tabIndex: "-1",
+              type: "button",
+              className: "px-4 py-2 text-white bg-red-500 rounded",
+              children: "Borrar"
+            })]
+          })]
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Edit);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Resena/Index.js":
+/*!********************************************!*\
+  !*** ./resources/js/Pages/Resena/Index.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
+/* harmony import */ var _favorito_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./favorito.png */ "./resources/js/Pages/Resena/favorito.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+var Index = function Index() {
+  var resenas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
+  var data = resenas.resenas;
+  console.log(data);
+  /**
+   * 
+   * @param {*} resenas 
+   * @returns 
+   */
+
+  function tarjetasResenas(resenas) {
+    var lista = resenas.map(function (resena, index) {
+      var numeroEstrellas = resena.estrellas;
+      var img = [];
+
+      while (numeroEstrellas > 0) {
+        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+          src: _favorito_png__WEBPACK_IMPORTED_MODULE_4__["default"],
+          alt: "imgfavorito",
+          className: "imgfav"
+        }));
+        numeroEstrellas--;
+      }
+
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
+        className: "tarjetaResena",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("header", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+            children: resena.user_nombre
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("main", {
+          children: resena.descripcion
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("footer", {
+          children: img
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+          tabIndex: "1",
+          className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none botonEdit",
+          href: route("resenas.edit", resena.id),
+          children: "Editar"
+        })]
+      }, index);
+    });
+    return lista;
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    className: "container mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
+      className: "text-3xl font-bold text-center hunoindexResenas",
+      children: " Rese\xF1as "
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "flex items-center justify-between navindex",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
+        href: route("dashboard"),
+        children: "Mi zona"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "overflow-x-auto bg-white contenedoresenas ",
+      children: [tarjetasResenas(data), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        children: " No existen rese\xF1as."
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 /***/ }),
 
@@ -7210,6 +7634,30 @@ if ($defineProperty) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/favorito.css":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/favorito.css ***!
+  \**********************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "/* Index ----------- */\n\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.contenedorFavoritos {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.articleFavoritoIndex {\n    display: inline-block;\n    margin: 8px;\n\n}\n\n.imgrecetaindex {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/receta.css":
 /*!********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/receta.css ***!
@@ -7227,7 +7675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.divcomponent{\n    border: 1px solid blue;\n\n}\n\n.espaciador{\n    max-width: 978px;\n    padding-top: 50px;\n}\n.separador{\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n.separador hr{\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n\n}\n.containerEditoCreate{\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    /* min-width: 900px;cffffffffffff */\n}\n.contenedorForm{\n    width: 100%;\n    max-width: 1000px;\n}\n\n/* Index */\n\n.hunoindex{\n    padding: 25px;\n}\n.navindex{\n    padding: 25px;\n}\n.contenedorrecetas{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.articlerecetasindex{\n    display: inline-block;\n    /* border: 1px solid black; */\n    margin: 8px;\n\n    /* transition: transform .2s; */\n}\n.articlerecetasindex:hover{\n    /* transform: scale(1.0002); */\n}\n\n.imgrecetaindex{\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.nombrerecetaindex{\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/* Show */\n.hunoshow{\n    padding: 25px;\n}\n.navshow{\n    padding: 15px;\n    width: 500px;\n}\n.headershow{\n    display: flex;\n}\n.sectionheader{\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n.imgshow{\n    /* border-radius: 10px;\n    width: 300px;\n    height: 300px; */\n\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.datostagshow{\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    min-width: 220px;\n}\n.itemtagshow{\n    font-size: 14px;\n}\n.itemtagshow p{\n    font-size: 20px;\n}\n.contenarticuloshow{\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n}\n.articlerecetashow{\n    /* border: 1px solid red; */\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px;\n}\n.articlerecetashow h1{\n    font-size: 40px;\n    line-height: 1.2;\n}\n.articlerecetashow h3{\n    font-size: 24px;\n    /* line-height: 1.9; */\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n/*  --------- Show reseñas -------------------*/\n\n.resenasShow{\n    max-width: 1000px;\n    margin-top: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n.tarjetaRes{\n    min-height: 60px;\n    padding: 20px;\n}\n.tarjetaResContent header{\n    display: flex;\n    justify-content: space-between;\n}\n.tarjetaResContent header div{\n    display: flex;\n}\n.estrella{\n    width: 20px;\n    height: 20px;\n    border: 1px solid black;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.divcomponent{\n    border: 1px solid blue;\n\n}\n\n.espaciador{\n    max-width: 978px;\n    padding-top: 50px;\n}\n.separador{\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n.separador hr{\n    color: #aba6a6;\n}\n.container{\n    padding: 25px; \n}\n/*----------------- Edit  Create .js ------------------------ */\n\n.containerEditoCreate{\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    /* min-width: 900px;cffffffffffff */\n}\n.contenedorForm{\n    width: 100%;\n    max-width: 1000px;\n}\n\n.navedit{\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.hunoindex{\n    padding: 25px;\n}\n.navindex{\n    padding: 25px;\n}\n.navIndexRecetas{\n    padding: 25px;\n    display: flex;\n    justify-content: space-around;\n}\n.contenedorrecetas{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.articlerecetasindex{\n    display: inline-block;\n    /* border: 1px solid black; */\n    margin: 8px;\n\n    /* transition: transform .2s; */\n}\n\n.imgrecetaindex{\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.nombrerecetaindex{\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow{\n    padding: 25px;\n}\n.navshow{\n    padding: 15px;\n    width: 500px;\n}\n.containerRecetaShow {\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.headershow{\n    display: flex;\n}\n.sectionheader{\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n.imgshow{\n    /* border-radius: 10px;\n    width: 300px;\n    height: 300px; */\n\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.datostagshow{\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    min-width: 220px;\n}\n.itemtagshow{\n    font-size: 14px;\n}\n.itemtagshow p{\n    font-size: 20px;\n}\n.contenarticuloshow{\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n}\n.articlerecetashow{\n    /* border: 1px solid red; */\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px;\n}\n.articlerecetashow h1{\n    font-size: 40px;\n    line-height: 1.2;\n}\n.articlerecetashow h3{\n    font-size: 24px;\n    /* line-height: 1.9; */\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow{\n    max-width: 1000px;\n    margin-top: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n.tarjetaResena{\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n.tarjetaResena header{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.tarjetaResena main{\n\n}\n.tarjetaResena footer{\n    display: flex;\n\n}\n\n.imgfav{\n    width: 30px;\n    height: 30px;\n}\n.imguser{\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7251,7 +7699,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena{\n    min-height: 60px;\n    padding: 20px;\n\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena {\n    min-height: 60px;\n    padding: 20px;\n\n}\n\n\n/* -----------   Index.js  Resenas --------- */\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.hunoindexResenas {\n    padding: 25px;\n}\n\n.contenedoresenas {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    padding:50px;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   \n.botonEdit{\n    max-height: 40px;\n}\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n\n\n.tarjetaResena footer {\n    display: flex;\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7478,9 +7926,9 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
-/***/ "./resources/js/Pages/libro-de-cocina.png":
+/***/ "./resources/js/Pages/Receta/favorito.png":
 /*!************************************************!*\
-  !*** ./resources/js/Pages/libro-de-cocina.png ***!
+  !*** ./resources/js/Pages/Receta/favorito.png ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -7489,7 +7937,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/libro-de-cocina.png?1b3e7044ad3dd71f3aacbd7deb36290f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/favorito.png?8813493990c7cd1fa4b0ecdefd23ae0b");
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Resena/favorito.png":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/Resena/favorito.png ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/favorito.png?8813493990c7cd1fa4b0ecdefd23ae0b");
 
 /***/ }),
 
@@ -60415,6 +60878,36 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
+/***/ "./resources/css/favorito.css":
+/*!************************************!*\
+  !*** ./resources/css/favorito.css ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_favorito_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./favorito.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/favorito.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_favorito_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_favorito_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./resources/css/receta.css":
 /*!**********************************!*\
   !*** ./resources/css/receta.css ***!
@@ -60775,6 +61268,12 @@ var map = {
 	"./Auth/VerifyEmail.js": "./resources/js/Pages/Auth/VerifyEmail.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
+	"./Favorito/Create": "./resources/js/Pages/Favorito/Create.js",
+	"./Favorito/Create.js": "./resources/js/Pages/Favorito/Create.js",
+	"./Favorito/Edit": "./resources/js/Pages/Favorito/Edit.js",
+	"./Favorito/Edit.js": "./resources/js/Pages/Favorito/Edit.js",
+	"./Favorito/Index": "./resources/js/Pages/Favorito/Index.js",
+	"./Favorito/Index.js": "./resources/js/Pages/Favorito/Index.js",
 	"./Receta/Create": "./resources/js/Pages/Receta/Create.js",
 	"./Receta/Create.js": "./resources/js/Pages/Receta/Create.js",
 	"./Receta/Edit": "./resources/js/Pages/Receta/Edit.js",
@@ -60783,11 +61282,16 @@ var map = {
 	"./Receta/Index.js": "./resources/js/Pages/Receta/Index.js",
 	"./Receta/Show": "./resources/js/Pages/Receta/Show.js",
 	"./Receta/Show.js": "./resources/js/Pages/Receta/Show.js",
+	"./Receta/favorito.png": "./resources/js/Pages/Receta/favorito.png",
 	"./Resena/Create": "./resources/js/Pages/Resena/Create.js",
 	"./Resena/Create.js": "./resources/js/Pages/Resena/Create.js",
+	"./Resena/Edit": "./resources/js/Pages/Resena/Edit.js",
+	"./Resena/Edit.js": "./resources/js/Pages/Resena/Edit.js",
+	"./Resena/Index": "./resources/js/Pages/Resena/Index.js",
+	"./Resena/Index.js": "./resources/js/Pages/Resena/Index.js",
+	"./Resena/favorito.png": "./resources/js/Pages/Resena/favorito.png",
 	"./Welcome": "./resources/js/Pages/Welcome.js",
-	"./Welcome.js": "./resources/js/Pages/Welcome.js",
-	"./libro-de-cocina.png": "./resources/js/Pages/libro-de-cocina.png"
+	"./Welcome.js": "./resources/js/Pages/Welcome.js"
 };
 
 

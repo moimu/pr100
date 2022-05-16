@@ -16,15 +16,11 @@
 .separador hr{
     color: #aba6a6;
 }
-
-.container {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+.container{
+    padding: 25px; 
 }
+/*----------------- Edit  Create .js ------------------------ */
+
 .containerEditoCreate{
     padding: 25px;
     display: flex;
@@ -38,13 +34,23 @@
     max-width: 1000px;
 }
 
-/* Index */
+.navedit{
+    padding: 15px;
+
+}
+
+/* -------------------Index -----------------------*/
 
 .hunoindex{
     padding: 25px;
 }
 .navindex{
     padding: 25px;
+}
+.navIndexRecetas{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
 }
 .contenedorrecetas{
     display: flex;
@@ -58,9 +64,6 @@
     margin: 8px;
 
     /* transition: transform .2s; */
-}
-.articlerecetasindex:hover{
-    /* transform: scale(1.0002); */
 }
 
 .imgrecetaindex{
@@ -76,13 +79,22 @@
     margin-bottom: 15px;
 }
 
-/* Show */
+/*------------------------ Show -------------------------------*/
+
+
+
 .hunoshow{
     padding: 25px;
 }
 .navshow{
     padding: 15px;
     width: 500px;
+}
+.containerRecetaShow {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .headershow{
     display: flex;
@@ -141,7 +153,9 @@
     margin-top: 15px;
 }
 
-/*  --------- Show reseñas -------------------*/
+
+
+/*  ------------------- Show reseñas -------------------*/
 
 .resenasShow{
     max-width: 1000px;
@@ -150,19 +164,33 @@
     width: 100%;
     overflow-y: scroll;
 }
-.tarjetaRes{
+.tarjetaResena{
     min-height: 60px;
-    padding: 20px;
-}
-.tarjetaResContent header{
+    padding-left: 22px;
+    padding-right: 22px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #aba6a6;
+    margin-bottom: 12px;
 }
-.tarjetaResContent header div{
+.tarjetaResena header{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.estrella{
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+.tarjetaResena main{
+
+}
+.tarjetaResena footer{
+    display: flex;
+
+}
+
+.imgfav{
+    width: 30px;
+    height: 30px;
+}
+.imguser{
+    width: 50px;
+    height: 50px;
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Receta;
 use Illuminate\Http\Request;
 
-// no se si vale 
+// redirecciones a rutas
 use Illuminate\Support\Facades\Redirect;
 
 // Intervention para tratar imágenes php
@@ -199,7 +199,13 @@ class RecetaController extends Controller
      */
     public function destroy(Receta $receta){
 
+        
+        // borrado de las reseñas asociadas a la receta ya que restringen su borrado
+        DB::table('resenas')->where( "recetas_id", '=', $receta->id)->delete();
+    
+        // borrado de la receta
         $receta->delete();
+
         return Redirect::route('recetas.index');
     }
 }

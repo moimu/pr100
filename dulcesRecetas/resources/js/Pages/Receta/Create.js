@@ -18,36 +18,34 @@ const Create = () => {
         img: "",
         detalles: "",
     });
-   
+
     function handleSubmit(e) {
         e.preventDefault();
         // envio datos del formulario a esta ruta
-        post( route("recetas.store") );
+        post(route("recetas.store"));
     }
     return (
         <div className="">
             <div className="containerEditoCreate mx-auto">
 
-                <div>
-                    <h1 className="mb-8 text-3xl font-bold hunoindex">
+                <h1 className="mb-8 text-3xl font-bold hunoindex"> Nueva receta </h1>
 
-                        <InertiaLink
-                            href={route("recetas.index")}
-                            className="text-indigo-600 hover:text-indigo-700"
-                        >
-                            Todas las recetas
-                        </InertiaLink>
+                <div className="flex items-center justify-between mb-6 navedit">
 
-                        <span className="font-medium text-indigo-600"> / </span>
-                        Nueva receta
-                    </h1>
+                    <InertiaLink
+                        className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
+
+                        href={route("recetas.index")}
+                    > Recetas
+                    </InertiaLink>
+
                 </div>
 
                 <div className="max-w-6xl p-8 bg-white rounded shadow contenedorForm">
                     <form name="createForm" onSubmit={handleSubmit}>
 
                         <div className="flex flex-col">
-                        <img scr="http://localhost/icons/libro-de-cocina.png"/>
+                            <img scr="http://localhost/icons/libro-de-cocina.png" />
                             <div className="mb-4">
                                 <label className="">Nombre</label>
                                 <input
@@ -104,7 +102,7 @@ const Create = () => {
                                     <option value="América del Norte">América del Norte</option>
                                     <option value="Europa">Europa</option>
                                     <option value="Oceanía">Asia</option>
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.continente}
                                 </span>
@@ -137,11 +135,11 @@ const Create = () => {
                                     name="alergenos"
                                     errors={errors.alergenos}
                                     value={data.alergenos}
-                                    
+
                                     onChange={(e) =>
                                         setData("alergenos", e.target.value)
                                     }
-                                    
+
                                 >
                                     <option value="" selected> Elige alérgenos </option>
                                     <option value="Leche"> Leche </option>
@@ -153,12 +151,12 @@ const Create = () => {
                                     <option value="Pescado"> Pescado </option>
                                     <option value="Mariscos"> Mariscos </option>
 
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.alergenos}
                                 </span>
                             </div>
-                            
+
                             <div className="mb-0">
                                 <label className=""> Dificultad </label>
                                 <select
@@ -177,7 +175,7 @@ const Create = () => {
                                     <option value="Intermedio"> Intermedio </option>
                                     <option value="Avanzado"> Avanzado </option>
 
-                                </select> 
+                                </select>
                                 <span className="text-red-600">
                                     {errors.dificultad}
                                 </span>
@@ -190,8 +188,8 @@ const Create = () => {
                                     className="w-full px-4 py-2"
                                     label="tiempo"
                                     name="tiempo"
-                                    value={data.tiempo }
-                                    placeholder="Duración en minutos" 
+                                    value={data.tiempo}
+                                    placeholder="Duración en minutos"
                                     required
                                     onChange={(e) =>
                                         setData("tiempo", e.target.value)
@@ -204,13 +202,13 @@ const Create = () => {
 
                             <div className="mb-4">
                                 <label className=""> Calorías </label>
-                                <input   
+                                <input
                                     type="number"
                                     className="w-full px-4 py-2"
                                     label="calorias"
                                     name="calorias"
                                     value={data.calorias}
-                                    
+
                                     onChange={(e) =>
                                         setData("calorias", e.target.value)
                                     }
@@ -288,7 +286,7 @@ const Create = () => {
                                     name="detalles"
                                     errors={errors.detalles}
                                     value={data.detalles}
-                                    
+
                                     onChange={(e) =>
                                         setData("detalles", e.target.value)
                                     }
@@ -297,7 +295,7 @@ const Create = () => {
                                     {errors.detalles}
                                 </span>
                             </div>
-                            
+
 
                         </div>
 

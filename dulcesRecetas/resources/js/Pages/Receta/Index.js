@@ -15,7 +15,13 @@ const Index = () => {
 
                 <h1 className="text-3xl font-bold text-center hunoindex"> Recetas </h1>
 
-                <div className="flex items-center justify-between navindex">
+                <div className="flex items-center justify-between navIndexRecetas">
+                    <InertiaLink
+                        className="px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none"
+                        href={route("dashboard")}
+                    >
+                        Mi zona
+                    </InertiaLink>
                     <InertiaLink
                         className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
                         href={route("recetas.create")}
@@ -27,30 +33,30 @@ const Index = () => {
                 <div className="overflow-x-auto bg-white contenedorrecetas">
 
 
-                    {data.map(({ id, nombre, img, dificultad, tiempo  }) => (
-                        
-                            <article className="articlerecetasindex">
-                                <header>
-                                    <InertiaLink
-                                        tabIndex="1"
-                                        className="flex items-center"
-                                        href={route("recetas.show", id)}
-                                    >
-                                       <img src={img} className="imgrecetaindex" alt={nombre} loading="lazy" />
-                                    </InertiaLink>
-                                </header>
-                                <main>
-                                    <h1 className="nombrerecetaindex">{nombre}</h1>
-                                    <p>{dificultad}</p>
-                                    <p>{tiempo} Minutos</p>
-                                </main>
-                                <footer >
-                                    <section>
-                                        {/* valoraciones */}
-                                    </section>
-                                </footer>
-                            </article>
-                        
+                    {data.map(({ id, nombre, img, dificultad, tiempo }) => (
+
+                        <article className="articlerecetasindex">
+                            <header>
+                                <InertiaLink
+                                    tabIndex="1"
+                                    className="flex items-center"
+                                    href={route("recetas.show", id)}
+                                >
+                                    <img src={img} className="imgrecetaindex" alt={nombre} loading="lazy" />
+                                </InertiaLink>
+                            </header>
+                            <main>
+                                <h1 className="nombrerecetaindex">{nombre}</h1>
+                                <p>{dificultad}</p>
+                                <p>{tiempo} Minutos</p>
+                            </main>
+                            <footer >
+                                <section>
+                                    {/* valoraciones */}
+                                </section>
+                            </footer>
+                        </article>
+
 
                     ))}
                     {data.length === 0 && (

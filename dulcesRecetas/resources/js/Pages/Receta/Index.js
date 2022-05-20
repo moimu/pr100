@@ -3,6 +3,7 @@ import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
 import '../../../css//receta.css'
+// import banner from '../../img/banner.jpeg';
 
 const Index = () => {
     const recetas = usePage().props;
@@ -12,7 +13,7 @@ const Index = () => {
 
         <div>
             <div className="container mx-auto">
-
+                {/* <img src={banner}></img> */}
                 <h1 className="text-3xl font-bold text-center hunoindex"> Recetas </h1>
 
                 <div className="flex items-center justify-between navIndexRecetas">

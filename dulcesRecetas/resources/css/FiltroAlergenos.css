@@ -1,0 +1,15 @@
+.icon {
+
+    width: 100px;
+    height: 100px;
+}
+
+.botonIcon {
+    /* width: 100px;
+    height: 100px; */
+
+    border: 1px solid black;
+}
+.seleccion{
+    background-color: aquamarine;
+}

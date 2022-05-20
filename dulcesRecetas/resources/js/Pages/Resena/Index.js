@@ -3,7 +3,8 @@ import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
 import '../../../css//resena.css'
-import imageFavorito from './favorito.png';
+import imageFavorito from '../../img/favorito.png';
+
 
 const Index = () => {
     const resenas = usePage().props;

@@ -24,6 +24,10 @@ const Create = () => {
         // envio datos del formulario a esta ruta
         post(route("recetas.store"));
     }
+    function editalergenos(e){
+        data.alergenos += e.currentTarget.value.toString()+",";
+        console.log(data);
+    }
     return (
         <div className="">
             <div className="containerEditoCreate mx-auto">
@@ -127,34 +131,60 @@ const Create = () => {
                                 </span>
                             </div>
 
-                            <div className="mb-0">
+                            <div className="mb-0" >
                                 <label className=""> Alérgenos </label>
-                                <select
-                                    className="w-full rounded"
-                                    label="alergenos"
-                                    name="alergenos"
-                                    errors={errors.alergenos}
-                                    value={data.alergenos}
-
-                                    onChange={(e) =>
-                                        setData("alergenos", e.target.value)
-                                    }
-
-                                >
-                                    <option value="" selected> Elige alérgenos </option>
-                                    <option value="Leche"> Leche </option>
-                                    <option value="Huevos"> Huevos </option>
-                                    <option value="Trigo"> Trigo </option>
-                                    <option value="Soya"> Soya </option>
-                                    <option value="Frutos secos"> Frutos secos </option>
-                                    <option value="Cacahuates"> Cacahuates </option>
-                                    <option value="Pescado"> Pescado </option>
-                                    <option value="Mariscos"> Mariscos </option>
-
-                                </select>
-                                <span className="text-red-600">
-                                    {errors.alergenos}
-                                </span>
+                                <fieldset className="border border-secondary w-full rounded">
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Lácteos" key={"Lácteos".toString()}/>
+                                            Lácteos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Huevo" key={"Huevo".toString()}/>
+                                            Huevo
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Gluten" key={"Gluten".toString()}/>
+                                            Gluten
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Soja" key={"Soja".toString()}/>
+                                            Soja
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Frutos secos" key={"Frutos secos".toString()}/>
+                                            Frutos secos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Cacahuete" key={"Cacahuete".toString()}/>
+                                            Cacahuete
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Moluscos" key={"Moluscos".toString()}/>
+                                            Moluscos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Crustáceos" key={"Crustáceos".toString()}/>
+                                            Crustáceos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Pescado" key={"Pescado".toString()}/>
+                                            Pescado
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Mostaza" key={"Mostaza".toString()}/>
+                                            Mostaza
+                                    </li>
+                                </fieldset>
                             </div>
 
                             <div className="mb-0">

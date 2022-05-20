@@ -6,22 +6,58 @@ import '../../../css//receta.css'
 import ResenaCreate from "../Resena/Create.js";
 import FavoritoCreate from "../Favorito/Create.js";
 
-import imageFavorito from './favorito.png';
+import imageFavorito from '../../img/favorito.png';
 
+import iconLacteos from '../../img/alergenos/iconLacteos.png';
+import iconHuevo from '../../img/alergenos/iconHuevo.png';
+import iconGluten from '../../img/alergenos/iconGluten.png';
+import iconSoja from '../../img/alergenos/iconSoja.png';
+import iconFrutosSecos from '../../img/alergenos/iconFrutosSecos.png';
+import iconCacahuete from '../../img/alergenos/iconCacahuete.png';
+import iconMoluscos from '../../img/alergenos/iconMoluscos.png';
+import iconCrustaceo from '../../img/alergenos/iconCrustaceo.png';
+import iconPescado from '../../img/alergenos/iconPescado.png';
+import iconMostaza from '../../img/alergenos/iconMostaza.png';
 
 const Show = () => {
     const data = usePage().props;
-    
     const urlImgUser = data.auth.user.imguser;
     // Datos de la receta
     const receta = data.receta[0];
 
     // Reseñas de la receta a mostrar
     const resenas = data.receta[1];
+    // console.log(receta); console.log(resenas); console.log(resenas); 
 
-    // console.log(receta);
-    // console.log(resenas); 
-    console.log(resenas);
+    function iconAlergenos(string) {
+        let alergenos = string.split(',').map((alergeno) => {
+            switch (alergeno) {
+                case "Lácteos":
+                    return <img className="iconAlergenos" src={iconLacteos} />;
+                case "Huevo":
+                    return <img className="iconAlergenos" src={iconHuevo} />;
+                case "Gluten":
+                    return <img className="iconAlergenos" src={iconGluten} />;
+                case "Soja":
+                    return <img className="iconAlergenos" src={iconSoja} />;
+                case "Frutos secos":
+                    return <img className="iconAlergenos" src={iconFrutosSecos} />;
+                case "Cacahuete":
+                    return <img className="iconAlergenos" src={iconCacahuete} />;
+                case "Moluscos":
+                    return <img className="iconAlergenos" src={iconMoluscos} />;
+                case "Crustáceos":
+                    return <img className="iconAlergenos" src={iconCrustaceo} />;
+                case "Pescado":
+                    return <img className="iconAlergenos" src={iconPescado} />;
+                case "Mostaza":
+                    return <img className="iconAlergenos" src={iconMostaza} />;
+                default:
+                    return ;
+            }
+        });
+        return alergenos;
+    }
 
     function listado(cadena) {
         let array = cadena.split(',');
@@ -51,12 +87,13 @@ const Show = () => {
                     <footer>
                         {img}
                     </footer>
-                    
+
                 </section>
             );
         });
         return lista;
     }
+
 
     return (
 
@@ -89,46 +126,53 @@ const Show = () => {
 
 
                     <article className="articlerecetashow">
-                        <header class="headershow">
-                            <img src={receta.img} className="imgshow" alt={receta.nombre} loading="lazy" />
+                        <header className="">
+                            <div className="headershowtop">
+                                <img src={receta.img} className="imgshow" alt={receta.nombre} loading="lazy" />
 
+                                <section className="sectionheader">
+                                    <h1>{receta.nombre}</h1>
+                                    <div className="datostagshow">
+                                        <div>
+                                            <div className="itemtagshow">
+                                                <h4> Origen </h4>
+                                                <p>{receta.continente}</p>
+                                            </div>
 
-                            <section class="sectionheader">
-                                <h1>{receta.nombre}</h1>
-                                <div class="datostagshow">
-                                    <div>
-                                        <div class="itemtagshow">
-                                            <h4> Origen </h4>
-                                            <p>{receta.continente}</p>
+                                            <div className="itemtagshow">
+                                                <h4> Nivel </h4>
+                                                <p>{receta.dificultad}</p>
+                                            </div>
                                         </div>
-                                        <div class="itemtagshow">
-                                            <h4> Alergenos </h4>
-                                            <p>{receta.alergenos}</p>
+
+                                        <div>
+                                            <div className="itemtagshow">
+                                                <h4> Calorías </h4>
+                                                <p>{receta.calorias}</p>
+                                            </div>
+                                            <div className="itemtagshow">
+                                                <h4> Comensales </h4>
+                                                <p>{receta.npersonas}</p>
+                                            </div>
+                                            <div className="itemtagshow">
+                                                <h4> Minutos </h4>
+                                                <p>{receta.tiempo}</p>
+                                            </div>
                                         </div>
-                                        <div class="itemtagshow">
-                                            <h4> Nivel </h4>
-                                            <p>{receta.dificultad}</p>
-                                        </div>
+
                                     </div>
+                                </section>
 
-                                    <div>
-                                        <div class="itemtagshow">
-                                            <h4> Calorías </h4>
-                                            <p>{receta.calorias}</p>
-                                        </div>
-                                        <div class="itemtagshow">
-                                            <h4> Comensales </h4>
-                                            <p>{receta.npersonas}</p>
-                                        </div>
-                                        <div class="itemtagshow">
-                                            <h4> Minutos </h4>
-                                            <p>{receta.tiempo}</p>
-                                        </div>
+                            </div>
+                            <div>
+                                <div className="itemtagshowAlergenos">
+                                    <h4> Alérgenos </h4>
+                                    <div className="divIconsAlergenos"> 
+                                        {iconAlergenos(receta.alergenos)}
                                     </div>
-
                                 </div>
+                            </div>
 
-                            </section>
                         </header>
 
                         <div className="separador">
@@ -181,7 +225,7 @@ const Show = () => {
                 </div>
 
             </div>
-        </div>
+        </div >
 
     );
 };

@@ -12,7 +12,7 @@ const Edit = () => {
         // img: receta.img || "",
         continente: receta.continente || "",
         descripcion: receta.descripcion || "",
-        alergenos: receta.alergenos || "",
+        alergenos: "",
         dificultad: receta.dificultad || "",
         tiempo: receta.tiempo || "",
         calorias: receta.calorias || "",
@@ -21,6 +21,7 @@ const Edit = () => {
         procedimiento: receta.procedimiento || "",
         detalles: receta.detalles || ""
     });
+    console.log(data);
     function handleSubmit(e) {
         e.preventDefault();
         put(route("recetas.update", receta.id));
@@ -30,6 +31,11 @@ const Edit = () => {
             Inertia.delete(route("recetas.destroy", receta.id));
         }
     }
+    function editalergenos(e){
+        data.alergenos += e.currentTarget.value.toString()+",";
+        console.log(data);
+    }
+
     return (
         <div className="">
             <div className="containerEditoCreate mx-auto">
@@ -132,34 +138,60 @@ const Edit = () => {
                                 </span>
                             </div>
 
-                            <div className="mb-0">
+                            <div className="mb-0" >
                                 <label className=""> Alérgenos </label>
-                                <select
-                                    className="w-full rounded"
-                                    label="alergenos"
-                                    name="alergenos"
-                                    errors={errors.alergenos}
-                                    value={data.alergenos}
-
-                                    onChange={(e) =>
-                                        setData("alergenos", e.target.value)
-                                    }
-
-                                >
-                                    <option value="" default> Sin alérgenos </option>
-                                    <option value="Leche"> Leche </option>
-                                    <option value="Huevos"> Huevos </option>
-                                    <option value="Trigo"> Trigo </option>
-                                    <option value="Soya"> Soya </option>
-                                    <option value="Frutos secos"> Leche </option>
-                                    <option value="Cacahuates"> Huevos </option>
-                                    <option value="Pescado"> Trigo </option>
-                                    <option value="Mariscos"> Soya </option>
-
-                                </select>
-                                <span className="text-red-600">
-                                    {errors.alergenos}
-                                </span>
+                                <fieldset className="border border-secondary w-full rounded">
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Lácteos" key={"Lácteos".toString()}/>
+                                            Lácteos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Huevo" key={"Huevo".toString()}/>
+                                            Huevo
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Gluten" key={"Gluten".toString()}/>
+                                            Gluten
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Soja" key={"Soja".toString()}/>
+                                            Soja
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Frutos secos" key={"Frutos secos".toString()}/>
+                                            Frutos secos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Cacahuete" key={"Cacahuete".toString()}/>
+                                            Cacahuete
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Moluscos" key={"Moluscos".toString()}/>
+                                            Moluscos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Crustáceos" key={"Crustáceos".toString()}/>
+                                            Crustáceos
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Pescado" key={"Pescado".toString()}/>
+                                            Pescado
+                                    </li>
+                                    <li>
+                                        <input onChange={ (e) => editalergenos( e )} 
+                                            type="radio" value="Mostaza" key={"Mostaza".toString()}/>
+                                            Mostaza
+                                    </li>
+                                </fieldset>
                             </div>
 
                             <div className="mb-0">
@@ -176,9 +208,9 @@ const Edit = () => {
                                     }
                                 >
                                     <option value="" selected> Elige nivel dificultad </option>
-                                    <option value="Principiante"> principiante </option>
-                                    <option value="Intermedio"> intermedio </option>
-                                    <option value="Avanzado"> avanzado </option>
+                                    <option value="Principiante"> Principiante </option>
+                                    <option value="Intermedio"> Intermedio </option>
+                                    <option value="Avanzado"> Avanzado </option>
 
                                 </select>
                                 <span className="text-red-600">

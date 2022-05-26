@@ -2,6 +2,9 @@ import React from "react";
 import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
+import Header from "../../Components/Header.js";
+import Footer from "../../Components/Footer.js";
+
 import '../../../css//receta.css'
 import ResenaCreate from "../Resena/Create.js";
 import FavoritoCreate from "../Favorito/Create.js";
@@ -19,7 +22,7 @@ import iconCrustaceo from '../../img/alergenos/iconCrustaceo.png';
 import iconPescado from '../../img/alergenos/iconPescado.png';
 import iconMostaza from '../../img/alergenos/iconMostaza.png';
 
-const Show = () => {
+const Show = (props) => {
     const data = usePage().props;
     const urlImgUser = data.auth.user.imguser;
     // Datos de la receta
@@ -27,37 +30,7 @@ const Show = () => {
 
     // Reseñas de la receta a mostrar
     const resenas = data.receta[1];
-    // console.log(receta); console.log(resenas); console.log(resenas); 
-
-    function iconAlergenos(string) {
-        let alergenos = string.split(',').map((alergeno) => {
-            switch (alergeno) {
-                case "Lácteos":
-                    return <img className="iconAlergenos" src={iconLacteos} />;
-                case "Huevo":
-                    return <img className="iconAlergenos" src={iconHuevo} />;
-                case "Gluten":
-                    return <img className="iconAlergenos" src={iconGluten} />;
-                case "Soja":
-                    return <img className="iconAlergenos" src={iconSoja} />;
-                case "Frutos secos":
-                    return <img className="iconAlergenos" src={iconFrutosSecos} />;
-                case "Cacahuete":
-                    return <img className="iconAlergenos" src={iconCacahuete} />;
-                case "Moluscos":
-                    return <img className="iconAlergenos" src={iconMoluscos} />;
-                case "Crustáceos":
-                    return <img className="iconAlergenos" src={iconCrustaceo} />;
-                case "Pescado":
-                    return <img className="iconAlergenos" src={iconPescado} />;
-                case "Mostaza":
-                    return <img className="iconAlergenos" src={iconMostaza} />;
-                default:
-                    return ;
-            }
-        });
-        return alergenos;
-    }
+    console.log(props.auth.user);
 
     function listado(cadena) {
         let array = cadena.split(',');
@@ -97,135 +70,142 @@ const Show = () => {
 
     return (
 
-        <div>
-            <div className="containerRecetaShow mx-auto">
 
-                <h1 className="text-3xl font-bold text-center hunoshow"> Receta </h1>
+        <div className="containerRecetaShow mx-auto">
 
-                <div className="flex items-center justify-between mb-6 navshow">
-                    <InertiaLink
-                        className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
-                        href={route("recetas.index")}
-                    >
-                        Recetas
-                    </InertiaLink>
-                    <InertiaLink
-                        tabIndex="1"
-                        className="px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none"
-                        href={route("recetas.edit", receta.id)}
-                    >
-                        Editar
-                    </InertiaLink>
-                    {/* Create de favoritos  */}
-                    <FavoritoCreate receta={receta} />
-                </div>
+            <Header props={props} />
 
-                <div className="overflow-x-auto bg-white rounded shadow contenarticuloshow">
+            <div className="overflow-x-auto bg-white rounded shadow contArticleShow bg-gray-100">
 
-                    <div className="espaciador"></div>
+                <article className="articlerecetashow">
+                    <header className="">
+                        <div className="headershowtop">
+                            <img src={receta.img} className="imgshow" alt={receta.nombre} loading="lazy" />
 
-
-                    <article className="articlerecetashow">
-                        <header className="">
-                            <div className="headershowtop">
-                                <img src={receta.img} className="imgshow" alt={receta.nombre} loading="lazy" />
-
-                                <section className="sectionheader">
-                                    <h1>{receta.nombre}</h1>
-                                    <div className="datostagshow">
-                                        <div>
-                                            <div className="itemtagshow">
-                                                <h4> Origen </h4>
-                                                <p>{receta.continente}</p>
-                                            </div>
-
-                                            <div className="itemtagshow">
-                                                <h4> Nivel </h4>
-                                                <p>{receta.dificultad}</p>
-                                            </div>
+                            <section className="sectionheader">
+                                <h1>{receta.nombre}</h1>
+                                <div className="datostagshow">
+                                    <div>
+                                        <div className="itemtagshow">
+                                            <h4> Origen </h4>
+                                            <p>{receta.continente}</p>
                                         </div>
 
-                                        <div>
-                                            <div className="itemtagshow">
-                                                <h4> Calorías </h4>
-                                                <p>{receta.calorias}</p>
-                                            </div>
-                                            <div className="itemtagshow">
-                                                <h4> Comensales </h4>
-                                                <p>{receta.npersonas}</p>
-                                            </div>
-                                            <div className="itemtagshow">
-                                                <h4> Minutos </h4>
-                                                <p>{receta.tiempo}</p>
-                                            </div>
+                                        <div className="itemtagshow">
+                                            <h4> Nivel </h4>
+                                            <p>{receta.dificultad}</p>
                                         </div>
-
                                     </div>
-                                </section>
 
-                            </div>
-                            <div>
-                                <div className="itemtagshowAlergenos">
-                                    <h4> Alérgenos </h4>
-                                    <div className="divIconsAlergenos"> 
-                                        {iconAlergenos(receta.alergenos)}
+                                    <div>
+                                        <div className="itemtagshow">
+                                            <h4> Calorías </h4>
+                                            <p>{receta.calorias}</p>
+                                        </div>
+                                        <div className="itemtagshow">
+                                            <h4> Comensales </h4>
+                                            <p>{receta.npersonas}</p>
+                                        </div>
+                                        <div className="itemtagshow">
+                                            <h4> Minutos </h4>
+                                            <p>{receta.tiempo}</p>
+                                        </div>
                                     </div>
+
+                                    <div>
+                                        <div className="botoneraShow">
+                                            <InertiaLink
+                                                tabIndex="1"
+                                                className="px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none"
+                                                href={route("recetas.edit", receta.id)}
+                                            >
+                                                Editar
+                                            </InertiaLink>
+
+                                            <FavoritoCreate receta={receta} />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+
+                        </div>
+                        <div>
+                            <div className="itemtagshowAlergenos">
+                                <h4> Alérgenos </h4>
+                                <div className="divIconsAlergenos">
+
+                                    {receta.lacteos === 1 && (<img className="iconAlergenos" src={iconLacteos} />)}
+                                    {receta.huevo === 1 && (<img className="iconAlergenos" src={iconHuevo} />)}
+                                    {receta.gluten === 1 && (<img className="iconAlergenos" src={iconGluten} />)}
+                                    {receta.soja === 1 && (<img className="iconAlergenos" src={iconSoja} />)}
+                                    {receta.frutos === 1 && (<img className="iconAlergenos" src={iconFrutosSecos} />)}
+                                    {receta.cacahuete === 1 && (<img className="iconAlergenos" src={iconCacahuete} />)}
+                                    {receta.moluscos === 1 && (<img className="iconAlergenos" src={iconMoluscos} />)}
+                                    {receta.crustaceos === 1 && (<img className="iconAlergenos" src={iconCrustaceo} />)}
+                                    {receta.pescado === 1 && (<img className="iconAlergenos" src={iconPescado} />)}
+                                    {receta.mostaza === 1 && (<img className="iconAlergenos" src={iconMostaza} />)}
+
+                                    {/* {iconAlergenos(receta.alergenos)} */}
+
                                 </div>
                             </div>
-
-                        </header>
-
-                        <div className="separador">
-                            <hr />
                         </div>
-                        <main>
-                            <section>
-                                <h3> Descripción </h3>
-                                <p>
-                                    {receta.descripcion}
-                                </p>
-                            </section>
 
-                            <section>
-                                <h3> Ingredientes </h3>
-                                <ul>
-                                    {listado(receta.ingreCantidad)}
-                                </ul>
+                    </header>
 
-                                <h3> Procedimiento </h3>
-                                <ul>
-                                    {listado(receta.procedimiento)}
-                                </ul>
-                            </section>
-                            <section>
-                                <h3>Detalles</h3>
-                                <p>
-                                    {receta.detalles}
-                                </p>
-                            </section>
-                        </main>
-                        <footer >
-                            <section>
-                                <ol>
-                                    <li></li>
-                                </ol>
-                            </section>
-                        </footer>
-                    </article>
+                    <div className="separador">
+                        <hr />
+                    </div>
+                    <main>
+                        <section>
+                            <h3> Descripción </h3>
+                            <p>
+                                {receta.descripcion}
+                            </p>
+                        </section>
 
-                </div>
+                        <section>
+                            <h3> Ingredientes </h3>
+                            <ul>
+                                {listado(receta.ingreCantidad)}
+                            </ul>
 
-                <div className="overflow-x-auto bg-white rounded shadow resenasShow">
-
-                    {/* Create de reseñas + total reseñas de la receta */}
-
-                    <ResenaCreate receta_id={receta.id} />
-                    {tarjetasResenas(resenas)}
-
-                </div>
+                            <h3> Procedimiento </h3>
+                            <ul>
+                                {listado(receta.procedimiento)}
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Detalles</h3>
+                            <p>
+                                {receta.detalles}
+                            </p>
+                        </section>
+                    </main>
+                    <footer >
+                        <section>
+                            <ol>
+                                <li></li>
+                            </ol>
+                        </section>
+                    </footer>
+                </article>
 
             </div>
-        </div >
+
+            <div className="overflow-x-auto bg-white rounded shadow resenasShow">
+
+                {/* Create de reseñas + total reseñas de la receta */}
+
+                <ResenaCreate receta_id={receta.id} />
+                {tarjetasResenas(resenas)}
+
+            </div>
+
+            <Footer />
+
+        </div>
 
     );
 };

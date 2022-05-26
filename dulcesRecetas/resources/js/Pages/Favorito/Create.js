@@ -30,7 +30,7 @@ function Create() {
                 type="submit"
                 className="px-6 py-2 font-bold text-white bg-yellow-500 rounded btn btn-warning"
             >
-                Añadir favorito
+                Favorito
             </button>
 
         </form>

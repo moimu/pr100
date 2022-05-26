@@ -24,8 +24,7 @@ use App\Models\Resena;
 use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
-
-
+use Symfony\Component\VarDumper\VarDumper;
 
 class RecetaController extends Controller
 {
@@ -35,19 +34,24 @@ class RecetaController extends Controller
     public function __construct()
     {
         // Si requerimos autentificación del usuario
-        // $this->middleware('auth');
+        $this->middleware('auth');
     }
+
 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //  usuarios o usuario autenticado ve todas las recetas
 
+        // dd($request);
+        
+
+        //  usuarios o usuario autenticado ve todas las recetas
         $recetas = Receta::all();
+
         return Inertia::render('Receta/Index', ['recetas' => $recetas]);
     }
 
@@ -69,28 +73,39 @@ class RecetaController extends Controller
      */
     public function store(Request $request)
     {
+
         // Antes de crear nueva receta verificamos existencia en bd
         $recetas = Receta::all()->where('nombre', $request->nombre)->first();
-        if( $recetas ){
+        if ($recetas) {
             return back()
-            ->withErrors(['nombre' => 'Receta existente']) // mensaje informativo error rojo
-            ->withInput(['nombre' => $request->nombre])    // mostrar en input valor erroneo
-        ;}
+                ->withErrors(['nombre' => 'Receta existente']) // mensaje informativo error rojo
+                ->withInput(['nombre' => $request->nombre])    // mostrar en input valor erroneo
+            ;
+        }
 
         // reglas de validacion para cada input
         $data = $request->validate([
-            'nombre'=>'required|string',
-            'img'=>'required|image',
-            'continente'=>'required|string',
-            'descripcion'=>'required|string',
-            'alergenos'=>'nullable|string',
-            'dificultad'=>'required|string',   
-            'tiempo'=>'required|integer', 
-            'calorias'=>'nullable|integer',
-            'npersonas'=>'required|integer',
-            'ingreCantidad'=>'required|string',
-            'procedimiento'=>'required|string',
-            'detalles'=>'nullable|string',
+            'nombre' => 'required|string',
+            'img' => 'required|image',
+            'continente' => 'required|string',
+            'descripcion' => 'required|string',
+            'dificultad' => 'required|string',
+            'tiempo' => 'required|integer',
+            'calorias' => 'nullable|integer',
+            'npersonas' => 'required|integer',
+            'ingreCantidad' => 'required|string',
+            'procedimiento' => 'required|string',
+            'detalles' => 'nullable|string',
+            'lacteos' => 'required|boolean',
+            'huevo' => 'required|boolean',
+            'gluten' => 'required|boolean',
+            'soja' => 'required|boolean',
+            'frutos' => 'required|boolean',
+            'cacahuete' => 'required|boolean',
+            'moluscos' => 'required|boolean',
+            'crustaceos' => 'required|boolean',
+            'pescado' => 'required|boolean',
+            'mostaza' => 'required|boolean',
         ]);
 
         // guardar imagen servidor e insertar receta en bd
@@ -102,7 +117,6 @@ class RecetaController extends Controller
             'img' => $path,
             'continente' => $request['continente'],
             'descripcion' => $request['descripcion'],
-            'alergenos' => $request['alergenos'],
             'dificultad' => $request['dificultad'],
             'tiempo' => $request['tiempo'],
             'calorias' => $request['calorias'],
@@ -110,6 +124,16 @@ class RecetaController extends Controller
             'ingreCantidad' => $request['ingreCantidad'],
             'procedimiento' => $request['procedimiento'],
             'detalles' => $request['detalles'],
+            'lacteos' => $request['lacteos'],
+            'huevo' => $request['huevo'],
+            'gluten' => $request['gluten'],
+            'soja' => $request['soja'],
+            'frutos' => $request['frutos'],
+            'cacahuete' => $request['cacahuete'],
+            'moluscos' => $request['moluscos'],
+            'crustaceos' => $request['crustaceos'],
+            'pescado' => $request['pescado'],
+            'mostaza' => $request['mostaza'],
         ]);
 
         return Redirect::route('recetas.index');
@@ -125,13 +149,12 @@ class RecetaController extends Controller
     {
 
         $id = $receta->id;
-        $resenasDeLaReceta = DB::table('resenas')->where( "recetas_id", '=', $id)->get();
-    
+        $resenasDeLaReceta = DB::table('resenas')->where("recetas_id", '=', $id)->get();
+
         $ar = [];
         $ar[0] = $receta;
         $ar[1] = $resenasDeLaReceta;
-        return Inertia::render('Receta/Show',  ['receta' => $ar] );
-
+        return Inertia::render('Receta/Show',  ['receta' => $ar]);
     }
 
     /**
@@ -140,10 +163,10 @@ class RecetaController extends Controller
      * @param  \App\Models\Receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function edit(Receta $receta){
+    public function edit(Receta $receta)
+    {
 
-        return Inertia::render('Receta/Edit',  ['receta' => $receta] );
-        
+        return Inertia::render('Receta/Edit',  ['receta' => $receta]);
     }
 
     /**
@@ -153,23 +176,26 @@ class RecetaController extends Controller
      * @param  \App\Models\Receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Receta $receta){
+    public function update(Request $request, Receta $receta)
+    {
+
+        dd($request);
 
         // reglas de validacion para cada input sin imagen
         $data = $request->validate([
-            'nombre'=>'nullable|string',
-            'continente'=>'nullable|string',
-            'descripcion'=>'nullable|string',
-            'alergenos'=>'nullable|string',
-            'dificultad'=>'nullable|string',   
-            'tiempo'=>'nullable|integer', 
-            'calorias'=>'nullable|integer',
-            'npersonas'=>'nullable|integer',
-            'ingreCantidad'=>'nullable|string',
-            'procedimiento'=>'nullable|string',
-            'detalles'=>'nullable|string',
+            'nombre' => 'nullable|string',
+            'continente' => 'nullable|string',
+            'descripcion' => 'nullable|string',
+            'alergenos' => 'nullable|string',
+            'dificultad' => 'nullable|string',
+            'tiempo' => 'nullable|integer',
+            'calorias' => 'nullable|integer',
+            'npersonas' => 'nullable|integer',
+            'ingreCantidad' => 'nullable|string',
+            'procedimiento' => 'nullable|string',
+            'detalles' => 'nullable|string',
         ]);
-        
+
         // if( $request->hasFile('img') ){
 
         //     // borrar antigua imagen
@@ -186,7 +212,7 @@ class RecetaController extends Controller
         //     $receta->save();
         // }
 
-        $receta->update( $data );
+        $receta->update($data);
 
         return Redirect::route('recetas.index');
     }
@@ -197,12 +223,17 @@ class RecetaController extends Controller
      * @param  \App\Models\Receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Receta $receta){
+    public function destroy(Receta $receta)
+    {
 
-        
-        // borrado de las reseñas asociadas a la receta ya que restringen su borrado
-        DB::table('resenas')->where( "recetas_id", '=', $receta->id)->delete();
-    
+
+        // borrado de las reseñas asociadas a la receta ya que restringen su borrado.
+        DB::table('resenas')->where("recetas_id", '=', $receta->id)->delete();
+
+        // borrado de favoritos asociadas a la receta ya que carecen de sentido.
+        DB::table('favoritos')->where("recetas_id", '=', $receta->id)->delete();
+
+
         // borrado de la receta
         $receta->delete();
 

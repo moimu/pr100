@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('img')->nullable();
             $table->string('continente')->default('Europa');
             $table->string('descripcion');
-            $table->string('alergenos')->nullable();
             $table->string('dificultad')->default('Principiante');
             $table->integer('tiempo')->default('30');
             $table->integer('calorias')->nullable();
@@ -28,6 +27,16 @@ return new class extends Migration
             $table->longText('ingreCantidad');
             $table->longText('procedimiento');
             $table->string('detalles')->nullable();
+            $table->boolean('lacteos');
+            $table->boolean('huevo');
+            $table->boolean('gluten');
+            $table->boolean('soja');
+            $table->boolean('frutos');
+            $table->boolean('cacahuete');
+            $table->boolean('moluscos');
+            $table->boolean('crustaceos');
+            $table->boolean('pescado');
+            $table->boolean('mostaza');
         });
     }
 

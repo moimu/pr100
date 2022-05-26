@@ -1,0 +1,70 @@
+:root {
+    --nar-claro: #ffedcc;
+    --azul-claro: #5aacff;
+}
+
+/* Estilos componente Header */
+
+.headerprincipal {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: linear-gradient(to right, var(--azul-claro), white);  
+    color: white;
+    margin-bottom: 30px;
+}
+.headerprincipal h1{
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+
+}
+.linkUser{
+    gap: 10px;
+    display: flex;
+    margin-top: 34px;
+    margin-right: 17px;
+    align-items: flex-end;
+}
+.logo {
+    width: 100px;
+    height: 90px;
+    margin-top: 35px;
+}
+.logoRegistroLogin{
+    width: 150px;
+
+}
+.logoUser {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos componente Footer */
+
+.footerprincipal {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--azul-claro);
+    color:white;
+
+    /* margin-top: 30px; */
+
+    /* position: absolute;
+    bottom: 0; */
+
+    /* position:fixed;
+    left:0px;
+    bottom:0px; */
+}
+
+
+
+.seccion{
+padding: 15px;
+}
+
+.footerprincipal p{
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}

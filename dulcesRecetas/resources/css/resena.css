@@ -6,6 +6,12 @@
 
 
 /* -----------   Index.js  Resenas --------- */
+
+.principal{
+    display: flex;
+    flex-direction: column;
+}
+
 .navindex {
     padding: 25px;
     display: flex;
@@ -17,13 +23,19 @@
 }
 
 .contenedoresenas {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     padding:50px;
+    min-height: 80vh;
+
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .tarjetaResena {
+    
     min-height: 60px;
     padding-left: 22px;
     padding-right: 22px;
@@ -56,4 +68,19 @@
 .imguser {
     width: 50px;
     height: 50px;
+}
+
+/* Edit   */
+
+.contenedorForm{
+    min-height: 60vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.containerEditResenas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

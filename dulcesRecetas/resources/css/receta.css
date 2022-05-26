@@ -1,79 +1,103 @@
-
-.divcomponent{
+:root {
+    --nar-claro: #ffedcc;
+    --azul-claro: #5aacff;
+}
+.divcomponent {
     border: 1px solid blue;
-
 }
 
-.espaciador{
+.espaciador {
     max-width: 978px;
     padding-top: 50px;
 }
-.separador{
+
+.separador {
     margin: 33px auto 33px;
     max-width: 810px;
     width: 100%;
 }
-.separador hr{
+
+.separador hr {
     color: #aba6a6;
 }
-.container{
-    padding: 25px; 
+
+.container {
+    padding: 25px;
 }
+
 /*----------------- Edit  Create .js ------------------------ */
 
-.containerEditoCreate{
-    padding: 25px;
+
+.containerEditoCreate {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* min-width: 900px;cffffffffffff */
-}
-.contenedorForm{
-    width: 100%;
-    max-width: 1000px;
 }
 
-.navedit{
+.contenedorForm {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    
+}
+
+.navedit {
     padding: 15px;
 
 }
 
 /* -------------------Index -----------------------*/
 
-.hunoindex{
+.principal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hunoindex {
     padding: 25px;
 }
-.navindex{
+
+.navindex {
     padding: 25px;
 }
-.navIndexRecetas{
-    padding: 25px;
+
+.navIndexRecetas {
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 }
-.contenedorrecetas{
+
+.contenedorrecetas {
+
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap:10px;
     justify-content: center;
+    padding: 20px;
+    min-height: 80vh;
+    margin-top: 25px;
+
 }
 
-.articlerecetasindex{
-    display: inline-block;
-    /* border: 1px solid black; */
-    margin: 8px;
-
-    /* transition: transform .2s; */
-}
-
-.imgrecetaindex{
+.articlerecetasindex {
+    height: 320px;
+    padding: 5px;
     border-radius: 1em;
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 300px;
-    max-height: 300px;
 }
-.nombrerecetaindex{
+
+.imgrecetaindex {
+    height: 184px;
+    width: 220px;
+    border-radius: 1em;
+}
+
+.nombrerecetaindex {
     font-size: 22px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -83,99 +107,113 @@
 
 
 
-.hunoshow{
+.hunoshow {
     padding: 25px;
 }
-.navshow{
+
+.navshow {
     padding: 15px;
     width: 500px;
 }
+
 .containerRecetaShow {
-    padding: 25px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-.headershowtop{
+
+.headershowtop {
     display: flex;
 }
-.sectionheader{
+
+.sectionheader {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.imgshow{
+
+.imgshow {
     border-radius: 1em;
     min-width: 250px;
     min-height: 250px;
     max-width: 300px;
     max-height: 300px;
 }
-.iconAlergenos{
+
+.iconAlergenos {
     width: 60px;
     height: 60px;
 }
-.datostagshow{
+
+.datostagshow {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-width: 220px;
+    gap: 25px;
 }
-.itemtagshow{
+
+.itemtagshow {
     font-size: 14px;
 }
-.itemtagshow p{
+
+.itemtagshow p {
     font-size: 20px;
 }
-.itemtagshowAlergenos{
+
+.itemtagshowAlergenos {
     font-size: 14px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.divIconsAlergenos{
+
+.divIconsAlergenos {
     display: flex;
-    gap:5px;
+    gap: 5px;
 }
 
-.contenarticuloshow{
+.contArticleShow {
     display: flex;
     justify-content: center;
     max-width: 1000px;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.articlerecetashow{
-    /* border: 1px solid red; */
+
+.articlerecetashow {
     box-sizing: border-box;
     width: 100%;
     min-height: calc(100vh - 60px);
     margin: auto;
-    padding: 25px;
+    padding: 25px; 
 }
-.articlerecetashow h1{
+
+.articlerecetashow h1 {
     font-size: 40px;
     line-height: 1.2;
 }
-.articlerecetashow h3{
+
+.articlerecetashow h3 {
     font-size: 24px;
-    /* line-height: 1.9; */
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
 
-
 /*  ------------------- Show reseñas -------------------*/
 
-.resenasShow{
+.resenasShow {
     max-width: 1000px;
     margin-top: 30px;
+    margin-bottom: 30px;
     max-height: 300px;
     width: 100%;
     overflow-y: scroll;
 }
-.tarjetaResena{
+
+.tarjetaResena {
     min-height: 60px;
     padding-left: 22px;
     padding-right: 22px;
@@ -184,24 +222,29 @@
     border-bottom: 1px solid #aba6a6;
     margin-bottom: 12px;
 }
-.tarjetaResena header{
+
+.tarjetaResena header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.tarjetaResena main{
 
+.botoneraShow{
+    display: flex;
+    flex-direction: column;
 }
-.tarjetaResena footer{
+
+.tarjetaResena footer {
     display: flex;
 
 }
 
-.imgfav{
+.imgfav {
     width: 30px;
     height: 30px;
 }
-.imguser{
+
+.imguser {
     width: 50px;
     height: 50px;
 }

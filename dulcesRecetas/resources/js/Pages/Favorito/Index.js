@@ -2,9 +2,12 @@ import React from "react";
 import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
+import Header from "../../Components/Header.js";
+import Footer from "../../Components/Footer.js";
+
 import '../../../css//favorito.css'
 
-const Index = () => {
+const Index = (props) => {
     const favoritos = usePage().props;
     const data = favoritos.favoritos;
     console.log(data);
@@ -12,23 +15,15 @@ const Index = () => {
 
     return (
 
-        <div className="container mx-auto">
+        <div className="">
 
-            <h1 className="text-3xl font-bold text-center hunoindex"> Favoritos </h1>
+            <Header props={props} />
 
-            <div className="flex items-center justify-between navindex">
-                <InertiaLink
-                    className="px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none"
-                    href={route("dashboard")}
-                >
-                    Mi zona
-                </InertiaLink>
-            </div>
-            <div className="overflow-x-auto bg-white contenedorFavoritos">
+            <div className="overflow-x-auto contenedorFavoritos bg-gray-100">
 
                 {data.map(({ user_id, recetas_id, recetas_nombre, recetas_img }) => (
 
-                    <article className="articleFavoritoIndex">
+                    <article className="articleFavoritoIndex bg-white">
                         <header>
                             <InertiaLink
                                 tabIndex="1"
@@ -58,6 +53,9 @@ const Index = () => {
                 )}
 
             </div>
+
+            <Footer />
+
         </div>
 
     );

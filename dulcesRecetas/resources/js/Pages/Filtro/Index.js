@@ -1,42 +1,47 @@
 import React from "react";
 import { Inertia } from "@inertiajs/inertia";
-import { InertiaLink, usePage, Link, Head } from "@inertiajs/inertia-react";
+import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
+import { Link, Head } from '@inertiajs/inertia-react';
 import FiltroAlergenos from "../../Components/FiltroAlergenos.js";
 import Header from "../../Components/Header.js";
 import Footer from "../../Components/Footer.js";
 
 
 import '../../../css//receta.css'
+// import banner from '../../img/banner.jpeg';
 
 const Index = (props) => {
     const recetas = usePage().props;
     const data = recetas.recetas;
-   
+    console.log(data);
     return (
 
-        <div className="mx-auto principal min-h-screen">
+        <div className="mx-auto principal">
 
             <Head>
                 <title> Dulces Recetas </title>
                 {/* <link rel="icon" type="image/ico" href="../../img/favicon.ico" /> */}
             </Head>
 
-            <Header props={props}/>
+            <Header props={props} />
 
             <FiltroAlergenos />
-            
-            <div className="overflow-x-auto contenedorrecetas bg-gray-100">
+
+
+            <div className="overflow-x-auto bg-white contenedorrecetas">
+
+
                 {data.map(({ id, nombre, img, dificultad, tiempo }) => (
 
-                    <article className="articlerecetasindex bg-white card">
+                    <article className="articlerecetasindex">
                         <header>
                             <InertiaLink
                                 tabIndex="1"
                                 className="flex items-center"
                                 href={route("recetas.show", id)}
                             >
-                                <img src={img} className="card-img-top imgrecetaindex" alt={nombre} loading="lazy" />
+                                <img src={img} className="imgrecetaindex" alt={nombre} loading="lazy" />
                             </InertiaLink>
                         </header>
                         <main>
@@ -51,21 +56,20 @@ const Index = (props) => {
                         </footer>
                     </article>
 
- 
-                ))
-                }
+
+                ))}
                 {data.length === 0 && (
 
                     <div> No existen recetas.</div>
 
                 )}
-            </div>
 
+
+            </div>
 
             <Footer />
 
         </div>
-
 
     );
 };

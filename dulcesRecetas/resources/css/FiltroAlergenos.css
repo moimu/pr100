@@ -1,15 +1,26 @@
-.icon {
 
-    width: 100px;
-    height: 100px;
+.containerFiltro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
+.icon {
+    width: 70px;
+    height: 70px;
+}
 .botonIcon {
-    /* width: 100px;
-    height: 100px; */
-
     border: 1px solid black;
+    border-radius: 1em;
+    margin: 2px;
 }
 .seleccion{
-    background-color: aquamarine;
+    background-color: #e5e7eb;
+}
+.formFiltro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.boton{
+    height: 40px;
 }

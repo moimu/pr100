@@ -4506,39 +4506,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/alergenos/iconLacteos.png */ "./resources/js/img/alergenos/iconLacteos.png");
-/* harmony import */ var _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/alergenos/iconHuevo.png */ "./resources/js/img/alergenos/iconHuevo.png");
-/* harmony import */ var _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/alergenos/iconGluten.png */ "./resources/js/img/alergenos/iconGluten.png");
-/* harmony import */ var _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/alergenos/iconSoja.png */ "./resources/js/img/alergenos/iconSoja.png");
-/* harmony import */ var _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/alergenos/iconFrutosSecos.png */ "./resources/js/img/alergenos/iconFrutosSecos.png");
-/* harmony import */ var _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/alergenos/iconCacahuete.png */ "./resources/js/img/alergenos/iconCacahuete.png");
-/* harmony import */ var _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/alergenos/iconMoluscos.png */ "./resources/js/img/alergenos/iconMoluscos.png");
-/* harmony import */ var _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/alergenos/iconCrustaceo.png */ "./resources/js/img/alergenos/iconCrustaceo.png");
-/* harmony import */ var _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/alergenos/iconPescado.png */ "./resources/js/img/alergenos/iconPescado.png");
-/* harmony import */ var _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/alergenos/iconMostaza.png */ "./resources/js/img/alergenos/iconMostaza.png");
-/* harmony import */ var _css_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../css//FiltroAlergenos.css */ "./resources/css/FiltroAlergenos.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/alergenos/iconLacteos.png */ "./resources/js/img/alergenos/iconLacteos.png");
+/* harmony import */ var _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/alergenos/iconHuevo.png */ "./resources/js/img/alergenos/iconHuevo.png");
+/* harmony import */ var _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/alergenos/iconGluten.png */ "./resources/js/img/alergenos/iconGluten.png");
+/* harmony import */ var _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/alergenos/iconSoja.png */ "./resources/js/img/alergenos/iconSoja.png");
+/* harmony import */ var _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/alergenos/iconFrutosSecos.png */ "./resources/js/img/alergenos/iconFrutosSecos.png");
+/* harmony import */ var _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/alergenos/iconCacahuete.png */ "./resources/js/img/alergenos/iconCacahuete.png");
+/* harmony import */ var _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/alergenos/iconMoluscos.png */ "./resources/js/img/alergenos/iconMoluscos.png");
+/* harmony import */ var _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/alergenos/iconCrustaceo.png */ "./resources/js/img/alergenos/iconCrustaceo.png");
+/* harmony import */ var _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/alergenos/iconPescado.png */ "./resources/js/img/alergenos/iconPescado.png");
+/* harmony import */ var _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/alergenos/iconMostaza.png */ "./resources/js/img/alergenos/iconMostaza.png");
+/* harmony import */ var _css_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../css//FiltroAlergenos.css */ "./resources/css/FiltroAlergenos.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -4556,163 +4537,494 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var FiltroAlergenos = /*#__PURE__*/function (_React$Component) {
-  _inherits(FiltroAlergenos, _React$Component);
+var FiltroAlergenos = function FiltroAlergenos() {
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
+    lacteos: false,
+    huevo: false,
+    gluten: false,
+    soja: false,
+    frutos: false,
+    cacahuete: false,
+    moluscos: false,
+    crustaceos: false,
+    pescado: false,
+    mostaza: false,
+    alergenos: true
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post,
+      errors = _useForm.errors;
 
-  var _super = _createSuper(FiltroAlergenos);
+  console.log(data);
 
-  function FiltroAlergenos(props) {
-    var _this;
-
-    _classCallCheck(this, FiltroAlergenos);
-
-    _this = _super.call(this, props);
-    _this.state = {
-      alergenos: []
-    };
-    _this.seleccion = _this.seleccion.bind(_assertThisInitialized(_this));
-    _this.removeItemFromArr = _this.removeItemFromArr.bind(_assertThisInitialized(_this));
-    _this.alergenos = [];
-    return _this;
+  function handleSubmit(e) {
+    e.preventDefault();
+    post(route("filtros.index"));
   }
-  /**
-   * borra un valor dado dentro del array 
-   * @param {*} arr 
-   * @param {*} item 
-   */
 
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+    className: "p-4 bg-white rounded containerFiltro bg-gray-100",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+      className: "max-w-3xl shadow sm:rounded-lg bg-white",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("form", {
+        name: "createForm",
+        className: "formFiltro",
+        onSubmit: handleSubmit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_3__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "lacteos",
+            value: "lacteos",
+            onChange: function onChange(e) {
+              if (data.lacteos) {
+                return setData("lacteos", false);
+              }
 
-  _createClass(FiltroAlergenos, [{
-    key: "removeItemFromArr",
-    value: function removeItemFromArr(arr, item) {
-      var i = arr.indexOf(item);
-
-      if (i !== -1) {
-        arr.splice(i, 1);
-      }
-    }
-    /**
-     * Añade clase a elemento clicado y 
-     * añade alérgeno al array de alérgenos,
-     * actualiza el estado 
-     * @param {*} e 
-     */
-
-  }, {
-    key: "seleccion",
-    value: function seleccion(e) {
-      var alergeno = e.currentTarget.value;
-      var elemento = e.currentTarget;
-
-      if (elemento.classList.contains('seleccion')) {
-        elemento.classList.remove('seleccion');
-        this.removeItemFromArr(this.alergenos, alergeno);
-      } else {
-        elemento.classList.add('seleccion');
-        this.alergenos.push(alergeno);
-      }
-
-      this.setState({
-        alergenos: this.alergenos
-      });
-      console.log(this.alergenos);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
-          className: "mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "L\xE1cteos",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_1__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Huevo",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_2__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Gluten",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_3__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Soja",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_4__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Frutos secos",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_5__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Cacahuete",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_6__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Moluscos",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_7__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Crust\xE1ceos",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_8__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Pescado",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_9__["default"]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
-            className: "botonIcon",
-            onClick: this.seleccion,
-            value: "Mostaza",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
-              className: "icon",
-              src: _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_10__["default"]
-            })
+              setData("lacteos", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.lacteos
           })]
-        })
-      });
-    }
-  }]);
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_4__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "huevo",
+            value: "huevo",
+            onChange: function onChange(e) {
+              if (data.huevo) {
+                return setData("huevo", false);
+              }
 
-  return FiltroAlergenos;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+              setData("huevo", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.huevo
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_5__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "gluten",
+            value: "gluten",
+            onChange: function onChange(e) {
+              if (data.gluten) {
+                return setData("gluten", false);
+              }
+
+              setData("gluten", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.gluten
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_6__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "soja",
+            value: "soja",
+            onChange: function onChange(e) {
+              if (data.soja) {
+                return setData("soja", false);
+              }
+
+              setData("soja", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.soja
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_7__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "frutos",
+            value: "frutos",
+            onChange: function onChange(e) {
+              if (data.frutos) {
+                return setData("frutos", false);
+              }
+
+              setData("frutos", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.frutos
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_8__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "cacahuete",
+            value: "cacahuete",
+            onChange: function onChange(e) {
+              if (data.cacahuete) {
+                return setData("cacahuete", false);
+              }
+
+              setData("cacahuete", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.cacahuete
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_9__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "moluscos",
+            value: "moluscos",
+            onChange: function onChange(e) {
+              if (data.moluscos) {
+                return setData("moluscos", false);
+              }
+
+              setData("moluscos", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.moluscos
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_10__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "crustaceos",
+            value: "crustaceos",
+            onChange: function onChange(e) {
+              if (data.crustaceos) {
+                return setData("crustaceos", false);
+              }
+
+              setData("crustaceos", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.crustaceos
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_11__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "pescado",
+            value: "pescado",
+            onChange: function onChange(e) {
+              if (data.pescado) {
+                return setData("pescado", false);
+              }
+
+              setData("pescado", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pescado
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
+            className: "icon",
+            src: _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_12__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("input", {
+            type: "checkbox",
+            name: "mostaza",
+            value: "mostaza",
+            onChange: function onChange(e) {
+              if (data.mostaza) {
+                return setData("mostaza", false);
+              }
+
+              setData("mostaza", true);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.mostaza
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+          className: "flex justify-between",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+            type: "submit",
+            className: "px-4 py-2 text-white bg-blue-500 rounded boton",
+            children: "Filtrar"
+          })
+        })]
+      })
+    })
+  });
+}; // class FiltroAlergenos extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             alergenos: [],
+//         }
+//         this.seleccion = this.seleccion.bind(this);
+//         this.removeItemFromArr = this.removeItemFromArr.bind(this);
+//         this.alergenos = [];
+//     }
+//     /**
+//      * borra un valor dado dentro del array
+//      * @param {*} arr
+//      * @param {*} item
+//      */
+//     removeItemFromArr(arr, item) {
+//         let i = arr.indexOf(item);
+//         if (i !== -1) {
+//             arr.splice(i, 1);
+//         }
+//     }
+//     /**
+//      * Añade clase a elemento clicado y
+//      * añade alérgeno al array de alérgenos,
+//      * actualiza el estado
+//      * @param {*} e
+//      */
+//     seleccion(e) {
+//         let alergeno = e.currentTarget.value
+//         let elemento = e.currentTarget;
+//         if (elemento.classList.contains('seleccion')) {
+//             elemento.classList.remove('seleccion');
+//             this.removeItemFromArr(this.alergenos, alergeno)
+//         }
+//         else {
+//             elemento.classList.add('seleccion');
+//             this.alergenos.push(alergeno);
+//         }
+//         this.setState({
+//             alergenos: this.alergenos,
+//         });
+//     }
+//     render() {
+//         let alergenosNo = "WWWWWAAAA";
+//         return (
+//             <>
+//                 <form name="createForm" action={route('filtros.index', this.state.alergenos)}>
+//                     <button
+//                         type="submit"
+//                         className="px-4 py-2 text-white bg-green-500 rounded"
+//                     >
+//                         Envio Filtro
+//                     </button>
+//                     <div className="shadow sm:rounded-lg">
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Lácteos">
+//                             <img className="icon" src={iconLacteos} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Huevo">
+//                             <img className="icon" src={iconHuevo} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Gluten">
+//                             <img className="icon" src={iconGluten} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Soja">
+//                             <img className="icon" src={iconSoja} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Frutos secos">
+//                             <img className="icon" src={iconFrutosSecos} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Cacahuete">
+//                             <img className="icon" src={iconCacahuete} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Moluscos">
+//                             <img className="icon" src={iconMoluscos} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Crustáceos">
+//                             <img className="icon" src={iconCrustaceo} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Pescado">
+//                             <img className="icon" src={iconPescado} />
+//                         </input>
+//                         <input className="botonIcon" onClick={this.seleccion} defaultValue="Mostaza">
+//                             <img className="icon" src={iconMostaza} />
+//                         </input>
+//                     </div>
+//                 </form>
+//             </>
+//         );
+//     }
+// }
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FiltroAlergenos);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Footer.js":
+/*!*******************************************!*\
+  !*** ./resources/js/Components/Footer.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+ // navbar navbar-fixed-bottom
+
+
+
+function Header(_ref) {
+  var props = _ref.props;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("footer", {
+    className: "footerprincipal",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
+      className: "seccion",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "INFO"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            href: "#",
+            children: "Preguntas frecuentes"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            href: "#",
+            children: "Contacto"
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
+      className: "seccion",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "SIGUENOS"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            href: "#",
+            children: "Instagram"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            href: "#",
+            children: "Facebook"
+          })
+        })]
+      })
+    })]
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/Components/Header.js":
+/*!*******************************************!*\
+  !*** ./resources/js/Components/Header.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Dropdown */ "./resources/js/Components/Dropdown.js");
+/* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Header(_ref) {
+  var props = _ref.props;
+  console.log(props);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+    className: "headerprincipal bg-white",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+      href: route("recetas.index"),
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+        src: "/images/bombonTranparente.png",
+        className: "logo"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      className: "text-3xl font-bold text-center",
+      children: " Dulces Recetas "
+    }), props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "linkUser",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Trigger, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "inline-flex rounded-md",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+              type: "button",
+              className: "inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150",
+              children: [props.auth.user.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
+                className: "ml-2 -mr-0.5 h-4 w-4",
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 20 20",
+                fill: "currentColor",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+                  fillRule: "evenodd",
+                  d: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+                  clipRule: "evenodd"
+                })
+              })]
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Content, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
+            href: route('logout'),
+            method: "post",
+            as: "button",
+            children: "Log Out"
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        href: route('dashboard'),
+        className: "text-sm text-gray-700 underline ",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          src: props.auth.user.imguser,
+          className: "logoUser"
+        })
+      })]
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "linkUser",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        href: route('login'),
+        className: "text-sm text-gray-700 underline",
+        children: "Login"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        href: route('register'),
+        className: "ml-4 text-sm text-gray-700 underline",
+        children: "Registro"
+      })]
+    })]
+  });
+}
 
 /***/ }),
 
@@ -4915,7 +5227,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_NavLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/NavLink */ "./resources/js/Components/NavLink.js");
 /* harmony import */ var _Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/ResponsiveNavLink */ "./resources/js/Components/ResponsiveNavLink.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -4936,132 +5250,48 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Authenticated(_ref) {
   var auth = _ref.auth,
       header = _ref.header,
-      children = _ref.children;
+      children = _ref.children,
+      props = _ref.props;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
       showingNavigationDropdown = _useState2[0],
       setShowingNavigationDropdown = _useState2[1];
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-    className: "min-h-screen bg-gray-100",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("nav", {
-      className: "bg-white border-b border-gray-100",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-        className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-          className: "flex justify-between h-16",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-            className: "flex",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "shrink-0 flex items-center",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__.Link, {
-                href: "/",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                  className: "block h-9 w-auto text-gray-500"
-                })
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('dashboard'),
-                active: route().current('dashboard'),
-                children: "Dashboard"
-              })
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            className: "hidden sm:flex sm:items-center sm:ml-6",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "ml-3 relative",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Trigger, {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-                    className: "inline-flex rounded-md",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
-                      type: "button",
-                      className: "inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150",
-                      children: [auth.user.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-                        className: "ml-2 -mr-0.5 h-4 w-4",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 20 20",
-                        fill: "currentColor",
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-                          fillRule: "evenodd",
-                          d: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
-                          clipRule: "evenodd"
-                        })
-                      })]
-                    })
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Content, {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
-                    href: route('logout'),
-                    method: "post",
-                    as: "button",
-                    children: "Log Out"
-                  })
-                })]
-              })
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            children: "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD D"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-            className: "-mr-2 flex items-center sm:hidden",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-              onClick: function onClick() {
-                return setShowingNavigationDropdown(function (previousState) {
-                  return !previousState;
-                });
-              },
-              className: "inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
-                className: "h-6 w-6",
-                stroke: "currentColor",
-                fill: "none",
-                viewBox: "0 0 24 24",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-                  className: !showingNavigationDropdown ? 'inline-flex' : 'hidden',
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  strokeWidth: "2",
-                  d: "M4 6h16M4 12h16M4 18h16"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-                  className: showingNavigationDropdown ? 'inline-flex' : 'hidden',
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  strokeWidth: "2",
-                  d: "M6 18L18 6M6 6l12 12"
-                })]
-              })
-            })
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    className: "min-h-screen ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("nav", {
+      className: "",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        props: props
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: (showingNavigationDropdown ? 'block' : 'hidden') + ' sm:hidden',
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           className: "pt-2 pb-3 space-y-1",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
             href: route('dashboard'),
             active: route().current('dashboard'),
             children: "Dashboard"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "pt-4 pb-1 border-t border-gray-200",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             className: "px-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
               className: "font-medium text-base text-gray-800",
               children: auth.user.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
               className: "font-medium text-sm text-gray-500",
               children: auth.user.email
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
             className: "mt-3 space-y-1",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
               method: "post",
               href: route('logout'),
               as: "button",
@@ -5070,15 +5300,16 @@ function Authenticated(_ref) {
           })]
         })]
       })]
-    }), header && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("header", {
+    }), header && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("header", {
       className: "bg-white shadow",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8",
         children: header
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("main", {
-      children: children
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
+      className: "bg-gray-100",
+      children: [" ", children, " "]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
   });
 }
 
@@ -5098,7 +5329,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Components/ApplicationLogo */ "./resources/js/Components/ApplicationLogo.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -5106,16 +5339,17 @@ __webpack_require__.r(__webpack_exports__);
 
 function Guest(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
         href: "/",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_ApplicationLogo__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          className: "w-20 h-20 fill-current text-gray-500"
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          src: "/images/bombonTranparente.png",
+          className: "logoRegistroLogin"
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg",
       children: children
     })]
@@ -5759,45 +5993,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Resena_Index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Resena/Index.js */ "./resources/js/Pages/Resena/Index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
-
- // Para ver la reseñas del user autenticado
 
 
 
 
 function Dashboard(props) {
-  console.log(props);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
-    errors: props.errors,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
-      className: "font-semibold text-xl text-gray-800 leading-tight",
-      children: " Mi zona "
-    }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("title", {
+    errors: props.errors // header={<h2 className="font-semibold text-xl text-gray-800 leading-tight"> Mi zona </h2>}
+    ,
+    props: props,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("title", {
         children: " dulces recetas "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("meta", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("meta", {
         "head-key": "description",
         name: "description",
         content: "recetario de dulces, postres, tartas, panes"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("link", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("link", {
         rel: "icon",
         type: "",
         href: "/images/favicon.ico"
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
               href: route("recetas.index"),
               children: "Recetas"
@@ -5805,15 +6033,31 @@ function Dashboard(props) {
           })
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
+              href: route("recetas.create"),
+              children: "Nueva"
+            })
+          })
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "py-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            className: "p-6 bg-white border-b border-gray-200",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               className: "px-6 py-2 text-white bg-yellow-500 rounded-md focus:outline-none",
               href: route("favoritos.index"),
               children: "Recetas favoritas"
@@ -5821,15 +6065,15 @@ function Dashboard(props) {
           })
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "py-12",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "p-6 bg-white border-b border-gray-200",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none",
               href: route("resenas.index"),
               children: "Recetas rese\xF1adas"
@@ -5891,7 +6135,7 @@ function Create() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       type: "submit",
       className: "px-6 py-2 font-bold text-white bg-yellow-500 rounded btn btn-warning",
-      children: "A\xF1adir favorito"
+      children: "Favorito"
     })
   });
 }
@@ -5905,16 +6149,6 @@ function Create() {
 /*!*********************************************!*\
   !*** ./resources/js/Pages/Favorito/Edit.js ***!
   \*********************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Favorito/Index.js":
-/*!**********************************************!*\
-  !*** ./resources/js/Pages/Favorito/Index.js ***!
-  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5934,58 +6168,262 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Index = function Index() {
+var Edit = function Edit(props) {
+  var resena = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.resena;
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
+    descripcion: resena.descripcion || "",
+    estrellas: resena.estrellas || ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      put = _useForm.put,
+      errors = _useForm.errors;
+
+  console.log(data);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    put(route("resenas.update", resena.id));
+  }
+
+  function destroy() {
+    if (confirm("Seguro que quieres borrar este receta?")) {
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("resenas.destroy", resena.id));
+    }
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    className: "containerEditResenas mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Header, {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+      name: "createForm",
+      onSubmit: handleSubmit,
+      className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "flex flex-col",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "mb-4",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+            className: "",
+            children: " Descripci\xF3n "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "text",
+            className: "w-full px-4 py-2",
+            label: "descripcion",
+            name: "descripcion",
+            value: data.descripcion,
+            required: true,
+            onChange: function onChange(e) {
+              return setData("descripcion", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.descripcion
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "mb-4",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+            className: "",
+            children: " Estrellas "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "number",
+            className: "w-full px-4 py-2",
+            label: "estrellas",
+            name: "estrellas",
+            value: data.estrellas,
+            required: true,
+            onChange: function onChange(e) {
+              return setData("estrellas", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.estrellas
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "flex justify-between",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          type: "submit",
+          className: "px-4 py-2 text-white bg-green-500 rounded",
+          children: "Actualizar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          onClick: destroy,
+          tabIndex: "-1",
+          type: "button",
+          className: "px-4 py-2 text-white bg-red-500 rounded",
+          children: "Borrar"
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Footer, {})]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Edit);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Favorito/Index.js":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Favorito/Index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_favorito_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//favorito.css */ "./resources/css/favorito.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+var Index = function Index(props) {
   var favoritos = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
   var data = favoritos.favoritos;
   console.log(data);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-    className: "container mx-auto",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-      className: "text-3xl font-bold text-center hunoindex",
-      children: " Favoritos "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "flex items-center justify-between navindex",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-        className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
-        href: route("dashboard"),
-        children: "Mi zona"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "overflow-x-auto bg-white contenedorFavoritos",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    className: "",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "overflow-x-auto contenedorFavoritos bg-gray-100",
       children: [data.map(function (_ref) {
         var user_id = _ref.user_id,
             recetas_id = _ref.recetas_id,
             recetas_nombre = _ref.recetas_nombre,
             recetas_img = _ref.recetas_img;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("article", {
-          className: "articleFavoritoIndex",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("header", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("article", {
+          className: "articleFavoritoIndex bg-white",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               tabIndex: "1",
               className: "flex items-center",
               href: route("recetas.show", recetas_id),
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
                 src: recetas_img,
                 className: "imgrecetaindex",
                 alt: recetas_nombre,
                 loading: "lazy"
               })
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h1", {
               className: "nombrerecetaindex",
               children: recetas_nombre
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
               children: " Minutos"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("section", {})
           })]
         });
-      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
         children: " No existen Favoritos."
       })]
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Filtro/Index.js":
+/*!********************************************!*\
+  !*** ./resources/js/Pages/Filtro/Index.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+ // import banner from '../../img/banner.jpeg';
+
+
+
+
+var Index = function Index(props) {
+  var recetas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
+  var data = recetas.recetas;
+  console.log(data);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    className: "mx-auto principal",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("title", {
+        children: " Dulces Recetas "
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "overflow-x-auto bg-white contenedorrecetas",
+      children: [data.map(function (_ref) {
+        var id = _ref.id,
+            nombre = _ref.nombre,
+            img = _ref.img,
+            dificultad = _ref.dificultad,
+            tiempo = _ref.tiempo;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("article", {
+          className: "articlerecetasindex",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              tabIndex: "1",
+              className: "flex items-center",
+              href: route("recetas.show", id),
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+                src: img,
+                className: "imgrecetaindex",
+                alt: nombre,
+                loading: "lazy"
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+              className: "nombrerecetaindex",
+              children: nombre
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+              children: dificultad
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+              children: [tiempo, " Minutos"]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {})
+          })]
+        });
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        children: " No existen recetas."
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
   });
 };
 
@@ -6007,8 +6445,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -6016,413 +6456,457 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Create = function Create() {
+
+
+var Create = function Create(props) {
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
     nombre: "",
     continente: "",
     descripcion: "",
-    alergenos: "",
     dificultad: "",
     tiempo: "",
     calorias: "",
     ingreCantidad: "",
     procedimiento: "",
     img: "",
-    detalles: ""
+    detalles: "",
+    lacteos: false,
+    huevo: false,
+    gluten: false,
+    soja: false,
+    frutos: false,
+    cacahuete: false,
+    moluscos: false,
+    crustaceos: false,
+    pescado: false,
+    mostaza: false
   }),
       data = _useForm.data,
       setData = _useForm.setData,
       errors = _useForm.errors,
       post = _useForm.post;
 
+  console.log(props.auth.user);
+
   function handleSubmit(e) {
+    // if(!data.alergenos){
+    //     data.alergenos="Ninguno";
+    // }
     e.preventDefault(); // envio datos del formulario a esta ruta
 
     post(route("recetas.store"));
-  }
+  } // function editalergenos(e){
+  //     data.alergenos += e.currentTarget.value.toString()+",";
+  //     console.log(data);
+  // }
 
-  function editalergenos(e) {
-    data.alergenos += e.currentTarget.value.toString() + ",";
-    console.log(data);
-  }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-    className: "",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "containerEditoCreate mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-        className: "mb-8 text-3xl font-bold hunoindex",
-        children: " Nueva receta "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "flex items-center justify-between mb-6 navedit",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
-          href: route("recetas.index"),
-          children: " Recetas"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "max-w-6xl p-8 bg-white rounded shadow contenedorForm",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
-          name: "createForm",
-          onSubmit: handleSubmit,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "flex flex-col",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-              scr: "http://localhost/icons/libro-de-cocina.png"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: "Nombre"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                className: "w-full px-4 py-2",
-                label: "Nombre",
-                name: "nombre",
-                value: data.nombre,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("nombre", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.nombre
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    className: "containerEditoCreate mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "max-w-6xl p-8 bg-white rounded shadow contenedorForm bg-gray-100",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+        name: "createForm",
+        onSubmit: handleSubmit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "flex flex-col",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+            scr: "http://localhost/icons/libro-de-cocina.png"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: "Nombre"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "text",
+              className: "w-full px-4 py-2",
+              label: "Nombre",
+              name: "nombre",
+              value: data.nombre,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("nombre", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.nombre
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Imagen "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "file",
+              className: "w-full px-4 py-2",
+              label: "img",
+              name: "img",
+              required: true,
+              onChange: function onChange(e) {
+                return setData("img", e.target.files[0]);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.img
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Continente "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("select", {
+              className: "w-full rounded",
+              label: "continente",
+              name: "continente",
+              errors: errors.continente,
+              value: data.continente,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("continente", e.target.value);
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "",
+                selected: true,
+                children: " Elige pais "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Asia",
+                children: "Asia"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Ant\xE1rtida",
+                children: "Ant\xE1rtida"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica",
+                children: "Am\xE9rica"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica del Sur",
+                children: "Am\xE9rica del Sur"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica del Norte",
+                children: "Am\xE9rica del Norte"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Europa",
+                children: "Europa"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Ocean\xEDa",
+                children: "Asia"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Imagen "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "file",
-                className: "w-full px-4 py-2",
-                label: "img",
-                name: "img",
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("img", e.target.files[0]);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.img
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Continente "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
-                className: "w-full rounded",
-                label: "continente",
-                name: "continente",
-                errors: errors.continente,
-                value: data.continente,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("continente", e.target.value);
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "",
-                  selected: true,
-                  children: " Elige pais "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Asia",
-                  children: "Asia"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Ant\xE1rtida",
-                  children: "Ant\xE1rtida"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica",
-                  children: "Am\xE9rica"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica del Sur",
-                  children: "Am\xE9rica del Sur"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica del Norte",
-                  children: "Am\xE9rica del Norte"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Europa",
-                  children: "Europa"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Ocean\xEDa",
-                  children: "Asia"
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.continente
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Descripci\xF3n "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "descripcion",
-                name: "descripcion",
-                errors: errors.descripcion,
-                value: data.descripcion,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("descripcion", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.descripcion
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Al\xE9rgenos "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("fieldset", {
-                className: "border border-secondary w-full rounded",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "L\xE1cteos"
-                  }, "Lácteos".toString()), "L\xE1cteos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Huevo"
-                  }, "Huevo".toString()), "Huevo"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Gluten"
-                  }, "Gluten".toString()), "Gluten"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Soja"
-                  }, "Soja".toString()), "Soja"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Frutos secos"
-                  }, "Frutos secos".toString()), "Frutos secos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Cacahuete"
-                  }, "Cacahuete".toString()), "Cacahuete"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Moluscos"
-                  }, "Moluscos".toString()), "Moluscos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Crust\xE1ceos"
-                  }, "Crustáceos".toString()), "Crust\xE1ceos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Pescado"
-                  }, "Pescado".toString()), "Pescado"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Mostaza"
-                  }, "Mostaza".toString()), "Mostaza"]
-                })]
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Dificultad "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
-                className: "w-full rounded",
-                label: "dificultad",
-                name: "dificultad",
-                errors: errors.dificultad,
-                value: data.dificultad,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("dificultad", e.target.value);
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "",
-                  selected: true,
-                  children: " Elige nivel dificultad "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Principiante",
-                  children: " Principiante "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Intermedio",
-                  children: " Intermedio "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Avanzado",
-                  children: " Avanzado "
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.dificultad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Tiempo "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "tiempo",
-                name: "tiempo",
-                value: data.tiempo,
-                placeholder: "Duraci\xF3n en minutos",
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("tiempo", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.tiempo
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Calor\xEDas "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "calorias",
-                name: "calorias",
-                value: data.calorias,
-                onChange: function onChange(e) {
-                  return setData("calorias", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.calorias
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " N\xBA de personas "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "npersonas",
-                name: "npersonas",
-                value: data.npersonas,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("npersonas", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.npersonas
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Cantidades y Ingredientes "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "ingreCantidad",
-                name: "ingreCantidad",
-                errors: errors.ingreCantidad,
-                value: data.ingreCantidad,
-                placeholder: "cantidad igrediente, cantidad igrediente, ... ",
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("ingreCantidad", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.ingreCantidad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Procedimiento "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "procedimiento",
-                name: "procedimiento",
-                errors: errors.procedimiento,
-                value: data.procedimiento,
-                placeholder: "proceso 1, proceso 2, ... ",
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("procedimiento", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.ingreCantidad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Detalles "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "detalles",
-                name: "detalles",
-                errors: errors.detalles,
-                value: data.detalles,
-                onChange: function onChange(e) {
-                  return setData("detalles", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.detalles
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.continente
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Descripci\xF3n "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "descripcion",
+              name: "descripcion",
+              errors: errors.descripcion,
+              value: data.descripcion,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("descripcion", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.descripcion
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Al\xE9rgenos "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("fieldset", {
+              className: "border border-secondary w-full rounded",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.lacteos) {
+                      return setData("lacteos", false);
+                    }
+
+                    setData("lacteos", true);
+                  },
+                  type: "checkbox",
+                  value: "lacteos"
+                }, "lacteos".toString()), "L\xE1cteos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.huevo) {
+                      return setData("huevo", false);
+                    }
+
+                    setData("huevo", true);
+                  },
+                  type: "checkbox",
+                  value: "huevo"
+                }, "huevo".toString()), "Huevo"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.gluten) {
+                      return setData("gluten", false);
+                    }
+
+                    setData("gluten", true);
+                  },
+                  type: "checkbox",
+                  value: "gluten"
+                }, "gluten".toString()), "Gluten"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.soja) {
+                      return setData("soja", false);
+                    }
+
+                    setData("soja", true);
+                  },
+                  type: "checkbox",
+                  value: "soja"
+                }, "soja".toString()), "Soja"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.frutos) {
+                      return setData("frutos", false);
+                    }
+
+                    setData("frutos", true);
+                  },
+                  type: "checkbox",
+                  value: "frutos"
+                }, "frutos".toString()), "Frutos secos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.cacahuete) {
+                      return setData("cacahuete", false);
+                    }
+
+                    setData("cacahuete", true);
+                  },
+                  type: "checkbox",
+                  value: "cacahuete"
+                }, "cacahuete".toString()), "Cacahuete"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.moluscos) {
+                      return setData("moluscos", false);
+                    }
+
+                    setData("moluscos", true);
+                  },
+                  type: "checkbox",
+                  value: "moluscos"
+                }, "moluscos".toString()), "Moluscos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.crustaceos) {
+                      return setData("crustaceos", false);
+                    }
+
+                    setData("crustaceos", true);
+                  },
+                  type: "checkbox",
+                  value: "crustaceos"
+                }, "crustaceos".toString()), "Crust\xE1ceos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.pescado) {
+                      return setData("pescado", false);
+                    }
+
+                    setData("pescado", true);
+                  },
+                  type: "checkbox",
+                  value: "pescado"
+                }, "pescado".toString()), "Pescado"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    if (data.mostaza) {
+                      return setData("mostaza", false);
+                    }
+
+                    setData("mostaza", true);
+                  },
+                  type: "checkbox",
+                  value: "mostaza"
+                }, "mostaza".toString()), "Mostaza"]
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "mt-4",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-              type: "submit",
-              className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
-              children: "Guardar receta"
-            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Dificultad "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("select", {
+              className: "w-full rounded",
+              label: "dificultad",
+              name: "dificultad",
+              errors: errors.dificultad,
+              value: data.dificultad,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("dificultad", e.target.value);
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "",
+                selected: true,
+                children: " Elige nivel dificultad "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Principiante",
+                children: " Principiante "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Intermedio",
+                children: " Intermedio "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Avanzado",
+                children: " Avanzado "
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.dificultad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Tiempo "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "tiempo",
+              name: "tiempo",
+              value: data.tiempo,
+              placeholder: "Duraci\xF3n en minutos",
+              required: true,
+              onChange: function onChange(e) {
+                return setData("tiempo", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.tiempo
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Calor\xEDas "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "calorias",
+              name: "calorias",
+              value: data.calorias,
+              onChange: function onChange(e) {
+                return setData("calorias", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.calorias
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " N\xBA de personas "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "npersonas",
+              name: "npersonas",
+              value: data.npersonas,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("npersonas", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.npersonas
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Cantidades y Ingredientes "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "ingreCantidad",
+              name: "ingreCantidad",
+              errors: errors.ingreCantidad,
+              value: data.ingreCantidad,
+              placeholder: "cantidad igrediente, cantidad igrediente, ... ",
+              required: true,
+              onChange: function onChange(e) {
+                return setData("ingreCantidad", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.ingreCantidad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Procedimiento "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "procedimiento",
+              name: "procedimiento",
+              errors: errors.procedimiento,
+              value: data.procedimiento,
+              placeholder: "proceso 1, proceso 2, ... ",
+              required: true,
+              onChange: function onChange(e) {
+                return setData("procedimiento", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.ingreCantidad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Detalles "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "detalles",
+              name: "detalles",
+              errors: errors.detalles,
+              value: data.detalles,
+              onChange: function onChange(e) {
+                return setData("detalles", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.detalles
+            })]
           })]
-        })
-      })]
-    })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: "mt-4",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+            type: "submit",
+            className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
+            children: "Guardar receta"
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -6444,8 +6928,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -6453,7 +6939,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Edit = function Edit() {
+
+
+var Edit = function Edit(props) {
   var receta = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.receta;
 
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
@@ -6476,8 +6964,13 @@ var Edit = function Edit() {
       errors = _useForm.errors;
 
   console.log(data);
+  console.log(props.auth.user);
 
   function handleSubmit(e) {
+    if (!data.alergenos) {
+      data.alergenos = "Ninguno";
+    }
+
     e.preventDefault();
     put(route("recetas.update", receta.id));
   }
@@ -6493,368 +6986,357 @@ var Edit = function Edit() {
     console.log(data);
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-    className: "",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "containerEditoCreate mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
-        className: "mb-8 text-3xl font-bold hunoindex",
-        children: [" Edici\xF3n de ", data.nombre, " "]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "flex items-center justify-between mb-6 navedit",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
-          href: route("recetas.show", receta.id),
-          children: " Receta"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
-          name: "createForm",
-          onSubmit: handleSubmit,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "flex flex-col",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: "Nombre"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                className: "w-full px-4 py-2",
-                label: "nombre",
-                name: "nombre",
-                value: data.nombre,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("nombre", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.nombre
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    className: "containerEditoCreate mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm bg-gray-100",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+        name: "createForm",
+        onSubmit: handleSubmit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "flex flex-col",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: "Nombre"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "text",
+              className: "w-full px-4 py-2",
+              label: "nombre",
+              name: "nombre",
+              value: data.nombre,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("nombre", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.nombre
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Continente "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("select", {
+              className: "w-full rounded",
+              label: "continente",
+              name: "continente",
+              errors: errors.continente,
+              value: data.continente,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("continente", e.target.value);
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "",
+                selected: true,
+                children: " Elige pais "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Asia",
+                children: "Asia"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Ant\xE1rtida",
+                children: "Ant\xE1rtida"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica",
+                children: "Am\xE9rica"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica del Sur",
+                children: "Am\xE9rica del Sur"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Am\xE9rica del Norte",
+                children: "Am\xE9rica del Norte"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Europa",
+                children: "Europa"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Ocean\xEDa",
+                children: "Asia"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Continente "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
-                className: "w-full rounded",
-                label: "continente",
-                name: "continente",
-                errors: errors.continente,
-                value: data.continente,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("continente", e.target.value);
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "",
-                  selected: true,
-                  children: " Elige pais "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Asia",
-                  children: "Asia"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Ant\xE1rtida",
-                  children: "Ant\xE1rtida"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica",
-                  children: "Am\xE9rica"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica del Sur",
-                  children: "Am\xE9rica del Sur"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Am\xE9rica del Norte",
-                  children: "Am\xE9rica del Norte"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Europa",
-                  children: "Europa"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Ocean\xEDa",
-                  children: "Asia"
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.continente
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Descripci\xF3n "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "descripcion",
-                name: "descripcion",
-                errors: errors.descripcion,
-                value: data.descripcion,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("descripcion", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.descripcion
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Al\xE9rgenos "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("fieldset", {
-                className: "border border-secondary w-full rounded",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "L\xE1cteos"
-                  }, "Lácteos".toString()), "L\xE1cteos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Huevo"
-                  }, "Huevo".toString()), "Huevo"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Gluten"
-                  }, "Gluten".toString()), "Gluten"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Soja"
-                  }, "Soja".toString()), "Soja"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Frutos secos"
-                  }, "Frutos secos".toString()), "Frutos secos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Cacahuete"
-                  }, "Cacahuete".toString()), "Cacahuete"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Moluscos"
-                  }, "Moluscos".toString()), "Moluscos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Crust\xE1ceos"
-                  }, "Crustáceos".toString()), "Crust\xE1ceos"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Pescado"
-                  }, "Pescado".toString()), "Pescado"]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                    onChange: function onChange(e) {
-                      return editalergenos(e);
-                    },
-                    type: "radio",
-                    value: "Mostaza"
-                  }, "Mostaza".toString()), "Mostaza"]
-                })]
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Dificultad "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
-                className: "w-full rounded",
-                label: "dificultad",
-                name: "dificultad",
-                errors: errors.dificultad,
-                value: data.dificultad,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("dificultad", e.target.value);
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "",
-                  selected: true,
-                  children: " Elige nivel dificultad "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Principiante",
-                  children: " Principiante "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Intermedio",
-                  children: " Intermedio "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
-                  value: "Avanzado",
-                  children: " Avanzado "
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.dificultad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Tiempo "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "tiempo",
-                name: "tiempo",
-                value: data.tiempo,
-                placeholder: "Duraci\xF3n en minutos",
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("tiempo", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.tiempo
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Calor\xEDas "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "calorias",
-                name: "calorias",
-                value: data.calorias,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("calorias", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.calorias
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " N\xBA de personas "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "npersonas",
-                name: "npersonas",
-                value: data.npersonas,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("npersonas", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.npersonas
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Ingredientes y Cantidades "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "ingreCantidad",
-                name: "ingreCantidad",
-                errors: errors.ingreCantidad,
-                value: data.ingreCantidad,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("ingreCantidad", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.ingreCantidad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Procedimiento "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "procedimiento",
-                name: "procedimiento",
-                errors: errors.procedimiento,
-                value: data.procedimiento,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("procedimiento", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.ingreCantidad
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-0",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Detalles "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("textarea", {
-                type: "text",
-                className: "w-full rounded",
-                label: "detalles",
-                name: "detalles",
-                errors: errors.detalles,
-                value: data.detalles,
-                onChange: function onChange(e) {
-                  return setData("detalles", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.detalles
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.continente
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Descripci\xF3n "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "descripcion",
+              name: "descripcion",
+              errors: errors.descripcion,
+              value: data.descripcion,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("descripcion", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.descripcion
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Al\xE9rgenos "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("fieldset", {
+              className: "border border-secondary w-full rounded",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "L\xE1cteos"
+                }, "Lácteos".toString()), "L\xE1cteos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Huevo"
+                }, "Huevo".toString()), "Huevo"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Gluten"
+                }, "Gluten".toString()), "Gluten"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Soja"
+                }, "Soja".toString()), "Soja"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Frutos secos"
+                }, "Frutos secos".toString()), "Frutos secos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Cacahuete"
+                }, "Cacahuete".toString()), "Cacahuete"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Moluscos"
+                }, "Moluscos".toString()), "Moluscos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Crust\xE1ceos"
+                }, "Crustáceos".toString()), "Crust\xE1ceos"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Pescado"
+                }, "Pescado".toString()), "Pescado"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  onChange: function onChange(e) {
+                    return editalergenos(e);
+                  },
+                  type: "radio",
+                  value: "Mostaza"
+                }, "Mostaza".toString()), "Mostaza"]
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "flex justify-between",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-              type: "submit",
-              className: "px-4 py-2 text-white bg-green-500 rounded",
-              children: "Actualizar"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-              onClick: destroy,
-              tabIndex: "-1",
-              type: "button",
-              className: "px-4 py-2 text-white bg-red-500 rounded",
-              children: "Borrar"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Dificultad "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("select", {
+              className: "w-full rounded",
+              label: "dificultad",
+              name: "dificultad",
+              errors: errors.dificultad,
+              value: data.dificultad,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("dificultad", e.target.value);
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "",
+                selected: true,
+                children: " Elige nivel dificultad "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Principiante",
+                children: " Principiante "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Intermedio",
+                children: " Intermedio "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+                value: "Avanzado",
+                children: " Avanzado "
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.dificultad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Tiempo "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "tiempo",
+              name: "tiempo",
+              value: data.tiempo,
+              placeholder: "Duraci\xF3n en minutos",
+              required: true,
+              onChange: function onChange(e) {
+                return setData("tiempo", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.tiempo
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Calor\xEDas "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "calorias",
+              name: "calorias",
+              value: data.calorias,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("calorias", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.calorias
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " N\xBA de personas "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+              type: "number",
+              className: "w-full px-4 py-2",
+              label: "npersonas",
+              name: "npersonas",
+              value: data.npersonas,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("npersonas", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.npersonas
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Ingredientes y Cantidades "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "ingreCantidad",
+              name: "ingreCantidad",
+              errors: errors.ingreCantidad,
+              value: data.ingreCantidad,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("ingreCantidad", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.ingreCantidad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Procedimiento "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "procedimiento",
+              name: "procedimiento",
+              errors: errors.procedimiento,
+              value: data.procedimiento,
+              required: true,
+              onChange: function onChange(e) {
+                return setData("procedimiento", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.ingreCantidad
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            className: "mb-0",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              className: "",
+              children: " Detalles "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("textarea", {
+              type: "text",
+              className: "w-full rounded",
+              label: "detalles",
+              name: "detalles",
+              errors: errors.detalles,
+              value: data.detalles,
+              onChange: function onChange(e) {
+                return setData("detalles", e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              className: "text-red-600",
+              children: errors.detalles
             })]
           })]
-        })
-      })]
-    })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "flex justify-between",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+            type: "submit",
+            className: "px-4 py-2 text-white bg-green-500 rounded",
+            children: "Actualizar"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+            onClick: destroy,
+            tabIndex: "-1",
+            type: "button",
+            className: "px-4 py-2 text-white bg-red-500 rounded",
+            children: "Borrar"
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -6876,77 +7358,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
- // import banner from '../../img/banner.jpeg';
 
 
 
 
-var Index = function Index() {
+
+
+
+var Index = function Index(props) {
   var recetas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
-  var data = recetas.recetas; // console.log(data);
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "container mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-        className: "text-3xl font-bold text-center hunoindex",
-        children: " Recetas "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "flex items-center justify-between navIndexRecetas",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
-          href: route("dashboard"),
-          children: "Mi zona"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
-          href: route("recetas.create"),
-          children: "Nueva receta"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "overflow-x-auto bg-white contenedorrecetas",
-        children: [data.map(function (_ref) {
-          var id = _ref.id,
-              nombre = _ref.nombre,
-              img = _ref.img,
-              dificultad = _ref.dificultad,
-              tiempo = _ref.tiempo;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("article", {
-            className: "articlerecetasindex",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("header", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-                tabIndex: "1",
-                className: "flex items-center",
-                href: route("recetas.show", id),
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-                  src: img,
-                  className: "imgrecetaindex",
-                  alt: nombre,
-                  loading: "lazy"
-                })
+  var data = recetas.recetas;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    className: "mx-auto principal min-h-screen",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("title", {
+        children: " Dulces Recetas "
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "overflow-x-auto contenedorrecetas bg-gray-100",
+      children: [data.map(function (_ref) {
+        var id = _ref.id,
+            nombre = _ref.nombre,
+            img = _ref.img,
+            dificultad = _ref.dificultad,
+            tiempo = _ref.tiempo;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("article", {
+          className: "articlerecetasindex bg-white card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+              tabIndex: "1",
+              className: "flex items-center",
+              href: route("recetas.show", id),
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+                src: img,
+                className: "card-img-top imgrecetaindex",
+                alt: nombre,
+                loading: "lazy"
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-                className: "nombrerecetaindex",
-                children: nombre
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-                children: dificultad
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-                children: [tiempo, " Minutos"]
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("footer", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {})
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+              className: "nombrerecetaindex",
+              children: nombre
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+              children: dificultad
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+              children: [tiempo, " Minutos"]
             })]
-          });
-        }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          children: " No existen recetas."
-        })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {})
+          })]
+        });
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        children: " No existen recetas."
       })]
-    })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
   });
 };
 
@@ -6968,21 +7444,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var _Resena_Create_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Resena/Create.js */ "./resources/js/Pages/Resena/Create.js");
-/* harmony import */ var _Favorito_Create_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Favorito/Create.js */ "./resources/js/Pages/Favorito/Create.js");
-/* harmony import */ var _img_favorito_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../img/favorito.png */ "./resources/js/img/favorito.png");
-/* harmony import */ var _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../img/alergenos/iconLacteos.png */ "./resources/js/img/alergenos/iconLacteos.png");
-/* harmony import */ var _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../img/alergenos/iconHuevo.png */ "./resources/js/img/alergenos/iconHuevo.png");
-/* harmony import */ var _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../img/alergenos/iconGluten.png */ "./resources/js/img/alergenos/iconGluten.png");
-/* harmony import */ var _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../img/alergenos/iconSoja.png */ "./resources/js/img/alergenos/iconSoja.png");
-/* harmony import */ var _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../img/alergenos/iconFrutosSecos.png */ "./resources/js/img/alergenos/iconFrutosSecos.png");
-/* harmony import */ var _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../img/alergenos/iconCacahuete.png */ "./resources/js/img/alergenos/iconCacahuete.png");
-/* harmony import */ var _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../img/alergenos/iconMoluscos.png */ "./resources/js/img/alergenos/iconMoluscos.png");
-/* harmony import */ var _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../img/alergenos/iconCrustaceo.png */ "./resources/js/img/alergenos/iconCrustaceo.png");
-/* harmony import */ var _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../img/alergenos/iconPescado.png */ "./resources/js/img/alergenos/iconPescado.png");
-/* harmony import */ var _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../img/alergenos/iconMostaza.png */ "./resources/js/img/alergenos/iconMostaza.png");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var _Resena_Create_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Resena/Create.js */ "./resources/js/Pages/Resena/Create.js");
+/* harmony import */ var _Favorito_Create_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Favorito/Create.js */ "./resources/js/Pages/Favorito/Create.js");
+/* harmony import */ var _img_favorito_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../img/favorito.png */ "./resources/js/img/favorito.png");
+/* harmony import */ var _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../img/alergenos/iconLacteos.png */ "./resources/js/img/alergenos/iconLacteos.png");
+/* harmony import */ var _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../img/alergenos/iconHuevo.png */ "./resources/js/img/alergenos/iconHuevo.png");
+/* harmony import */ var _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../img/alergenos/iconGluten.png */ "./resources/js/img/alergenos/iconGluten.png");
+/* harmony import */ var _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../img/alergenos/iconSoja.png */ "./resources/js/img/alergenos/iconSoja.png");
+/* harmony import */ var _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../img/alergenos/iconFrutosSecos.png */ "./resources/js/img/alergenos/iconFrutosSecos.png");
+/* harmony import */ var _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../img/alergenos/iconCacahuete.png */ "./resources/js/img/alergenos/iconCacahuete.png");
+/* harmony import */ var _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../img/alergenos/iconMoluscos.png */ "./resources/js/img/alergenos/iconMoluscos.png");
+/* harmony import */ var _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../img/alergenos/iconCrustaceo.png */ "./resources/js/img/alergenos/iconCrustaceo.png");
+/* harmony import */ var _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../img/alergenos/iconPescado.png */ "./resources/js/img/alergenos/iconPescado.png");
+/* harmony import */ var _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../img/alergenos/iconMostaza.png */ "./resources/js/img/alergenos/iconMostaza.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -7003,88 +7481,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Show = function Show() {
+
+
+var Show = function Show(props) {
   var data = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
   var urlImgUser = data.auth.user.imguser; // Datos de la receta
 
   var receta = data.receta[0]; // Reseñas de la receta a mostrar
 
-  var resenas = data.receta[1]; // console.log(receta); console.log(resenas); console.log(resenas); 
-
-  function iconAlergenos(string) {
-    var alergenos = string.split(',').map(function (alergeno) {
-      switch (alergeno) {
-        case "Lácteos":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_7__["default"]
-          });
-
-        case "Huevo":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_8__["default"]
-          });
-
-        case "Gluten":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_9__["default"]
-          });
-
-        case "Soja":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_10__["default"]
-          });
-
-        case "Frutos secos":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_11__["default"]
-          });
-
-        case "Cacahuete":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_12__["default"]
-          });
-
-        case "Moluscos":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_13__["default"]
-          });
-
-        case "Crustáceos":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_14__["default"]
-          });
-
-        case "Pescado":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_15__["default"]
-          });
-
-        case "Mostaza":
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-            className: "iconAlergenos",
-            src: _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_16__["default"]
-          });
-
-        default:
-          return;
-      }
-    });
-    return alergenos;
-  }
+  var resenas = data.receta[1];
+  console.log(props.auth.user);
 
   function listado(cadena) {
     var array = cadena.split(',');
     var lista = array.map(function (element) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("li", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("li", {
         children: [" ", element, " "]
       });
     });
@@ -7097,27 +7508,27 @@ var Show = function Show() {
       var img = [];
 
       while (numeroEstrellas > 0) {
-        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-          src: _img_favorito_png__WEBPACK_IMPORTED_MODULE_6__["default"],
+        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+          src: _img_favorito_png__WEBPACK_IMPORTED_MODULE_8__["default"],
           alt: "imgfavorito",
           className: "imgfav"
         }));
         numeroEstrellas--;
       }
 
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("section", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("section", {
         className: "tarjetaResena",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("header", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("header", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
             src: urlImgUser,
             alt: "imguser",
             className: "imguser"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("span", {
             children: resena.user_nombre
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("main", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("main", {
           children: resena.descripcion
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("footer", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("footer", {
           children: img
         })]
       });
@@ -7125,142 +7536,165 @@ var Show = function Show() {
     return lista;
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-      className: "containerRecetaShow mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h1", {
-        className: "text-3xl font-bold text-center hunoshow",
-        children: " Receta "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-        className: "flex items-center justify-between mb-6 navshow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          className: "px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none",
-          href: route("recetas.index"),
-          children: "Recetas"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-          tabIndex: "1",
-          className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none",
-          href: route("recetas.edit", receta.id),
-          children: "Editar"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_Favorito_Create_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          receta: receta
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-        className: "overflow-x-auto bg-white rounded shadow contenarticuloshow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
-          className: "espaciador"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("article", {
-          className: "articlerecetashow",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("header", {
-            className: "",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-              className: "headershowtop",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("img", {
-                src: receta.img,
-                className: "imgshow",
-                alt: receta.nombre,
-                loading: "lazy"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("section", {
-                className: "sectionheader",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h1", {
-                  children: receta.nombre
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                  className: "datostagshow",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                      className: "itemtagshow",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                        children: " Origen "
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                        children: receta.continente
-                      })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                      className: "itemtagshow",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                        children: " Nivel "
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                        children: receta.dificultad
-                      })]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+    className: "containerRecetaShow mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
+      className: "overflow-x-auto bg-white rounded shadow contArticleShow bg-gray-100",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("article", {
+        className: "articlerecetashow",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("header", {
+          className: "",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+            className: "headershowtop",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+              src: receta.img,
+              className: "imgshow",
+              alt: receta.nombre,
+              loading: "lazy"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("section", {
+              className: "sectionheader",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h1", {
+                children: receta.nombre
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                className: "datostagshow",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "itemtagshow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                      children: " Origen "
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+                      children: receta.continente
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                      className: "itemtagshow",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                        children: " Calor\xEDas "
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                        children: receta.calorias
-                      })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                      className: "itemtagshow",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                        children: " Comensales "
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                        children: receta.npersonas
-                      })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                      className: "itemtagshow",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                        children: " Minutos "
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                        children: receta.tiempo
-                      })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "itemtagshow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                      children: " Nivel "
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+                      children: receta.dificultad
                     })]
                   })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "itemtagshow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                      children: " Calor\xEDas "
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+                      children: receta.calorias
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "itemtagshow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                      children: " Comensales "
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+                      children: receta.npersonas
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "itemtagshow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                      children: " Minutos "
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+                      children: receta.tiempo
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                    className: "botoneraShow",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+                      tabIndex: "1",
+                      className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none",
+                      href: route("recetas.edit", receta.id),
+                      children: "Editar"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Favorito_Create_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                      receta: receta
+                    })]
+                  })
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-                className: "itemtagshowAlergenos",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h4", {
-                  children: " Al\xE9rgenos "
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
-                  className: "divIconsAlergenos",
-                  children: iconAlergenos(receta.alergenos)
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+              className: "itemtagshowAlergenos",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h4", {
+                children: " Al\xE9rgenos "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+                className: "divIconsAlergenos",
+                children: [receta.lacteos === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconLacteos_png__WEBPACK_IMPORTED_MODULE_9__["default"]
+                }), receta.huevo === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconHuevo_png__WEBPACK_IMPORTED_MODULE_10__["default"]
+                }), receta.gluten === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconGluten_png__WEBPACK_IMPORTED_MODULE_11__["default"]
+                }), receta.soja === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconSoja_png__WEBPACK_IMPORTED_MODULE_12__["default"]
+                }), receta.frutos === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconFrutosSecos_png__WEBPACK_IMPORTED_MODULE_13__["default"]
+                }), receta.cacahuete === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconCacahuete_png__WEBPACK_IMPORTED_MODULE_14__["default"]
+                }), receta.moluscos === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconMoluscos_png__WEBPACK_IMPORTED_MODULE_15__["default"]
+                }), receta.crustaceos === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_16__["default"]
+                }), receta.pescado === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_17__["default"]
+                }), receta.mostaza === 1 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("img", {
+                  className: "iconAlergenos",
+                  src: _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_18__["default"]
                 })]
-              })
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
-            className: "separador",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("hr", {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h3", {
-                children: " Descripci\xF3n "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                children: receta.descripcion
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h3", {
-                children: " Ingredientes "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("ul", {
-                children: listado(receta.ingreCantidad)
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h3", {
-                children: " Procedimiento "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("ul", {
-                children: listado(receta.procedimiento)
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("section", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h3", {
-                children: "Detalles"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
-                children: receta.detalles
-              })]
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("section", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("ol", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("li", {})
-              })
             })
           })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
+          className: "separador",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("hr", {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("main", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("section", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h3", {
+              children: " Descripci\xF3n "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+              children: receta.descripcion
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("section", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h3", {
+              children: " Ingredientes "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("ul", {
+              children: listado(receta.ingreCantidad)
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h3", {
+              children: " Procedimiento "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("ul", {
+              children: listado(receta.procedimiento)
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("section", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h3", {
+              children: "Detalles"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("p", {
+              children: receta.detalles
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("footer", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("section", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("ol", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("li", {})
+            })
+          })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
-        className: "overflow-x-auto bg-white rounded shadow resenasShow",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_Resena_Create_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          receta_id: receta.id
-        }), tarjetasResenas(resenas)]
-      })]
-    })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
+      className: "overflow-x-auto bg-white rounded shadow resenasShow",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Resena_Create_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        receta_id: receta.id
+      }), tarjetasResenas(resenas)]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -7396,8 +7830,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -7405,7 +7841,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Edit = function Edit() {
+
+
+var Edit = function Edit(props) {
   var resena = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.resena;
 
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
@@ -7430,85 +7868,70 @@ var Edit = function Edit() {
     }
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-    className: "",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "containerEditoCreate mx-auto",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("h1", {
-          className: "mb-8 text-3xl font-bold hunoindex",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-            href: route("resenas.index"),
-            className: "text-indigo-600 hover:text-indigo-700",
-            children: "Rese\xF1as"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "font-medium text-indigo-600",
-            children: " /"
-          }), "Edici\xF3n Rese\xF1a"]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
-          name: "createForm",
-          onSubmit: handleSubmit,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "flex flex-col",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Descripci\xF3n "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "text",
-                className: "w-full px-4 py-2",
-                label: "descripcion",
-                name: "descripcion",
-                value: data.descripcion,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("descripcion", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.descripcion
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-                className: "",
-                children: " Estrellas "
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-                type: "number",
-                className: "w-full px-4 py-2",
-                label: "estrellas",
-                name: "estrellas",
-                value: data.estrellas,
-                required: true,
-                onChange: function onChange(e) {
-                  return setData("estrellas", e.target.value);
-                }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-                className: "text-red-600",
-                children: errors.estrellas
-              })]
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "flex justify-between",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-              type: "submit",
-              className: "px-4 py-2 text-white bg-green-500 rounded",
-              children: "Actualizar"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-              onClick: destroy,
-              tabIndex: "-1",
-              type: "button",
-              className: "px-4 py-2 text-white bg-red-500 rounded",
-              children: "Borrar"
-            })]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    className: "containerEditResenas mx-auto",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("form", {
+      name: "createForm",
+      onSubmit: handleSubmit,
+      className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm bg-gray-100",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "flex flex-col",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "mb-4",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            className: "",
+            children: " Rese\xF1a "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "text",
+            className: "w-full px-4 py-2",
+            label: "descripcion",
+            name: "descripcion",
+            value: data.descripcion,
+            required: true,
+            onChange: function onChange(e) {
+              return setData("descripcion", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.descripcion
           })]
-        })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "mb-4",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+            className: "",
+            children: " Estrellas "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "number",
+            className: "w-full px-4 py-2",
+            label: "estrellas",
+            name: "estrellas",
+            value: data.estrellas,
+            required: true,
+            onChange: function onChange(e) {
+              return setData("estrellas", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.estrellas
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "flex justify-between",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+          type: "submit",
+          className: "px-4 py-2 text-white bg-green-500 rounded",
+          children: "Actualizar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+          onClick: destroy,
+          tabIndex: "-1",
+          type: "button",
+          className: "px-4 py-2 text-white bg-red-500 rounded",
+          children: "Borrar"
+        })]
       })]
-    })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -7530,9 +7953,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
-/* harmony import */ var _img_favorito_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../img/favorito.png */ "./resources/js/img/favorito.png");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_resena_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../css//resena.css */ "./resources/css/resena.css");
+/* harmony import */ var _img_favorito_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../img/favorito.png */ "./resources/js/img/favorito.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -7541,7 +7966,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Index = function Index() {
+
+
+var Index = function Index(props) {
   var resenas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
   var data = resenas.resenas;
   console.log(data);
@@ -7557,25 +7984,25 @@ var Index = function Index() {
       var img = [];
 
       while (numeroEstrellas > 0) {
-        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: _img_favorito_png__WEBPACK_IMPORTED_MODULE_4__["default"],
+        img.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+          src: _img_favorito_png__WEBPACK_IMPORTED_MODULE_6__["default"],
           alt: "imgfavorito",
           className: "imgfav"
         }));
         numeroEstrellas--;
       }
 
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
         className: "tarjetaResena",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("header", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: resena.user_nombre
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("main", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("main", {
           children: resena.descripcion
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("footer", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
           children: img
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
           tabIndex: "1",
           className: "px-6 py-2 text-white bg-blue-500 rounded-md focus:outline-none botonEdit",
           href: route("resenas.edit", resena.id),
@@ -7586,24 +8013,16 @@ var Index = function Index() {
     return lista;
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-    className: "container mx-auto",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
-      className: "text-3xl font-bold text-center hunoindexResenas",
-      children: " Rese\xF1as "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-      className: "flex items-center justify-between navindex",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-        className: "px-6 py-2 text-white bg-orange-500 rounded-md focus:outline-none",
-        href: route("dashboard"),
-        children: "Mi zona"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-      className: "overflow-x-auto bg-white contenedoresenas ",
-      children: [tarjetasResenas(data), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    className: "principal",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      props: props
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "overflow-x-auto bg-white contenedoresenas bg-gray-100",
+      children: [tarjetasResenas(data), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         children: " No existen rese\xF1as."
       })]
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -7676,7 +8095,7 @@ function Welcome(props) {
         children: props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
           href: route('dashboard'),
           className: "text-sm text-gray-700 underline",
-          children: "Dashboard"
+          children: "Mi zona"
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: route('login'),
@@ -7894,7 +8313,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".icon {\n\n    width: 100px;\n    height: 100px;\n}\n\n.botonIcon {\n    /* width: 100px;\n    height: 100px; */\n\n    border: 1px solid black;\n}\n.seleccion{\n    background-color: aquamarine;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.containerFiltro{\n    width: 100%;\n    display: flex;\n    justify-content: center;\n}\n.icon {\n    width: 70px;\n    height: 70px;\n}\n.botonIcon {\n    border: 1px solid black;\n    border-radius: 1em;\n    margin: 2px;\n}\n.seleccion{\n    background-color: #e5e7eb;\n}\n.formFiltro{\n    display: flex;\n    align-items: flex-end;\n    justify-content: space-between;\n}\n.boton{\n    height: 40px;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/HeaderFooter.css":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/HeaderFooter.css ***!
+  \**************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n\n/* Estilos componente Header */\n\n.headerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 60px;\n    background: linear-gradient(to right, var(--azul-claro), white);  \n    color: white;\n    margin-bottom: 30px;\n}\n.headerprincipal h1{\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n\n}\n.linkUser{\n    gap: 10px;\n    display: flex;\n    margin-top: 34px;\n    margin-right: 17px;\n    align-items: flex-end;\n}\n.logo {\n    width: 100px;\n    height: 90px;\n    margin-top: 35px;\n}\n.logoRegistroLogin{\n    width: 150px;\n\n}\n.logoUser {\n    width: 50px;\n    height: 50px;\n}\n\n/* Estilos componente Footer */\n\n.footerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-around;\n    background-color: var(--azul-claro);\n    color:white;\n\n    /* margin-top: 30px; */\n\n    /* position: absolute;\n    bottom: 0; */\n\n    /* position:fixed;\n    left:0px;\n    bottom:0px; */\n}\n\n\n\n.seccion{\npadding: 15px;\n}\n\n.footerprincipal p{\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7918,7 +8361,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Index ----------- */\n\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.contenedorFavoritos {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.articleFavoritoIndex {\n    display: inline-block;\n    margin: 8px;\n\n}\n\n.imgrecetaindex {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Index ----------- */\n\n\n.formBotonPersonalizado {\n    border-radius: 1em;\n    background-color:  yellow;\n    width: 36px;\n    height: 36px;\n}\n\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.contenedorFavoritos {\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    align-items: center;\n    padding: 20px;\n    min-height: 80vh;\n}\n\n.articleFavoritoIndex {\n    height: 320px;\n    padding: 5px;\n    border-radius: 1em;\n}\n\n.imgrecetaindex{\n    height: 184px;\n    width: 220px;\n    border-radius: 1em;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7942,7 +8385,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.divcomponent{\n    border: 1px solid blue;\n\n}\n\n.espaciador{\n    max-width: 978px;\n    padding-top: 50px;\n}\n.separador{\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n.separador hr{\n    color: #aba6a6;\n}\n.container{\n    padding: 25px; \n}\n/*----------------- Edit  Create .js ------------------------ */\n\n.containerEditoCreate{\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    /* min-width: 900px;cffffffffffff */\n}\n.contenedorForm{\n    width: 100%;\n    max-width: 1000px;\n}\n\n.navedit{\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.hunoindex{\n    padding: 25px;\n}\n.navindex{\n    padding: 25px;\n}\n.navIndexRecetas{\n    padding: 25px;\n    display: flex;\n    justify-content: space-around;\n}\n.contenedorrecetas{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.articlerecetasindex{\n    display: inline-block;\n    /* border: 1px solid black; */\n    margin: 8px;\n\n    /* transition: transform .2s; */\n}\n\n.imgrecetaindex{\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.nombrerecetaindex{\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow{\n    padding: 25px;\n}\n.navshow{\n    padding: 15px;\n    width: 500px;\n}\n.containerRecetaShow {\n    padding: 25px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.headershowtop{\n    display: flex;\n}\n.sectionheader{\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n.imgshow{\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n.iconAlergenos{\n    width: 60px;\n    height: 60px;\n}\n.datostagshow{\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    min-width: 220px;\n}\n.itemtagshow{\n    font-size: 14px;\n}\n.itemtagshow p{\n    font-size: 20px;\n}\n.itemtagshowAlergenos{\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n.divIconsAlergenos{\n    display: flex;\n    gap:5px;\n}\n\n.contenarticuloshow{\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n}\n.articlerecetashow{\n    /* border: 1px solid red; */\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px;\n}\n.articlerecetashow h1{\n    font-size: 40px;\n    line-height: 1.2;\n}\n.articlerecetashow h3{\n    font-size: 24px;\n    /* line-height: 1.9; */\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow{\n    max-width: 1000px;\n    margin-top: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n.tarjetaResena{\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n.tarjetaResena header{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.tarjetaResena main{\n\n}\n.tarjetaResena footer{\n    display: flex;\n\n}\n\n.imgfav{\n    width: 30px;\n    height: 30px;\n}\n.imguser{\n    width: 50px;\n    height: 50px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n.divcomponent {\n    border: 1px solid blue;\n}\n\n.espaciador {\n    max-width: 978px;\n    padding-top: 50px;\n}\n\n.separador {\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n\n.separador hr {\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n}\n\n/*----------------- Edit  Create .js ------------------------ */\n\n\n.containerEditoCreate {\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.contenedorForm {\n    width: 100%;\n    max-width: 1000px;\n    margin-top: 50px;\n    margin-bottom: 75px;\n    \n}\n\n.navedit {\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.principal{\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n}\n\n.navIndexRecetas {\n    padding: 30px;\n    display: flex;\n    justify-content: space-around;\n}\n\n.contenedorrecetas {\n\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap:10px;\n    justify-content: center;\n    padding: 20px;\n    min-height: 80vh;\n    margin-top: 25px;\n\n}\n\n.articlerecetasindex {\n    height: 320px;\n    padding: 5px;\n    border-radius: 1em;\n}\n\n.imgrecetaindex {\n    height: 184px;\n    width: 220px;\n    border-radius: 1em;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow {\n    padding: 25px;\n}\n\n.navshow {\n    padding: 15px;\n    width: 500px;\n}\n\n.containerRecetaShow {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n}\n\n.headershowtop {\n    display: flex;\n}\n\n.sectionheader {\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.imgshow {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.iconAlergenos {\n    width: 60px;\n    height: 60px;\n}\n\n.datostagshow {\n    display: flex;\n    gap: 25px;\n}\n\n.itemtagshow {\n    font-size: 14px;\n}\n\n.itemtagshow p {\n    font-size: 20px;\n}\n\n.itemtagshowAlergenos {\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n\n.divIconsAlergenos {\n    display: flex;\n    gap: 5px;\n}\n\n.contArticleShow {\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n.articlerecetashow {\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px; \n}\n\n.articlerecetashow h1 {\n    font-size: 40px;\n    line-height: 1.2;\n}\n\n.articlerecetashow h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow {\n    max-width: 1000px;\n    margin-top: 30px;\n    margin-bottom: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.botoneraShow{\n    display: flex;\n    flex-direction: column;\n}\n\n.tarjetaResena footer {\n    display: flex;\n\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7966,7 +8409,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena {\n    min-height: 60px;\n    padding: 20px;\n\n}\n\n\n/* -----------   Index.js  Resenas --------- */\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.hunoindexResenas {\n    padding: 25px;\n}\n\n.contenedoresenas {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    padding:50px;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   \n.botonEdit{\n    max-height: 40px;\n}\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n\n\n.tarjetaResena footer {\n    display: flex;\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena {\n    min-height: 60px;\n    padding: 20px;\n\n}\n\n\n/* -----------   Index.js  Resenas --------- */\n\n.principal{\n    display: flex;\n    flex-direction: column;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.hunoindexResenas {\n    padding: 25px;\n}\n\n.contenedoresenas {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    padding:50px;\n    min-height: 80vh;\n\n    flex-direction: column;\n    margin-top: 50px;\n    text-align: center;\n}\n\n.tarjetaResena {\n    \n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   \n.botonEdit{\n    max-height: 40px;\n}\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n\n\n.tarjetaResena footer {\n    display: flex;\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}\n\n/* Edit   */\n\n.contenedorForm{\n    min-height: 60vh;\n    margin-top: 50px;\n    margin-bottom: 50px;\n}\n\n\n.containerEditResenas{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -68071,6 +68514,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./resources/css/HeaderFooter.css":
+/*!****************************************!*\
+  !*** ./resources/css/HeaderFooter.css ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./HeaderFooter.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/HeaderFooter.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./resources/css/favorito.css":
 /*!************************************!*\
   !*** ./resources/css/favorito.css ***!
@@ -68467,6 +68940,8 @@ var map = {
 	"./Favorito/Edit.js": "./resources/js/Pages/Favorito/Edit.js",
 	"./Favorito/Index": "./resources/js/Pages/Favorito/Index.js",
 	"./Favorito/Index.js": "./resources/js/Pages/Favorito/Index.js",
+	"./Filtro/Index": "./resources/js/Pages/Filtro/Index.js",
+	"./Filtro/Index.js": "./resources/js/Pages/Filtro/Index.js",
 	"./Receta/Create": "./resources/js/Pages/Receta/Create.js",
 	"./Receta/Create.js": "./resources/js/Pages/Receta/Create.js",
 	"./Receta/Edit": "./resources/js/Pages/Receta/Edit.js",

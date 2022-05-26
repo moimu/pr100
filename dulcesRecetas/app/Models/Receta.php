@@ -17,7 +17,6 @@ class Receta extends Model
 	    'img',
 		'continente',
 		'descripcion',
-		'alergenos',
 		'dificultad',
 		'tiempo',
 		'calorias',
@@ -25,6 +24,16 @@ class Receta extends Model
 		'ingreCantidad',
 		'procedimiento',
 		'detalles',
+		'lacteos',
+		'huevo',
+		'gluten',
+		'soja',
+		'frutos',
+		'cacahuete',
+		'moluscos',
+		'crustaceos',
+		'pescado',
+		'mostaza',
 	];
 
 	public function resenas(){

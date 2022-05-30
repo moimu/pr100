@@ -12,31 +12,27 @@ import '../../../css//receta.css'
 const Index = (props) => {
     const recetas = usePage().props;
     const data = recetas.recetas;
-   
+
     return (
 
         <div className="mx-auto principal min-h-screen">
 
-            <Head>
-                <title> Dulces Recetas </title>
-                {/* <link rel="icon" type="image/ico" href="../../img/favicon.ico" /> */}
-            </Head>
 
-            <Header props={props}/>
+            <Header props={props} />
 
             <FiltroAlergenos />
-            
+
             <div className="overflow-x-auto contenedorrecetas bg-gray-100">
                 {data.map(({ id, nombre, img, dificultad, tiempo }) => (
 
-                    <article className="articlerecetasindex bg-white card">
+                    <article className="articlerecetasindex bg-white card" >
                         <header>
                             <InertiaLink
                                 tabIndex="1"
                                 className="flex items-center"
                                 href={route("recetas.show", id)}
                             >
-                                <img src={img} className="card-img-top imgrecetaindex" alt={nombre} loading="lazy" />
+                                <img src={img} className="card-img-top imgreceta" alt={nombre} loading="lazy" />
                             </InertiaLink>
                         </header>
                         <main>
@@ -51,7 +47,7 @@ const Index = (props) => {
                         </footer>
                     </article>
 
- 
+
                 ))
                 }
                 {data.length === 0 && (

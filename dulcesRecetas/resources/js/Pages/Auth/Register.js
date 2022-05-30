@@ -10,6 +10,7 @@ export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
         name: '',
         email: '',
+        imguser: '',
         password: '',
         password_confirmation: '',
     });
@@ -64,6 +65,24 @@ export default function Register() {
                         handleChange={onHandleChange}
                         required
                     />
+                </div>
+
+                <div className="mb-4">
+                    <Label forInput="imguser" value="Imagen" />
+
+                    <input
+                        type="file"
+                        className="w-full px-4 py-2"
+                        label="imguser"
+                        name="imguser"
+                        
+                        onChange={(e) =>
+                            setData("imguser", e.target.files[0])
+                        }
+                    />
+                    <span className="text-red-600">
+                        {errors.imguser}
+                    </span>
                 </div>
 
                 <div className="mt-4">

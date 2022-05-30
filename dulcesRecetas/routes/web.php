@@ -8,6 +8,8 @@ use App\Http\Controllers\RecetaController;
 use App\Http\Controllers\FavoritoController;
 use App\Http\Controllers\ResenaController;
 use App\Http\Controllers\FiltroController;
+use App\Http\Controllers\UserController;
+
 
 
 // Añadir modelo de receta para renderizar
@@ -58,12 +60,6 @@ Route::match(['get', 'post'], '/filtros', [FiltroController::class, 'index'])->n
 // Route::put('/recetas/{receta}', [RecetaController::class, 'update'])->name('recetas.update'); 
 // Route::get('/recetas/{receta}',[RecetaController::class, 'show'])->name('recetas.show');
 // Route::delete('/recetas/{receta}', [RecetaController::class, 'destroy'])->name('recetas.destroy');
-
-
-// Route::get('/filtros', function () {
-//     return Inertia::render('Filtro/Index', []);
-// });
-
 
 require __DIR__.'/auth.php';
 

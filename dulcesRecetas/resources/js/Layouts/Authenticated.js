@@ -15,11 +15,11 @@ export default function Authenticated({ auth, header, children, props}) {
      
     return (
         <div className="min-h-screen ">
+        
             <nav className="" >
 
                 <Header props={props} />
-     
-                       
+          
                 <div className={(showingNavigationDropdown ? 'block' : 'hidden') + ' sm:hidden'}>
                     <div className="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink href={route('dashboard')} active={route().current('dashboard')}>

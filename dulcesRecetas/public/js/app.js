@@ -4882,7 +4882,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _images_git_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/git.png */ "./public/images/git.png");
+/* harmony import */ var _images_linkedin_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/linkedin.png */ "./public/images/linkedin.png");
+/* harmony import */ var _images_instagram_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/instagram.png */ "./public/images/instagram.png");
+/* harmony import */ var _images_contacto_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/contacto.png */ "./public/images/contacto.png");
+/* harmony import */ var _images_faqs_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/faqs.png */ "./public/images/faqs.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
 
 
  // navbar navbar-fixed-bottom
@@ -4891,46 +4901,62 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header(_ref) {
   var props = _ref.props;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("footer", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("footer", {
     className: "footerprincipal",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("section", {
       className: "seccion",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "INFO"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("header", {
+        children: " Info "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
             href: "#",
-            children: "Preguntas frecuentes"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+              src: _images_faqs_png__WEBPACK_IMPORTED_MODULE_7__["default"],
+              className: "imgsiguenos"
+            })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
             href: "#",
-            children: "Contacto"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+              src: _images_contacto_png__WEBPACK_IMPORTED_MODULE_6__["default"],
+              className: "imgsiguenos"
+            })
           })
         })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("section", {
       className: "seccion",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "SIGUENOS"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("header", {
+        children: " S\xEDguenos "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
             href: "#",
-            children: "Instagram"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+              src: _images_git_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+              className: "imgsiguenos"
+            })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
             href: "#",
-            children: "Facebook"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+              src: _images_linkedin_png__WEBPACK_IMPORTED_MODULE_4__["default"],
+              className: "imgsiguenos"
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+            href: "#",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
+              src: _images_instagram_png__WEBPACK_IMPORTED_MODULE_5__["default"],
+              className: "imgsiguenos"
+            })
           })
         })]
-      })
+      })]
     })]
   });
 }
@@ -4950,9 +4976,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/Dropdown */ "./resources/js/Components/Dropdown.js");
-/* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/ResponsiveNavLink */ "./resources/js/Components/ResponsiveNavLink.js");
+/* harmony import */ var _Components_Dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Dropdown */ "./resources/js/Components/Dropdown.js");
+/* harmony import */ var _css_HeaderFooter_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css//HeaderFooter.css */ "./resources/css/HeaderFooter.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -4962,67 +4991,105 @@ __webpack_require__.r(__webpack_exports__);
 function Header(_ref) {
   var props = _ref.props;
   console.log(props);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
-    className: "headerprincipal bg-white",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
-      href: route("recetas.index"),
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-        src: "/images/bombonTranparente.png",
-        className: "logo"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-      className: "text-3xl font-bold text-center",
-      children: " Dulces Recetas "
-    }), props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "linkUser",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Trigger, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "inline-flex rounded-md",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
-              type: "button",
-              className: "inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150",
-              children: [props.auth.user.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
-                className: "ml-2 -mr-0.5 h-4 w-4",
-                xmlns: "http://www.w3.org/2000/svg",
-                viewBox: "0 0 20 20",
-                fill: "currentColor",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
-                  fillRule: "evenodd",
-                  d: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
-                  clipRule: "evenodd"
-                })
-              })]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
+      className: "headerprincipal bg-white",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("title", {
+          children: " Dulces Recetas "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("link", {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("link", {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("link", {
+          href: "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap",
+          rel: "stylesheet"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+        href: route("recetas.index"),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+          src: "/images/bombonTranparente.png",
+          className: "logo"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "contTitulo",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
+          className: "text-3xl font-bold text-center",
+          children: " Dulces Recetas "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "contBotonera",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+            className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
+            href: route("recetas.index"),
+            children: "Recetas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+            className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
+            href: route("recetas.create"),
+            children: "Nueva"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+            className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
+            href: route("favoritos.index"),
+            children: "Favoritas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+            className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
+            href: route("resenas.index"),
+            children: "Rese\xF1as"
+          })]
+        })]
+      }), props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "linkUser",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["default"].Trigger, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              className: "inline-flex rounded-md",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
+                type: "button",
+                className: "inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150",
+                children: [props.auth.user.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+                  className: "ml-2 -mr-0.5 h-4 w-4",
+                  xmlns: "http://www.w3.org/2000/svg",
+                  viewBox: "0 0 20 20",
+                  fill: "currentColor",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                    fillRule: "evenodd",
+                    d: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+                    clipRule: "evenodd"
+                  })
+                })]
+              })
             })
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Content, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
-            href: route('logout'),
-            method: "post",
-            as: "button",
-            children: "Log Out"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["default"].Content, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["default"].Link, {
+              href: route('logout'),
+              method: "post",
+              as: "button",
+              children: "Log Out"
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          href: route('dashboard'),
+          className: "text-sm text-gray-700 underline ",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+            src: props.auth.user.imguser,
+            className: "logoUser"
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        href: route('dashboard'),
-        className: "text-sm text-gray-700 underline ",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-          src: props.auth.user.imguser,
-          className: "logoUser"
-        })
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "linkUser",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          href: route('login'),
+          className: "text-sm text-gray-700 underline",
+          children: "Login"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          href: route('register'),
+          className: "ml-4 text-sm text-gray-700 underline",
+          children: "Registro"
+        })]
       })]
-    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "linkUser",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        href: route('login'),
-        className: "text-sm text-gray-700 underline",
-        children: "Login"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        href: route('register'),
-        className: "ml-4 text-sm text-gray-700 underline",
-        children: "Registro"
-      })]
-    })]
+    })
   });
 }
 
@@ -5690,6 +5757,7 @@ function Register() {
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.useForm)({
     name: '',
     email: '',
+    imguser: '',
     password: '',
     password_confirmation: ''
   }),
@@ -5749,6 +5817,23 @@ function Register() {
           autoComplete: "username",
           handleChange: onHandleChange,
           required: true
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "mb-4",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          forInput: "imguser",
+          value: "Imagen"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
+          type: "file",
+          className: "w-full px-4 py-2",
+          label: "imguser",
+          name: "imguser",
+          onChange: function onChange(e) {
+            return setData("imguser", e.target.files[0]);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+          className: "text-red-600",
+          children: errors.imguser
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "mt-4",
@@ -6002,22 +6087,13 @@ __webpack_require__.r(__webpack_exports__);
 function Dashboard(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__["default"], {
     auth: props.auth,
-    errors: props.errors // header={<h2 className="font-semibold text-xl text-gray-800 leading-tight"> Mi zona </h2>}
-    ,
+    errors: props.errors,
+    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+      className: "font-semibold text-xl text-gray-800 leading-tight",
+      children: " Mi zona "
+    }),
     props: props,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("title", {
-        children: " dulces recetas "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("meta", {
-        "head-key": "description",
-        name: "description",
-        content: "recetario de dulces, postres, tartas, panes"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("link", {
-        rel: "icon",
-        type: "",
-        href: "/images/favicon.ico"
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "py-12",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
@@ -7378,11 +7454,7 @@ var Index = function Index(props) {
   var data = recetas.recetas;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
     className: "mx-auto principal min-h-screen",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("title", {
-        children: " Dulces Recetas "
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       props: props
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "overflow-x-auto contenedorrecetas bg-gray-100",
@@ -7401,7 +7473,7 @@ var Index = function Index(props) {
               href: route("recetas.show", id),
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
                 src: img,
-                className: "card-img-top imgrecetaindex",
+                className: "card-img-top imgreceta",
                 alt: nombre,
                 loading: "lazy"
               })
@@ -8337,7 +8409,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n\n/* Estilos componente Header */\n\n.headerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 60px;\n    background: linear-gradient(to right, var(--azul-claro), white);  \n    color: white;\n    margin-bottom: 30px;\n}\n.headerprincipal h1{\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n\n}\n.linkUser{\n    gap: 10px;\n    display: flex;\n    margin-top: 34px;\n    margin-right: 17px;\n    align-items: flex-end;\n}\n.logo {\n    width: 100px;\n    height: 90px;\n    margin-top: 35px;\n}\n.logoRegistroLogin{\n    width: 150px;\n\n}\n.logoUser {\n    width: 50px;\n    height: 50px;\n}\n\n/* Estilos componente Footer */\n\n.footerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-around;\n    background-color: var(--azul-claro);\n    color:white;\n\n    /* margin-top: 30px; */\n\n    /* position: absolute;\n    bottom: 0; */\n\n    /* position:fixed;\n    left:0px;\n    bottom:0px; */\n}\n\n\n\n.seccion{\npadding: 15px;\n}\n\n.footerprincipal p{\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n    /* CSS HEX */\n    --carnation-pink: #ff99c8ff;\n    --blond: #fcf6bdff;\n    --aero-blue: #d0f4deff;\n    --uranian-blue: #a9def9ff;\n    --mauve: #e4c1f9ff;\n\n    /* CSS HSL */\n    --carnation-pink: hsla(332, 100%, 80%, 1);\n    --blond: hsla(54, 91%, 86%, 1);\n    --aero-blue: hsla(143, 62%, 89%, 1);\n    --uranian-blue: hsla(200, 87%, 82%, 1);\n    --mauve: hsla(278, 82%, 87%, 1);\n\n}\n\n/* Estilos componente Header */\n\n.headerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 60px;\n    background: linear-gradient(to right, var(--azul-claro), white);  \n    color: white;\n    margin-bottom: 120px;\n}\n.headerprincipal h1{\n\n    /* margin-top: 41px; */\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n    font-family: 'Dancing Script', cursive;\n    font-size: 65px;\n\n}\n.linkUser{\n    gap: 10px;\n    display: flex;\n    margin-top: 34px;\n    margin-right: 17px;\n    align-items: flex-end;\n}\n.logo {\n    width: 100px;\n    height: 90px;\n    margin-top: 35px;\n}\n.logoRegistroLogin{\n    width: 150px;\n\n}\n.logoUser {\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n\n}\n.contTitulo{\n    margin-top: 80px;\n}\n.contBotonera{\n    margin-top: 35px;\n    text-align: center;\n\n}\n/* Estilos componente Footer */\n\n.footerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-around;\n    background-color: var(--azul-claro);\n    color:white;\n}\n\n\n\n.seccion{\n    padding: 15px;\n    margin-top: -42px;\n}\n.seccion ul {\n    display: flex;\n    gap: 15px;\n    flex-direction: row;\n    padding: 10px 0;\n\n}\n\n.footerprincipal header{\n    font-family: 'Dancing Script', cursive;\n    font-size: 30px;\n\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n}\n\n.imgsiguenos{\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8385,7 +8457,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n.divcomponent {\n    border: 1px solid blue;\n}\n\n.espaciador {\n    max-width: 978px;\n    padding-top: 50px;\n}\n\n.separador {\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n\n.separador hr {\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n}\n\n/*----------------- Edit  Create .js ------------------------ */\n\n\n.containerEditoCreate {\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.contenedorForm {\n    width: 100%;\n    max-width: 1000px;\n    margin-top: 50px;\n    margin-bottom: 75px;\n    \n}\n\n.navedit {\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.principal{\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n}\n\n.navIndexRecetas {\n    padding: 30px;\n    display: flex;\n    justify-content: space-around;\n}\n\n.contenedorrecetas {\n\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap:10px;\n    justify-content: center;\n    padding: 20px;\n    min-height: 80vh;\n    margin-top: 25px;\n\n}\n\n.articlerecetasindex {\n    height: 320px;\n    padding: 5px;\n    border-radius: 1em;\n}\n\n.imgrecetaindex {\n    height: 184px;\n    width: 220px;\n    border-radius: 1em;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow {\n    padding: 25px;\n}\n\n.navshow {\n    padding: 15px;\n    width: 500px;\n}\n\n.containerRecetaShow {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n}\n\n.headershowtop {\n    display: flex;\n}\n\n.sectionheader {\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.imgshow {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.iconAlergenos {\n    width: 60px;\n    height: 60px;\n}\n\n.datostagshow {\n    display: flex;\n    gap: 25px;\n}\n\n.itemtagshow {\n    font-size: 14px;\n}\n\n.itemtagshow p {\n    font-size: 20px;\n}\n\n.itemtagshowAlergenos {\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n\n.divIconsAlergenos {\n    display: flex;\n    gap: 5px;\n}\n\n.contArticleShow {\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n.articlerecetashow {\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px; \n}\n\n.articlerecetashow h1 {\n    font-size: 40px;\n    line-height: 1.2;\n}\n\n.articlerecetashow h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow {\n    max-width: 1000px;\n    margin-top: 30px;\n    margin-bottom: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.botoneraShow{\n    display: flex;\n    flex-direction: column;\n}\n\n.tarjetaResena footer {\n    display: flex;\n\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n.divcomponent {\n    border: 1px solid blue;\n}\n\n.espaciador {\n    max-width: 978px;\n    padding-top: 50px;\n}\n\n.separador {\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n\n.separador hr {\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n}\n\n/*----------------- Edit  Create .js ------------------------ */\n\n\n.containerEditoCreate {\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.contenedorForm {\n    width: 100%;\n    max-width: 1000px;\n    margin-bottom: 75px;\n    \n}\n\n.navedit {\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.principal{\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n} \n\n.navindex {\n    padding: 25px;\n}\n\n.navIndexRecetas {\n    padding: 30px;\n    display: flex;\n    justify-content: space-around;\n}\n\n.contenedorrecetas {\n\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap:10px;\n    justify-content: center;\n    padding: 20px;\n    min-height: 80vh;\n\n}\n\n.articlerecetasindex {\n    height: 320px;\n    \n    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);\n    transition: all 0.2s;\n    text-align: center;\n    border-radius: 8px;\n\n  \n}\n.articlerecetasindex:hover {\n    transform: translate(-15px);\n    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);\n    /* filter: opacity(.5); */\n}\n\n.imgreceta{\n    \n    height: 180px;\n    width: 286px;\n    border-radius: 8px;\n\n}\n\n\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow {\n    padding: 25px;\n}\n\n.navshow {\n    padding: 15px;\n    width: 500px;\n}\n\n.containerRecetaShow {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n}\n\n.headershowtop {\n    display: flex;\n}\n\n.sectionheader {\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.imgshow {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.iconAlergenos {\n    width: 60px;\n    height: 60px;\n}\n\n.datostagshow {\n    display: flex;\n    gap: 25px;\n}\n\n.itemtagshow {\n    font-size: 14px;\n}\n\n.itemtagshow p {\n    font-size: 20px;\n}\n\n.itemtagshowAlergenos {\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n\n.divIconsAlergenos {\n    display: flex;\n    gap: 5px;\n}\n\n.contArticleShow {\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n.articlerecetashow {\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px; \n}\n\n.articlerecetashow h1 {\n    font-size: 40px;\n    line-height: 1.2;\n}\n\n.articlerecetashow h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow {\n    max-width: 1000px;\n    margin-top: 30px;\n    margin-bottom: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.botoneraShow{\n    display: flex;\n    flex-direction: column;\n}\n\n.tarjetaResena footer {\n    display: flex;\n\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8633,6 +8705,81 @@ var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
 
+
+/***/ }),
+
+/***/ "./public/images/contacto.png":
+/*!************************************!*\
+  !*** ./public/images/contacto.png ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/contacto.png?3cd17e8fd00bb42fdb27226dfff17121");
+
+/***/ }),
+
+/***/ "./public/images/faqs.png":
+/*!********************************!*\
+  !*** ./public/images/faqs.png ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/faqs.png?0850423523197d415cc069cee07972a8");
+
+/***/ }),
+
+/***/ "./public/images/git.png":
+/*!*******************************!*\
+  !*** ./public/images/git.png ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/git.png?d8c6d6c90bdccf76d860cc3f6dddb39c");
+
+/***/ }),
+
+/***/ "./public/images/instagram.png":
+/*!*************************************!*\
+  !*** ./public/images/instagram.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/instagram.png?75e0546a6b5abe4c05063c93871ac0a8");
+
+/***/ }),
+
+/***/ "./public/images/linkedin.png":
+/*!************************************!*\
+  !*** ./public/images/linkedin.png ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/linkedin.png?5da81c58f46e7ffb2d52fac8c6599569");
 
 /***/ }),
 

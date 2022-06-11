@@ -7,6 +7,9 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
+// redirecciones a rutas
+use Illuminate\Support\Facades\Redirect;
+
 class VerifyEmailController extends Controller
 {
     /**
@@ -26,5 +29,6 @@ class VerifyEmailController extends Controller
         }
 
         return redirect()->intended(RouteServiceProvider::HOME.'?verified=1');
+  
     }
 }

@@ -13,7 +13,7 @@ import iconCrustaceo from '../img/alergenos/iconCrustaceo.png';
 import iconPescado from '../img/alergenos/iconPescado.png';
 import iconMostaza from '../img/alergenos/iconMostaza.png';
 
-import '../../css//FiltroAlergenos.css'
+import '../../css//Filtros.css'
 
 const FiltroAlergenos = () => {
     const { data, setData, post, errors } = useForm({
@@ -30,18 +30,19 @@ const FiltroAlergenos = () => {
         alergenos: true,
 
     });
-    console.log(data);
     function handleSubmit(e) {
         e.preventDefault();
-       post(route("filtros.index"));         
+        post(route("filtros.index"));
     }
 
     return (
 
-        <div className="p-4 bg-white rounded containerFiltro bg-gray-100">
+        <div id="FiltroAlergenos" className=" oculto p-4 bg-white rounded containerFiltro bg-gray-100">
 
-            <div className="max-w-3xl shadow sm:rounded-lg bg-white">
-                <form name="createForm" className="formFiltro" onSubmit={handleSubmit }>
+            <form onSubmit={handleSubmit}>
+
+                <div className="formFiltro max-w-3xl shadow sm:rounded-lg bg-white" >
+
 
                     <div>
                         <img className="icon" src={iconLacteos} />
@@ -212,22 +213,20 @@ const FiltroAlergenos = () => {
                             {errors.mostaza}
                         </span>
                     </div>
+                </div>
 
+                <div className="botonFormFiltro">
+                    <button
 
-                    <div className="flex justify-between">
-                        <button
+                        type="submit"
+                        className="px-4 py-2 text-white bg-blue-500 rounded boton"
+                    >
+                        Filtrar
+                    </button>
+                </div>
 
-                            type="submit"
-                            className="px-4 py-2 text-white bg-blue-500 rounded boton"
-                        >
-                            Filtrar
-                        </button>
+            </form>
 
-                    </div>
-
-
-                </form>
-            </div>
         </div>
     );
 }

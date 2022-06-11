@@ -1,0 +1,105 @@
+@startuml dulcesRecetas
+class Receta{
+    **Protected**
+    # nombre:
+    # img
+    # continente
+    # descripcion
+    # dificultad
+    # tiempo
+    # calorias
+    # npersonas
+    # ingreCantidad
+    # procedimiento
+    # detalles
+    # lacteos
+    # huevo
+    # gluten
+    # soja
+    # frutos
+    # cacahuete
+    # moluscos
+    # crustaceos
+    # pescado
+    # mostaza
+    **Private**
+    - created_ad
+    - updated_ad
+    ---
+    **Métodos**
+    ---
+    **Public**
+    + __construct()
+    + index($request): string
+    + create(): string
+    + store($request): string
+    + show($receta): string
+    + edit($receta): string
+    + update($request,$receta): string
+    + destroy($receta): string
+}
+
+class Usuarios{
+    **Protected**
+    # name
+    # email
+    # password
+    # imguser
+    **Private**
+    - created_ad
+    - updated_ad
+    - password
+    ---
+    **Métodos**
+    ---
+    **Public**
+    + __construct()
+}
+
+class Resenas{
+    **Protected**
+    # user_id
+    # recetas_id
+    # estrellas
+    # descripcion
+    # user_nombre
+    **Private**
+    - created_ad
+    - updated_ad
+    ---
+    **Métodos**
+    ---
+    **Public**
+    + __construct()
+    + index(): string
+    + create(): string
+    + store($request): string
+    + edit($resena): string
+    + update($request,$resena): string
+    + destroy($resena): string
+}
+
+class Favoritos{
+    **Protected**
+    # user_id
+    # recetas_id
+    # recetas_nombre
+    # recetas_img
+    **Private**
+    - created_ad
+    - updated_ad
+    ---
+    **Métodos**
+    ---
+    **Public**
+    + __construct()
+    + index(): string
+    + create(): string
+    + store($request): string
+    + destroy($favorito): string
+}
+
+Receta <|-- Resenas
+Usuarios <|-- Resenas
+Usuarios <|-- Favoritos
+@endunml

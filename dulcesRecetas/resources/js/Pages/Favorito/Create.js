@@ -18,8 +18,11 @@ function Create() {
     });
 
     function handleSubmit(e) {
-        e.preventDefault();
-        post(route("favoritos.store"));
+        if (confirm("Seguro que quieres crear este favorito?")) {
+            e.preventDefault();
+            post(route("favoritos.store"));
+        }
+
     }
 
     return (

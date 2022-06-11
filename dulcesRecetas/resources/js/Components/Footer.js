@@ -31,17 +31,17 @@ export default function Header({ props }) {
                 <header> Síguenos </header>
                 <ul>
                     <li>
-                        <a href="#" >
+                        <a href="https://github.com/moimu" >
                             <img src={git} className="imgsiguenos" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" >
+                        <a href="https://www.linkedin.com/in/mois%C3%A9s-mu%C3%B1oz-aranda-5353b3221/" >
                             <img src={linkedin} className="imgsiguenos" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" >
+                        <a href="https://www.instagram.com/moisesmuar/" >
                             <img src={instagram} className="imgsiguenos" />
                         </a>
                     </li>

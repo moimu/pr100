@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('estrellas');
             $table->string('descripcion');
             $table->string('user_nombre');
+            $table->string('recetas_img');
             $table->timestamps();
         });
     }

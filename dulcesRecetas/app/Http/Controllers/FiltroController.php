@@ -22,30 +22,52 @@ class FiltroController extends Controller
      */
     public function index(Request $request)
     {
+        // dd($request);
+        if (auth()->user()) {
+            $request = $request->all();
 
-        $alergenos = $request->all();
-        array_pop($alergenos);
-       
-        $ar= [];
-        // obtenemos array con alergenos que no  
-        // queremos que contega la receta.
-        foreach( $alergenos as $clave => $valor ){
-            if( $valor === true ){
-                array_push( $ar, $clave );
+            // Si clave alergenos es true
+            if( isset( $request['alergenos'] ) ){
+                array_pop($request);
+
+                $ar = [];
+                // obtenemos array con alergenos que no  
+                // queremos que contega la receta.
+                foreach ($request as $clave => $valor) {
+                    if ($valor === true) {
+                        array_push($ar, $clave);
+                    }
+                }
+    
+                // Construccion de la consulta que los campos alergenos recibido en la request
+                // esten marcados en registro de la receta como 0
+                $sql = "SELECT * FROM recetas";
+                foreach ($ar as $indice => $valor) {
+                    if ($indice === 0) {
+                        $sql = $sql . " WHERE $valor = 0";
+                    } else {
+                        $sql = $sql . " AND $valor = 0";
+                    }
+                }
+                $recetas = DB::select($sql);
+    
+                return Inertia::render('Filtro/Index', ['recetas' => $recetas]);
             }
-        }
-        
-        // Construccion de la consulta que los campos alergenos recibido en la request
-        // esten marcados en registro de la receta como 0
-        $sql = "SELECT * FROM recetas";
-        foreach ( $ar as $indice => $valor){
-            if( $indice===0 ){ $sql = $sql . " WHERE $valor = 0"; }
-            else{ $sql = $sql . " AND $valor = 0"; }
-        }
-        // dd( $sql );
-       $recetas = DB::select($sql);
+            // filtrado por continente
+            // Si clave paises es true
+            if( isset( $request['paises'] ) ){             
 
-        return Inertia::render('Filtro/Index', ['recetas' => $recetas]);
+                $pais = $request['pais'];
+                $sql = "SELECT * FROM recetas WHERE continente='$pais' ";
+                $recetas = DB::select($sql);
+
+                return Inertia::render('Filtro/Index', ['recetas' => $recetas]);
+
+            }   
+            
+        } else {
+            return;
+        }
     }
 
     /**

@@ -1,0 +1,49 @@
+.containerFiltro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+
+}
+
+.oculto{
+    display: none;
+
+}
+
+.icon {
+    width: 75px;
+    height: 65px;
+    padding: 5px;
+}
+
+.botonIcon {
+    border: 1px solid black;
+    border-radius: 1em;
+    margin: 2px;
+}
+
+.seleccion {
+    background-color: #e5e7eb;
+}
+
+.formFiltro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.boton {
+    height: 40px;
+}
+
+.botonFormFiltro {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnActivo{
+    border: solid 1px black;
+}

@@ -22,9 +22,15 @@ class FavoritoController extends Controller
      */
     public function index()
     {
-        // favoritos del usuario autenticado
-        $favoritos = auth()->user()->favoritos;
-        return Inertia::render('Favorito/Index', ['favoritos' => $favoritos]);
+        if (auth()->user()) {
+            
+            // favoritos del usuario autenticado
+            $favoritos = auth()->user()->favoritos;
+            return Inertia::render('Favorito/Index', ['favoritos' => $favoritos]);
+
+        } else {
+            return;
+        }
     }
 
     /**
@@ -50,18 +56,18 @@ class FavoritoController extends Controller
         // recibo reseña del componente Create valido e inserto
 
         $data = $request->validate([
-            'user_id'=>'required|integer',
-            'recetas_id'=>'required|integer',
-            'recetas_nombre'=>'required|string',
-            'recetas_img'=>'required|string',
+            'user_id' => 'required|integer',
+            'recetas_id' => 'required|integer',
+            'recetas_nombre' => 'required|string',
+            'recetas_img' => 'required|string',
 
         ]);
 
         $idreceta = $request['recetas_id'];
-        $favorito = DB::table('favoritos')->where( "recetas_id", '=', $idreceta )->first();
+        $favorito = DB::table('favoritos')->where("recetas_id", '=', $idreceta)->first();
 
         // dd($favorito);
-        if( !isset($favorito) ){
+        if (!isset($favorito)) {
 
             Favorito::create([
                 'user_id' => $request['user_id'],
@@ -69,16 +75,14 @@ class FavoritoController extends Controller
                 'recetas_nombre' => $request['recetas_nombre'],
                 'recetas_img' => $request['recetas_img'],
             ]);
-
         }
-        
-        $resenasDeLaReceta = DB::table('resenas')->where( "recetas_id", '=', $idreceta)->get();
+
+        $resenasDeLaReceta = DB::table('resenas')->where("recetas_id", '=', $idreceta)->get();
         $ar = [];
         $ar[0] = $request['receta'];
         $ar[1] = $resenasDeLaReceta;
 
-        return Inertia::render('Receta/Show',  ['receta' => $ar] );
-        
+        return Inertia::render('Receta/Show',  ['receta' => $ar]);
     }
 
     /**
@@ -124,6 +128,6 @@ class FavoritoController extends Controller
     public function destroy(Favorito $favorito)
     {
         $favorito->delete();
-        return Redirect::route('resenas.index');
+        return Redirect::route('favoritos.index');
     }
 }

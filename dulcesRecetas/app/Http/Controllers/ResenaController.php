@@ -23,9 +23,14 @@ class ResenaController extends Controller
      */
     public function index()
     {
-        // reseñas del usuario autenticado
-        $resenas = auth()->user()->resenas;
-        return Inertia::render('Resena/Index', ['resenas' => $resenas] );
+        if (auth()->user()) {
+
+            // reseñas del usuario autenticado
+            $resenas = auth()->user()->resenas;
+            return Inertia::render('Resena/Index', ['resenas' => $resenas]);
+        } else {
+            return;
+        }
     }
 
     /**
@@ -36,8 +41,8 @@ class ResenaController extends Controller
     public function create()
     {
         $user = auth()->user();
-       
-        return Inertia::render('Resena/Create', ['user' => $user] );
+
+        return Inertia::render('Resena/Create', ['user' => $user]);
     }
 
     /**
@@ -51,12 +56,13 @@ class ResenaController extends Controller
         // recibo reseña del componente Create valido e inserto
 
         $data = $request->validate([
-            'user_id'=>'required|integer',
-            'recetas_id'=>'required|integer',
-            'estrellas'=>'required|integer',
-            'descripcion'=>'required|string',
-            'user_nombre'=>'required|string',
-            
+            'user_id' => 'required|integer',
+            'recetas_id' => 'required|integer',
+            'estrellas' => 'required|integer',
+            'descripcion' => 'required|string',
+            'user_nombre' => 'required|string',
+            'recetas_img' => 'required|string',
+
         ]);
         $resena = Resena::create([
             'user_id' => $request['user_id'],
@@ -64,19 +70,19 @@ class ResenaController extends Controller
             'estrellas' => $request['estrellas'],
             'descripcion' => $request['descripcion'],
             'user_nombre' => $request['user_nombre'],
-            
+            'recetas_img' => $request['recetas_img'],
+
         ]);
 
         $id = $request['recetas_id'];
 
-        $resenasDeLaReceta = DB::table('resenas')->where( "recetas_id", '=', $id)->get();
-    
+        $resenasDeLaReceta = DB::table('resenas')->where("recetas_id", '=', $id)->get();
+
         $ar = [];
         $ar[0] = $request['receta'][0];
         $ar[1] = $resenasDeLaReceta;
 
-        return Inertia::render('Receta/Show',  ['receta' => $ar] );
-
+        return Inertia::render('Receta/Show',  ['receta' => $ar]);
     }
 
     /**
@@ -98,7 +104,7 @@ class ResenaController extends Controller
      */
     public function edit(Resena $resena)
     {
-        return Inertia::render('Resena/Edit',  ['resena' => $resena] );
+        return Inertia::render('Resena/Edit',  ['resena' => $resena]);
     }
 
     /**
@@ -112,11 +118,11 @@ class ResenaController extends Controller
     {
         // reglas de validacion para cada input 
         $data = $request->validate([
-            'descripcion'=>'nullable|string', 
-            'estrellas'=>'nullable|integer',
+            'descripcion' => 'nullable|string',
+            'estrellas' => 'nullable|integer',
         ]);
 
-        $resena->update( $data );
+        $resena->update($data);
 
         return Redirect::route('resenas.index');
     }

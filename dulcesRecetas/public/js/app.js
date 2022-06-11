@@ -4274,6 +4274,76 @@ function ApplicationLogo(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/Components/BotoneraControlFiltros.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/Components/BotoneraControlFiltros.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _css_Filtros_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css//Filtros.css */ "./resources/css/Filtros.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var BotoneraControlFiltros = function BotoneraControlFiltros() {
+  /**
+   * Oculta filtros y muestra el selecionado
+   * @param {} e 
+   */
+  function buscaFiltroDom(e) {
+    var idFiltro = e.target.name;
+    var filtroPaises = document.getElementById('FiltroPaises');
+    var filtroAlergenos = document.getElementById('FiltroAlergenos');
+    filtroPaises.classList.add('oculto');
+    filtroAlergenos.classList.add('oculto');
+
+    if (idFiltro == "FiltroAlergenos") {
+      document.getElementById("btnFiltroPaises").classList.remove('btnActivo');
+      document.getElementById("btnFiltroAlergenos").classList.add('btnActivo');
+      filtroAlergenos.classList.remove('oculto');
+    }
+
+    if (idFiltro == "FiltroPaises") {
+      document.getElementById("btnFiltroAlergenos").classList.remove('btnActivo');
+      document.getElementById("btnFiltroPaises").classList.add('btnActivo');
+      filtroPaises.classList.remove('oculto');
+    }
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    className: " p-4 bg-white rounded containerFiltro bg-gray-100",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      className: "px-4 py-2 text-white bg-yellow-500 rounded-md focus:outline-none",
+      id: "btnFiltroAlergenos",
+      name: "FiltroAlergenos",
+      onClick: buscaFiltroDom,
+      children: "Filtro al\xE9rgenos"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      className: "px-4 py-2 text-white bg-yellow-500 rounded-md focus:outline-none",
+      id: "btnFiltroPaises",
+      name: "FiltroPaises",
+      onClick: buscaFiltroDom,
+      children: "Filtro Paises"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BotoneraControlFiltros);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Button.js":
 /*!*******************************************!*\
   !*** ./resources/js/Components/Button.js ***!
@@ -4518,7 +4588,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_alergenos_iconCrustaceo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/alergenos/iconCrustaceo.png */ "./resources/js/img/alergenos/iconCrustaceo.png");
 /* harmony import */ var _img_alergenos_iconPescado_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/alergenos/iconPescado.png */ "./resources/js/img/alergenos/iconPescado.png");
 /* harmony import */ var _img_alergenos_iconMostaza_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/alergenos/iconMostaza.png */ "./resources/js/img/alergenos/iconMostaza.png");
-/* harmony import */ var _css_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../css//FiltroAlergenos.css */ "./resources/css/FiltroAlergenos.css");
+/* harmony import */ var _css_Filtros_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../css//Filtros.css */ "./resources/css/Filtros.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -4556,21 +4626,18 @@ var FiltroAlergenos = function FiltroAlergenos() {
       post = _useForm.post,
       errors = _useForm.errors;
 
-  console.log(data);
-
   function handleSubmit(e) {
     e.preventDefault();
     post(route("filtros.index"));
   }
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-    className: "p-4 bg-white rounded containerFiltro bg-gray-100",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-      className: "max-w-3xl shadow sm:rounded-lg bg-white",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("form", {
-        name: "createForm",
-        className: "formFiltro",
-        onSubmit: handleSubmit,
+    id: "FiltroAlergenos",
+    className: " oculto p-4 bg-white rounded containerFiltro bg-gray-100",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("form", {
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+        className: "formFiltro max-w-3xl shadow sm:rounded-lg bg-white",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("img", {
             className: "icon",
@@ -4761,15 +4828,15 @@ var FiltroAlergenos = function FiltroAlergenos() {
             className: "text-red-600",
             children: errors.mostaza
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-          className: "flex justify-between",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
-            type: "submit",
-            className: "px-4 py-2 text-white bg-blue-500 rounded boton",
-            children: "Filtrar"
-          })
         })]
-      })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+        className: "botonFormFiltro",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("button", {
+          type: "submit",
+          className: "px-4 py-2 text-white bg-blue-500 rounded boton",
+          children: "Filtrar"
+        })
+      })]
     })
   });
 }; // class FiltroAlergenos extends React.Component {
@@ -4868,6 +4935,171 @@ var FiltroAlergenos = function FiltroAlergenos() {
 
 /***/ }),
 
+/***/ "./resources/js/Components/FiltroPaises.js":
+/*!*************************************************!*\
+  !*** ./resources/js/Components/FiltroPaises.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _img_paises_banAmericaNorte_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/paises/banAmericaNorte.jpg */ "./resources/js/img/paises/banAmericaNorte.jpg");
+/* harmony import */ var _img_paises_bandChina_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/paises/bandChina.jpg */ "./resources/js/img/paises/bandChina.jpg");
+/* harmony import */ var _img_paises_bandEuropa_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/paises/bandEuropa.png */ "./resources/js/img/paises/bandEuropa.png");
+/* harmony import */ var _img_paises_bandOceania_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/paises/bandOceania.png */ "./resources/js/img/paises/bandOceania.png");
+/* harmony import */ var _img_paises_bndMexico_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/paises/bndMexico.png */ "./resources/js/img/paises/bndMexico.png");
+/* harmony import */ var _img_paises_bandAntartica_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/paises/bandAntartica.png */ "./resources/js/img/paises/bandAntartica.png");
+/* harmony import */ var _css_Filtros_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../css//Filtros.css */ "./resources/css/Filtros.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+var FiltroPaises = function FiltroPaises() {
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
+    pais: "",
+    paises: true
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post,
+      errors = _useForm.errors;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    post(route("filtros.index"));
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    id: "FiltroPaises",
+    className: " oculto p-4 bg-white rounded containerFiltro bg-gray-100",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("form", {
+      name: "createForm",
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+        className: "formFiltro max-w-3xl shadow sm:rounded-lg bg-white",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_banAmericaNorte_jpg__WEBPACK_IMPORTED_MODULE_3__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Am\xE9rica del Norte",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_bandChina_jpg__WEBPACK_IMPORTED_MODULE_4__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Asia",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_bandEuropa_png__WEBPACK_IMPORTED_MODULE_5__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Europa",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_bandOceania_png__WEBPACK_IMPORTED_MODULE_6__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Ocean\xEDa",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_bndMexico_png__WEBPACK_IMPORTED_MODULE_7__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Am\xE9rica del Sur",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+            className: "icon",
+            src: _img_paises_bandAntartica_png__WEBPACK_IMPORTED_MODULE_8__["default"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+            type: "radio",
+            name: "pais",
+            value: "Ant\xE1rtida",
+            onChange: function onChange(e) {
+              return setData("pais", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+            className: "text-red-600",
+            children: errors.pais
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+        className: "botonFormFiltro ",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+          type: "submit",
+          className: "px-4 py-2 text-white bg-blue-500 rounded boton",
+          children: "Filtrar"
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FiltroPaises);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Footer.js":
 /*!*******************************************!*\
   !*** ./resources/js/Components/Footer.js ***!
@@ -4933,7 +5165,7 @@ function Header(_ref) {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("ul", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-            href: "#",
+            href: "https://github.com/moimu",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
               src: _images_git_png__WEBPACK_IMPORTED_MODULE_3__["default"],
               className: "imgsiguenos"
@@ -4941,7 +5173,7 @@ function Header(_ref) {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-            href: "#",
+            href: "https://www.linkedin.com/in/mois%C3%A9s-mu%C3%B1oz-aranda-5353b3221/",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
               src: _images_linkedin_png__WEBPACK_IMPORTED_MODULE_4__["default"],
               className: "imgsiguenos"
@@ -4949,7 +5181,7 @@ function Header(_ref) {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-            href: "#",
+            href: "https://www.instagram.com/moisesmuar/",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
               src: _images_instagram_png__WEBPACK_IMPORTED_MODULE_5__["default"],
               className: "imgsiguenos"
@@ -4990,7 +5222,32 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header(_ref) {
   var props = _ref.props;
-  console.log(props);
+
+  /**
+   * Oculta filtros y muestra el selecionado
+   * @param {} e 
+   */
+  function buscaFiltroDom(e) {
+    var idFiltro = e.target.name;
+    var filtroPaises = document.getElementById('FiltroPaises');
+    var filtroAlergenos = document.getElementById('FiltroAlergenos');
+    filtroPaises.classList.add('oculto');
+    filtroAlergenos.classList.add('oculto');
+
+    if (idFiltro == "FiltroAlergenos") {
+      filtroAlergenos.classList.remove('oculto');
+    }
+
+    if (idFiltro == "FiltroPaises") {
+      filtroPaises.classList.remove('oculto');
+    }
+  }
+
+  function botonActivo(e) {
+    var botnpulsado = e.target.id;
+    document.getElementById(botnpulsado).style.background = "#3B82F6";
+  }
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
       className: "headerprincipal bg-white",
@@ -5024,18 +5281,26 @@ function Header(_ref) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
             className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
             href: route("recetas.index"),
+            id: "Recetas",
+            onClick: botonActivo,
             children: "Recetas"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
             className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
             href: route("recetas.create"),
+            id: "Nueva",
+            onClick: botonActivo,
             children: "Nueva"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
             className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
             href: route("favoritos.index"),
+            id: "Favoritas",
+            onClick: botonActivo,
             children: "Favoritas"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
             className: "px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none",
             href: route("resenas.index"),
+            id: "Rese\xF1as",
+            onClick: botonActivo,
             children: "Rese\xF1as"
           })]
         })]
@@ -5069,13 +5334,9 @@ function Header(_ref) {
               children: "Log Out"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-          href: route('dashboard'),
-          className: "text-sm text-gray-700 underline ",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-            src: props.auth.user.imguser,
-            className: "logoUser"
-          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+          src: props.auth.user.imguser,
+          className: "logoUser"
         })]
       }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "linkUser",
@@ -5416,7 +5677,7 @@ function Guest(_ref) {
           className: "logoRegistroLogin"
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), children && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg",
       children: children
     })]
@@ -6201,8 +6462,10 @@ function Create() {
       post = _useForm.post;
 
   function handleSubmit(e) {
-    e.preventDefault();
-    post(route("favoritos.store"));
+    if (confirm("Seguro que quieres crear este favorito?")) {
+      e.preventDefault();
+      post(route("favoritos.store"));
+    }
   }
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
@@ -6243,96 +6506,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var Edit = function Edit(props) {
-  var resena = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.resena;
+  var favorito = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.favorito;
 
-  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
-    descripcion: resena.descripcion || "",
-    estrellas: resena.estrellas || ""
-  }),
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({}),
       data = _useForm.data,
       setData = _useForm.setData,
       put = _useForm.put,
       errors = _useForm.errors;
 
-  console.log(data);
+  console.log(favorito);
 
   function handleSubmit(e) {
     e.preventDefault();
-    put(route("resenas.update", resena.id));
+    put(route("favoritos.update", resena.id));
   }
 
   function destroy() {
     if (confirm("Seguro que quieres borrar este receta?")) {
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("resenas.destroy", resena.id));
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("favoritos.destroy", favorito.id));
     }
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "containerEditResenas mx-auto",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Header, {
-      props: props
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("form", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
       name: "createForm",
       onSubmit: handleSubmit,
       className: "max-w-3xl p-8 bg-white rounded shadow contenedorForm",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "flex flex-col",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-          className: "mb-4",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-            className: "",
-            children: " Descripci\xF3n "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-            type: "text",
-            className: "w-full px-4 py-2",
-            label: "descripcion",
-            name: "descripcion",
-            value: data.descripcion,
-            required: true,
-            onChange: function onChange(e) {
-              return setData("descripcion", e.target.value);
-            }
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "text-red-600",
-            children: errors.descripcion
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-          className: "mb-4",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
-            className: "",
-            children: " Estrellas "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
-            type: "number",
-            className: "w-full px-4 py-2",
-            label: "estrellas",
-            name: "estrellas",
-            value: data.estrellas,
-            required: true,
-            onChange: function onChange(e) {
-              return setData("estrellas", e.target.value);
-            }
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-            className: "text-red-600",
-            children: errors.estrellas
-          })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "flex justify-between",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-          type: "submit",
-          className: "px-4 py-2 text-white bg-green-500 rounded",
-          children: "Actualizar"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
           onClick: destroy,
           tabIndex: "-1",
           type: "button",
           className: "px-4 py-2 text-white bg-red-500 rounded",
           children: "Borrar"
-        })]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Footer, {})]
+        })
+      })
+    })
   });
 };
 
@@ -6371,43 +6583,55 @@ var Index = function Index(props) {
   var favoritos = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
   var data = favoritos.favoritos;
   console.log(data);
+  /**
+   * 
+   * @param {*} favoritos array 
+   * @returns 
+   */
+
+  function tarjetasFavoritos(favoritos) {
+    var lista = favoritos.map(function (favorito, index) {
+      function destroy() {
+        if (confirm("Seguro que quieres borrar receta favorita?")) {
+          _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("favoritos.destroy", favorito.id));
+        }
+      }
+
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("section", {
+        className: "tarjetaFav",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("header", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+            src: favorito.recetas_img,
+            className: "imgFav",
+            alt: favorito.recetas_nombre,
+            loading: "lazy"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("main", {
+          children: favorito.recetas_nombre
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("form", {
+            name: "createForm",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+              onClick: destroy,
+              tabIndex: "-1",
+              type: "button",
+              className: "px-4 py-2 text-white bg-red-500 rounded",
+              children: "Borrar"
+            })
+          })
+        })]
+      }, favorito.recetas_id);
+    });
+    return lista;
+  }
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
       props: props
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "overflow-x-auto contenedorFavoritos bg-gray-100",
-      children: [data.map(function (_ref) {
-        var user_id = _ref.user_id,
-            recetas_id = _ref.recetas_id,
-            recetas_nombre = _ref.recetas_nombre,
-            recetas_img = _ref.recetas_img;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("article", {
-          className: "articleFavoritoIndex bg-white",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("header", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-              tabIndex: "1",
-              className: "flex items-center",
-              href: route("recetas.show", recetas_id),
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
-                src: recetas_img,
-                className: "imgrecetaindex",
-                alt: recetas_nombre,
-                loading: "lazy"
-              })
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h1", {
-              className: "nombrerecetaindex",
-              children: recetas_nombre
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
-              children: " Minutos"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("section", {})
-          })]
-        });
-      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "overflow-x-auto contFav bg-gray-100",
+      children: [tarjetasFavoritos(data), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
         children: " No existen Favoritos."
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
@@ -6432,11 +6656,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
-/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
-/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_BotoneraControlFiltros_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BotoneraControlFiltros.js */ "./resources/js/Components/BotoneraControlFiltros.js");
+/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
+/* harmony import */ var _Components_FiltroPaises_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/FiltroPaises.js */ "./resources/js/Components/FiltroPaises.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -6444,7 +6670,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import banner from '../../img/banner.jpeg';
+
+
 
 
 
@@ -6453,53 +6680,55 @@ var Index = function Index(props) {
   var recetas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
   var data = recetas.recetas;
   console.log(data);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
     className: "mx-auto principal",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("title", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("title", {
         children: " Dulces Recetas "
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       props: props
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-      className: "overflow-x-auto bg-white contenedorrecetas",
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Components_BotoneraControlFiltros_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Components_FiltroPaises_js__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "overflow-x-auto contenedorrecetas bg-gray-100",
       children: [data.map(function (_ref) {
         var id = _ref.id,
             nombre = _ref.nombre,
             img = _ref.img,
             dificultad = _ref.dificultad,
             tiempo = _ref.tiempo;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("article", {
-          className: "articlerecetasindex",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("article", {
+          className: "articlerecetasindex bg-white card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               tabIndex: "1",
               className: "flex items-center",
               href: route("recetas.show", id),
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
                 src: img,
-                className: "imgrecetaindex",
+                className: "card-img-top imgreceta",
                 alt: nombre,
                 loading: "lazy"
               })
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h1", {
               className: "nombrerecetaindex",
               children: nombre
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
               children: dificultad
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
               children: [tiempo, " Minutos"]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("section", {
+              className: "contEstrellasTotalesReceta"
+            })
           })]
         });
-      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
         children: " No existen recetas."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
   });
 };
 
@@ -6652,9 +6881,6 @@ var Create = function Create(props) {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
                 value: "Ant\xE1rtida",
                 children: "Ant\xE1rtida"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
-                value: "Am\xE9rica",
-                children: "Am\xE9rica"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
                 value: "Am\xE9rica del Sur",
                 children: "Am\xE9rica del Sur"
@@ -7434,11 +7660,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
-/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
-/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
-/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_BotoneraControlFiltros_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BotoneraControlFiltros.js */ "./resources/js/Components/BotoneraControlFiltros.js");
+/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
+/* harmony import */ var _Components_FiltroPaises_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/FiltroPaises.js */ "./resources/js/Components/FiltroPaises.js");
+/* harmony import */ var _Components_Header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Components/Header.js */ "./resources/js/Components/Header.js");
+/* harmony import */ var _Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Components/Footer.js */ "./resources/js/Components/Footer.js");
+/* harmony import */ var _css_receta_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../css//receta.css */ "./resources/css/receta.css");
+/* harmony import */ var _img_favorito_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../img/favorito.png */ "./resources/js/img/favorito.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
 
 
 
@@ -7450,51 +7682,93 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Index = function Index(props) {
-  var recetas = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
-  var data = recetas.recetas;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+  var data = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props;
+  var recetas = data.recetas;
+  /**
+   * Funcion para pintar estrellas de valoración de las recetas
+   * 
+   * @param {*} idReceta  id unico de la receta
+   * @param {*} resenas  total de reseñas registradas en tabla reseñas
+   * @returns integer
+   */
+
+  function mediaEstrellasResenas(idReceta, resenas) {
+    var resenasDeLaReceta;
+    var intTotalEstrellas = 0;
+    var intTotalResenas = 0;
+    resenasDeLaReceta = resenas.map(function (resena) {
+      // si es una reseña de la receta
+      if (resena.recetas_id == idReceta) {
+        // total.push(resena);
+        intTotalEstrellas = intTotalEstrellas + resena.estrellas;
+        intTotalResenas = intTotalResenas + 1;
+        return resena;
+      }
+    });
+    console.log("intTotalEstrellas");
+    console.log(intTotalEstrellas);
+    console.log("intTotalResenas");
+    console.log(intTotalResenas);
+    var mediaEstrellas = Math.round(intTotalEstrellas / intTotalResenas);
+    var imgs = [];
+
+    while (mediaEstrellas > 0) {
+      imgs.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+        src: _img_favorito_png__WEBPACK_IMPORTED_MODULE_9__["default"],
+        alt: "imgfavorito",
+        className: "imgfav"
+      }));
+      mediaEstrellas--;
+    }
+
+    return imgs;
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
     className: "mx-auto principal min-h-screen",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Components_Header_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       props: props
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Components_BotoneraControlFiltros_js__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Components_FiltroPaises_js__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
       className: "overflow-x-auto contenedorrecetas bg-gray-100",
-      children: [data.map(function (_ref) {
+      children: [recetas.map(function (_ref) {
         var id = _ref.id,
             nombre = _ref.nombre,
             img = _ref.img,
             dificultad = _ref.dificultad,
             tiempo = _ref.tiempo;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("article", {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("article", {
           className: "articlerecetasindex bg-white card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("header", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
               tabIndex: "1",
               className: "flex items-center",
               href: route("recetas.show", id),
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
                 src: img,
                 className: "card-img-top imgreceta",
                 alt: nombre,
                 loading: "lazy"
               })
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("main", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h1", {
               className: "nombrerecetaindex",
               children: nombre
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
               children: dificultad
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("p", {
               children: [tiempo, " Minutos"]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("footer", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("footer", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("section", {
+              className: "contEstrellasTotalesReceta"
+            })
           })]
         });
-      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      }), data.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
         children: " No existen recetas."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Components_Footer_js__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
   });
 };
 
@@ -7803,6 +8077,7 @@ function Create() {
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
     user_id: datos.auth.user.id,
     recetas_id: datos.receta[0].id,
+    recetas_img: datos.receta[0].img,
     descripcion: "",
     estrellas: "",
     user_nombre: datos.auth.user.name,
@@ -8067,8 +8342,10 @@ var Index = function Index(props) {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("section", {
         className: "tarjetaResena",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("header", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-            children: resena.user_nombre
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+            src: resena.recetas_img,
+            className: "imgRes",
+            loading: "lazy"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("main", {
           children: resena.descripcion
@@ -8146,10 +8423,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_FiltroAlergenos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/FiltroAlergenos.js */ "./resources/js/Components/FiltroAlergenos.js");
-/* harmony import */ var _Receta_Index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Receta/Index.js */ "./resources/js/Pages/Receta/Index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _Layouts_Guest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Layouts/Guest */ "./resources/js/Layouts/Guest.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -8157,46 +8432,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Welcome(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
       title: "Welcome"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "fixed top-0 right-0 px-6 py-4 sm:block",
-        children: props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-          href: route('dashboard'),
+        children: props.auth.user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          href: route('recetas.index'),
           className: "text-sm text-gray-700 underline",
-          children: "Mi zona"
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+          children: "Recetario"
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: route('login'),
             className: "text-sm text-gray-700 underline",
-            children: "Login"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+            children: "Log in"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
             href: route('register'),
             className: "ml-4 text-sm text-gray-700 underline",
-            children: "Registro"
+            children: "Register"
           })]
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "max-w-6xl mx-auto sm:px-6 lg:px-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "flex justify-center pt-8 sm:justify-start sm:pt-0",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
-            viewBox: "0 0 651 192",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            className: "h-16 w-auto text-gray-700 sm:h-20",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("g", {
-              clipPath: "url(#clip0)",
-              fill: "#EF3B2D",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
-                d: "M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"
-              })
-            })
-          })
-        })
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_Guest__WEBPACK_IMPORTED_MODULE_2__["default"], {})
       })]
     })]
   });
@@ -8368,10 +8628,10 @@ if ($defineProperty) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/FiltroAlergenos.css":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/FiltroAlergenos.css ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/Filtros.css":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/Filtros.css ***!
+  \*********************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -8385,7 +8645,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.containerFiltro{\n    width: 100%;\n    display: flex;\n    justify-content: center;\n}\n.icon {\n    width: 70px;\n    height: 70px;\n}\n.botonIcon {\n    border: 1px solid black;\n    border-radius: 1em;\n    margin: 2px;\n}\n.seleccion{\n    background-color: #e5e7eb;\n}\n.formFiltro{\n    display: flex;\n    align-items: flex-end;\n    justify-content: space-between;\n}\n.boton{\n    height: 40px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".containerFiltro {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    gap: 3px;\n\n}\n\n.oculto{\n    display: none;\n\n}\n\n.icon {\n    width: 75px;\n    height: 65px;\n    padding: 5px;\n}\n\n.botonIcon {\n    border: 1px solid black;\n    border-radius: 1em;\n    margin: 2px;\n}\n\n.seleccion {\n    background-color: #e5e7eb;\n}\n\n.formFiltro {\n    display: flex;\n    align-items: flex-end;\n    justify-content: space-between;\n    padding: 5px;\n}\n\n.boton {\n    height: 40px;\n}\n\n.botonFormFiltro {\n    margin-top: 15px;\n    display: flex;\n    justify-content: center;\n}\n\n.btnActivo{\n    border: solid 1px black;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8409,7 +8669,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n    /* CSS HEX */\n    --carnation-pink: #ff99c8ff;\n    --blond: #fcf6bdff;\n    --aero-blue: #d0f4deff;\n    --uranian-blue: #a9def9ff;\n    --mauve: #e4c1f9ff;\n\n    /* CSS HSL */\n    --carnation-pink: hsla(332, 100%, 80%, 1);\n    --blond: hsla(54, 91%, 86%, 1);\n    --aero-blue: hsla(143, 62%, 89%, 1);\n    --uranian-blue: hsla(200, 87%, 82%, 1);\n    --mauve: hsla(278, 82%, 87%, 1);\n\n}\n\n/* Estilos componente Header */\n\n.headerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 60px;\n    background: linear-gradient(to right, var(--azul-claro), white);  \n    color: white;\n    margin-bottom: 120px;\n}\n.headerprincipal h1{\n\n    /* margin-top: 41px; */\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n    font-family: 'Dancing Script', cursive;\n    font-size: 65px;\n\n}\n.linkUser{\n    gap: 10px;\n    display: flex;\n    margin-top: 34px;\n    margin-right: 17px;\n    align-items: flex-end;\n}\n.logo {\n    width: 100px;\n    height: 90px;\n    margin-top: 35px;\n}\n.logoRegistroLogin{\n    width: 150px;\n\n}\n.logoUser {\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n\n}\n.contTitulo{\n    margin-top: 80px;\n}\n.contBotonera{\n    margin-top: 35px;\n    text-align: center;\n\n}\n/* Estilos componente Footer */\n\n.footerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-around;\n    background-color: var(--azul-claro);\n    color:white;\n}\n\n\n\n.seccion{\n    padding: 15px;\n    margin-top: -42px;\n}\n.seccion ul {\n    display: flex;\n    gap: 15px;\n    flex-direction: row;\n    padding: 10px 0;\n\n}\n\n.footerprincipal header{\n    font-family: 'Dancing Script', cursive;\n    font-size: 30px;\n\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n}\n\n.imgsiguenos{\n    width: 50px;\n    height: 50px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n    /* CSS HEX */\n    --carnation-pink: #ff99c8ff;\n    --blond: #fcf6bdff;\n    --aero-blue: #d0f4deff;\n    --uranian-blue: #a9def9ff;\n    --mauve: #e4c1f9ff;\n\n    /* CSS HSL */\n    --carnation-pink: hsla(332, 100%, 80%, 1);\n    --blond: hsla(54, 91%, 86%, 1);\n    --aero-blue: hsla(143, 62%, 89%, 1);\n    --uranian-blue: hsla(200, 87%, 82%, 1);\n    --mauve: hsla(278, 82%, 87%, 1);\n\n}\n\n/* Estilos componente Header */\n\n.headerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: 60px;\n    background: linear-gradient(to right, var(--azul-claro), white);  \n    color: white;\n    margin-bottom: 120px;\n}\n.headerprincipal h1{\n\n    /* margin-top: 41px; */\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n    font-family: 'Dancing Script', cursive;\n    font-size: 65px;\n\n}\n.linkUser{\n    gap: 10px;\n    display: flex;\n    margin-top: 34px;\n    margin-right: 17px;\n    align-items: flex-end;\n}\n.logo {\n    width: 100px;\n    height: 90px;\n    margin-top: 35px;\n}\n.logoRegistroLogin{\n    width: 150px;\n\n}\n.logoUser {\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n\n}\n.contTitulo{\n    margin-top: 80px;\n}\n.contBotonera{\n    margin-top: 35px;\n    text-align: center;\n    display: flex;\n    gap: 3px;\n\n}\n.btnActivo{\n    border: solid 1px black;\n}\n/* Estilos componente Footer */\n\n.footerprincipal {\n    width:100%;\n    display: flex;\n    justify-content: space-around;\n    background-color: var(--azul-claro);\n    color:white;\n}\n\n\n\n.seccion{\n    padding: 15px;\n    margin-top: -42px;\n}\n.seccion ul {\n    display: flex;\n    gap: 15px;\n    flex-direction: row;\n    padding: 10px 0;\n\n}\n\n.footerprincipal header{\n    font-family: 'Dancing Script', cursive;\n    font-size: 30px;\n\n    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;\n}\n\n.imgsiguenos{\n    width: 45px;\n    height: 45px;\n   \n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8433,7 +8693,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Index ----------- */\n\n\n.formBotonPersonalizado {\n    border-radius: 1em;\n    background-color:  yellow;\n    width: 36px;\n    height: 36px;\n}\n\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.contenedorFavoritos {\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    align-items: center;\n    padding: 20px;\n    min-height: 80vh;\n}\n\n.articleFavoritoIndex {\n    height: 320px;\n    padding: 5px;\n    border-radius: 1em;\n}\n\n.imgrecetaindex{\n    height: 184px;\n    width: 220px;\n    border-radius: 1em;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Index ----------- */\n\n\n.formBotonPersonalizado {\n    border-radius: 1em;\n    background-color:  yellow;\n    width: 36px;\n    height: 36px;\n}\n\n.hunoindex {\n    padding: 25px;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.contenedorFavoritos {\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    align-items: center;\n    padding: 20px;\n    min-height: 80vh;\n}\n\n.articleFavoritoIndex {\n    height: 320px;\n    padding: 5px;\n    border-radius: 1em;\n}\n\n.imgrecetaindex{\n    height: 184px;\n    width: 220px;\n    border-radius: 1em;\n}\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n.imgFav{\n    height: 130px;\n    width: 150px;\n    border-radius: 1em;\n}\n\n.contFav{\n    width: 100%;\n    /* display: flex; */\n    /* flex-wrap: wrap; */\n    /* gap: 10px; */\n    /* justify-content: center; */\n    /* align-items: center; */\n    padding: 50px;\n    min-height: 80vh;\n}\n\n.tarjetaFav {\n    \n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   ", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8457,7 +8717,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n.divcomponent {\n    border: 1px solid blue;\n}\n\n.espaciador {\n    max-width: 978px;\n    padding-top: 50px;\n}\n\n.separador {\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n\n.separador hr {\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n}\n\n/*----------------- Edit  Create .js ------------------------ */\n\n\n.containerEditoCreate {\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.contenedorForm {\n    width: 100%;\n    max-width: 1000px;\n    margin-bottom: 75px;\n    \n}\n\n.navedit {\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.principal{\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n} \n\n.navindex {\n    padding: 25px;\n}\n\n.navIndexRecetas {\n    padding: 30px;\n    display: flex;\n    justify-content: space-around;\n}\n\n.contenedorrecetas {\n\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap:10px;\n    justify-content: center;\n    padding: 20px;\n    min-height: 80vh;\n\n}\n\n.articlerecetasindex {\n    height: 320px;\n    \n    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);\n    transition: all 0.2s;\n    text-align: center;\n    border-radius: 8px;\n\n  \n}\n.articlerecetasindex:hover {\n    transform: translate(-15px);\n    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);\n    /* filter: opacity(.5); */\n}\n\n.imgreceta{\n    \n    height: 180px;\n    width: 286px;\n    border-radius: 8px;\n\n}\n\n\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow {\n    padding: 25px;\n}\n\n.navshow {\n    padding: 15px;\n    width: 500px;\n}\n\n.containerRecetaShow {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n}\n\n.headershowtop {\n    display: flex;\n}\n\n.sectionheader {\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.imgshow {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.iconAlergenos {\n    width: 60px;\n    height: 60px;\n}\n\n.datostagshow {\n    display: flex;\n    gap: 25px;\n}\n\n.itemtagshow {\n    font-size: 14px;\n}\n\n.itemtagshow p {\n    font-size: 20px;\n}\n\n.itemtagshowAlergenos {\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n\n.divIconsAlergenos {\n    display: flex;\n    gap: 5px;\n}\n\n.contArticleShow {\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n.articlerecetashow {\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px; \n}\n\n.articlerecetashow h1 {\n    font-size: 40px;\n    line-height: 1.2;\n}\n\n.articlerecetashow h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow {\n    max-width: 1000px;\n    margin-top: 30px;\n    margin-bottom: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.botoneraShow{\n    display: flex;\n    flex-direction: column;\n}\n\n.tarjetaResena footer {\n    display: flex;\n\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nar-claro: #ffedcc;\n    --azul-claro: #5aacff;\n}\n.divcomponent {\n    border: 1px solid blue;\n}\n\n.espaciador {\n    max-width: 978px;\n    padding-top: 50px;\n}\n\n.separador {\n    margin: 33px auto 33px;\n    max-width: 810px;\n    width: 100%;\n}\n\n.separador hr {\n    color: #aba6a6;\n}\n\n.container {\n    padding: 25px;\n}\n\n/*----------------- Edit  Create .js ------------------------ */\n\n\n.containerEditoCreate {\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.contenedorForm {\n    width: 100%;\n    max-width: 1000px;\n    margin-bottom: 75px;\n    \n}\n\n.navedit {\n    padding: 15px;\n\n}\n\n/* -------------------Index -----------------------*/\n\n.principal{\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n} \n\n.navindex {\n    padding: 25px;\n}\n\n.navIndexRecetas {\n    padding: 30px;\n    display: flex;\n    justify-content: space-around;\n}\n\n.contenedorrecetas {\n\n    width: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    gap:25px;\n    justify-content: center;\n    padding: 20px;\n    min-height: 80vh;\n    margin-bottom: 120px;\n\n}\n\n.articlerecetasindex {\n    height: 333px;\n    \n    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);\n    transition: all 0.2s;\n    text-align: center;\n    border-radius: 8px;\n\n  \n}\n.articlerecetasindex:hover {\n    transform: translate(-15px);\n    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);\n    /* filter: opacity(.5); */\n}\n\n.imgreceta{\n    \n    height: 180px;\n    width: 286px;\n    border-radius: 8px;\n\n}\n\n\n\n.nombrerecetaindex {\n    font-size: 22px;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n.contEstrellasTotalesReceta{\n    display: flex;\n    justify-content: center;\n}\n\n/*------------------------ Show -------------------------------*/\n\n\n\n.hunoshow {\n    padding: 25px;\n}\n\n.navshow {\n    padding: 15px;\n    width: 500px;\n}\n\n.containerRecetaShow {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    \n}\n\n.headershowtop {\n    display: flex;\n}\n\n.sectionheader {\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.imgshow {\n    border-radius: 1em;\n    min-width: 250px;\n    min-height: 250px;\n    max-width: 300px;\n    max-height: 300px;\n}\n\n.iconAlergenos {\n    width: 60px;\n    height: 60px;\n}\n\n.datostagshow {\n    display: flex;\n    gap: 25px;\n}\n\n.itemtagshow {\n    font-size: 14px;\n}\n\n.itemtagshow p {\n    font-size: 20px;\n}\n\n.itemtagshowAlergenos {\n    font-size: 14px;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n\n.divIconsAlergenos {\n    display: flex;\n    gap: 5px;\n}\n\n.contArticleShow {\n    display: flex;\n    justify-content: center;\n    max-width: 1000px;\n    width: 100%;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n.articlerecetashow {\n    box-sizing: border-box;\n    width: 100%;\n    min-height: calc(100vh - 60px);\n    margin: auto;\n    padding: 25px; \n}\n\n.articlerecetashow h1 {\n    font-size: 40px;\n    line-height: 1.2;\n}\n\n.articlerecetashow h3 {\n    font-size: 24px;\n    margin-bottom: 15px;\n    margin-top: 15px;\n}\n\n\n/*  ------------------- Show reseñas -------------------*/\n\n.resenasShow {\n    max-width: 1000px;\n    margin-top: 30px;\n    margin-bottom: 30px;\n    max-height: 300px;\n    width: 100%;\n    overflow-y: scroll;\n}\n\n.tarjetaResena {\n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.botoneraShow{\n    display: flex;\n    flex-direction: column;\n}\n\n.tarjetaResena footer {\n    display: flex;\n\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8481,7 +8741,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena {\n    min-height: 60px;\n    padding: 20px;\n\n}\n\n\n/* -----------   Index.js  Resenas --------- */\n\n.principal{\n    display: flex;\n    flex-direction: column;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.hunoindexResenas {\n    padding: 25px;\n}\n\n.contenedoresenas {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    padding:50px;\n    min-height: 80vh;\n\n    flex-direction: column;\n    margin-top: 50px;\n    text-align: center;\n}\n\n.tarjetaResena {\n    \n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   \n.botonEdit{\n    max-height: 40px;\n}\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n\n\n.tarjetaResena footer {\n    display: flex;\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}\n\n/* Edit   */\n\n.contenedorForm{\n    min-height: 60vh;\n    margin-top: 50px;\n    margin-bottom: 50px;\n}\n\n\n.containerEditResenas{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".tarjetaInputResena {\n    min-height: 60px;\n    padding: 20px;\n\n}\n\n\n/* -----------   Index.js  Resenas --------- */\n\n.principal{\n    display: flex;\n    flex-direction: column;\n}\n\n.navindex {\n    padding: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n.hunoindexResenas {\n    padding: 25px;\n}\n\n.contenedoresenas {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    padding:50px;\n    min-height: 80vh;\n\n    flex-direction: column;\n    /* margin-top: 50px; */\n    text-align: center;\n}\n\n.tarjetaResena {\n    \n    min-height: 60px;\n    padding-left: 22px;\n    padding-right: 22px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid #aba6a6;\n    margin-bottom: 12px;\n}\n   \n.botonEdit{\n    max-height: 40px;\n}\n.tarjetaResena header {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.imgRes{\n    height: 130px;\n    width: 150px;\n    border-radius: 1em;\n}\n\n.tarjetaResena footer {\n    display: flex;\n}\n\n.imgfav {\n    width: 30px;\n    height: 30px;\n}\n\n.imguser {\n    width: 50px;\n    height: 50px;\n}\n\n/* Edit   */\n\n.contenedorForm{\n    min-height: 60vh;\n    /* margin-top: 50px; */\n    margin-bottom: 50px;\n}\n\n\n.containerEditResenas{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8945,6 +9205,96 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/favorito.png?8813493990c7cd1fa4b0ecdefd23ae0b");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/banAmericaNorte.jpg":
+/*!*****************************************************!*\
+  !*** ./resources/js/img/paises/banAmericaNorte.jpg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/banAmericaNorte.jpg?d84859652a86db5babe2e01414fd60fa");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/bandAntartica.png":
+/*!***************************************************!*\
+  !*** ./resources/js/img/paises/bandAntartica.png ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bandAntartica.png?3893e45fa2d292293b8df99854f776ab");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/bandChina.jpg":
+/*!***********************************************!*\
+  !*** ./resources/js/img/paises/bandChina.jpg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bandChina.jpg?c8995beb4eca38ebf56ff9058c6a60cb");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/bandEuropa.png":
+/*!************************************************!*\
+  !*** ./resources/js/img/paises/bandEuropa.png ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bandEuropa.png?a9be20452666e6f97c4fb6151b31dfe0");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/bandOceania.png":
+/*!*************************************************!*\
+  !*** ./resources/js/img/paises/bandOceania.png ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bandOceania.png?32299f8afce0d5aca4a2627a6de2f7f4");
+
+/***/ }),
+
+/***/ "./resources/js/img/paises/bndMexico.png":
+/*!***********************************************!*\
+  !*** ./resources/js/img/paises/bndMexico.png ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bndMexico.png?0a0c336b1d6398696476e55177fec3a6");
 
 /***/ }),
 
@@ -68631,10 +68981,10 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
-/***/ "./resources/css/FiltroAlergenos.css":
-/*!*******************************************!*\
-  !*** ./resources/css/FiltroAlergenos.css ***!
-  \*******************************************/
+/***/ "./resources/css/Filtros.css":
+/*!***********************************!*\
+  !*** ./resources/css/Filtros.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -68644,7 +68994,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./FiltroAlergenos.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/FiltroAlergenos.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Filtros_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./Filtros.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/Filtros.css");
 
             
 
@@ -68653,11 +69003,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Filtros_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_FiltroAlergenos_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_Filtros_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

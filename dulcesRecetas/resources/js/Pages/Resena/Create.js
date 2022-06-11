@@ -10,6 +10,7 @@ function Create() {
 
         user_id: datos.auth.user.id,
         recetas_id: datos.receta[0].id,
+        recetas_img: datos.receta[0].img,
         descripcion: "",
         estrellas: "",
         user_nombre: datos.auth.user.name,

@@ -3,13 +3,16 @@ import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 
 import { Link, Head } from '@inertiajs/inertia-react';
+import BotoneraControlFiltros from "../../Components/BotoneraControlFiltros.js";
+
 import FiltroAlergenos from "../../Components/FiltroAlergenos.js";
+import FiltroPaises from "../../Components/FiltroPaises.js";
+
+
 import Header from "../../Components/Header.js";
 import Footer from "../../Components/Footer.js";
 
-
 import '../../../css//receta.css'
-// import banner from '../../img/banner.jpeg';
 
 const Index = (props) => {
     const recetas = usePage().props;
@@ -25,23 +28,22 @@ const Index = (props) => {
             </Head>
 
             <Header props={props} />
-
+            <BotoneraControlFiltros />
             <FiltroAlergenos />
+            <FiltroPaises />
 
-
-            <div className="overflow-x-auto bg-white contenedorrecetas">
-
+            <div className="overflow-x-auto contenedorrecetas bg-gray-100">
 
                 {data.map(({ id, nombre, img, dificultad, tiempo }) => (
 
-                    <article className="articlerecetasindex">
+                    <article className="articlerecetasindex bg-white card" >
                         <header>
                             <InertiaLink
                                 tabIndex="1"
                                 className="flex items-center"
                                 href={route("recetas.show", id)}
                             >
-                                <img src={img} className="imgrecetaindex" alt={nombre} loading="lazy" />
+                                <img src={img} className="card-img-top imgreceta" alt={nombre} loading="lazy" />
                             </InertiaLink>
                         </header>
                         <main>
@@ -50,10 +52,11 @@ const Index = (props) => {
                             <p>{tiempo} Minutos</p>
                         </main>
                         <footer >
-                            <section>
-                                {/* valoraciones */}
+                            <section className="contEstrellasTotalesReceta">
+                                {/* { mediaEstrellasResenas(id, resenas) } */}
                             </section>
                         </footer>
+
                     </article>
 
 

@@ -32,8 +32,7 @@ const Index = (props) => {
             return (
                 <section className="tarjetaResena" key={index}>
                     <header>
-                        {/* <img src={urlImgUser} alt="imguser" className="imguser" /> */}
-                        <span>{resena.user_nombre}</span>
+                        <img src={ resena.recetas_img } className="imgRes" loading="lazy" />
                     </header>
                     <main>
                         {resena.descripcion}

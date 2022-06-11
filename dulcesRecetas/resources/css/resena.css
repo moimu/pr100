@@ -30,7 +30,7 @@
     min-height: 80vh;
 
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
 }
 
@@ -41,6 +41,8 @@
     padding-right: 22px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     border-bottom: 1px solid #aba6a6;
     margin-bottom: 12px;
 }
@@ -54,7 +56,11 @@
     align-items: center;
 }
 
-
+.imgRes{
+    height: 130px;
+    width: 150px;
+    border-radius: 1em;
+}
 
 .tarjetaResena footer {
     display: flex;
@@ -74,7 +80,7 @@
 
 .contenedorForm{
     min-height: 60vh;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
 }
 

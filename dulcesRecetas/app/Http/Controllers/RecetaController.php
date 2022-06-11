@@ -37,7 +37,6 @@ class RecetaController extends Controller
         $this->middleware('auth');
     }
 
-
     /**
      * Display a listing of the resource.
      *
@@ -45,12 +44,12 @@ class RecetaController extends Controller
      */
     public function index(Request $request)
     {
-
-        // dd($request);
-        
-
-        //  usuarios o usuario autenticado ve todas las recetas
         $recetas = Receta::all();
+
+        // Intento de mostrar tarjetas de recetas y sus reseñas ------
+        // $resenas = DB::table('resenas')->get();
+        // $recetasYresenas[0] =  $recetas;
+        // $recetasYresenas[1] =  $resenas;
 
         return Inertia::render('Receta/Index', ['recetas' => $recetas]);
     }
@@ -179,7 +178,7 @@ class RecetaController extends Controller
     public function update(Request $request, Receta $receta)
     {
 
-        dd($request);
+     
 
         // reglas de validacion para cada input sin imagen
         $data = $request->validate([

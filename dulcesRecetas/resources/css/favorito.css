@@ -46,3 +46,34 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.imgFav{
+    height: 130px;
+    width: 150px;
+    border-radius: 1em;
+}
+
+.contFav{
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 50px;
+    min-height: 80vh;
+}
+
+.tarjetaFav {
+    
+    min-height: 60px;
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #aba6a6;
+    margin-bottom: 12px;
+}
+   

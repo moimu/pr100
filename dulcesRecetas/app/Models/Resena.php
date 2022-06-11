@@ -18,6 +18,7 @@ class Resena extends Model
 	    'estrellas',
 	    'descripcion',
 		'user_nombre',
+		'recetas_img',
 	];
 
 	// retornar el usuario de la reseña
@@ -28,11 +29,6 @@ class Resena extends Model
 	// retornar la receta de la reseña
 	public function receta(){
 		return $this->belongsTo(Receta::class);
-	}
-	
-	// retornar la resenas con id receta buscado
-	public function resenaid( $idRecetabuscado ){
-		return Resena::where('recetas_id', $idRecetabuscado) ;
 	}
 
 }

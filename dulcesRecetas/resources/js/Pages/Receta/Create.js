@@ -106,7 +106,6 @@ const Create = (props) => {
                                 <option value="" selected> Elige pais </option>
                                 <option value="Asia">Asia</option>
                                 <option value="Antártida">Antártida</option>
-                                <option value="América">América</option>
                                 <option value="América del Sur">América del Sur</option>
                                 <option value="América del Norte">América del Norte</option>
                                 <option value="Europa">Europa</option>

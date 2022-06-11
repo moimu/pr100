@@ -7,7 +7,25 @@ import '../../css//HeaderFooter.css'
 
 
 export default function Header({ props }) {
-    console.log(props);
+
+    /**
+     * Oculta filtros y muestra el selecionado
+     * @param {} e 
+     */
+    function buscaFiltroDom(e) {
+        let idFiltro = e.target.name;
+        let filtroPaises = document.getElementById('FiltroPaises');
+        let filtroAlergenos = document.getElementById('FiltroAlergenos');
+        filtroPaises.classList.add('oculto');
+        filtroAlergenos.classList.add('oculto');
+        if (idFiltro == "FiltroAlergenos") { filtroAlergenos.classList.remove('oculto'); }
+        if (idFiltro == "FiltroPaises") { filtroPaises.classList.remove('oculto'); }
+    }
+    function botonActivo(e){
+        let botnpulsado = e.target.id;
+        document.getElementById(botnpulsado).style.background="#3B82F6";
+
+    }
     return (
         <>
             <header className="headerprincipal bg-white">
@@ -37,24 +55,32 @@ export default function Header({ props }) {
                         <InertiaLink
                             className="px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none"
                             href={route("recetas.index")}
+                            id="Recetas"
+                            onClick={botonActivo}
                         >
                             Recetas
                         </InertiaLink>
                         <InertiaLink
                             className="px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none"
                             href={route("recetas.create")}
+                            id="Nueva"
+                            onClick={botonActivo}
                         >
                             Nueva
                         </InertiaLink>
                         <InertiaLink
                             className="px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none"
                             href={route("favoritos.index")}
+                            id="Favoritas"
+                            onClick={botonActivo}
                         >
                             Favoritas
                         </InertiaLink>
                         <InertiaLink
                             className="px-4 py-2 text-white bg-yellow-400 rounded-md focus:outline-none"
                             href={route("resenas.index")}
+                            id="Reseñas"
+                            onClick={botonActivo}
                         >
                             Reseñas
                         </InertiaLink>
@@ -75,7 +101,7 @@ export default function Header({ props }) {
                                         type="button"
                                         className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
                                     >
-                                        {props.auth.user.name} 
+                                        {props.auth.user.name}
 
                                         <svg
                                             className="ml-2 -mr-0.5 h-4 w-4"
@@ -94,46 +120,18 @@ export default function Header({ props }) {
                             </Dropdown.Trigger>
 
                             <Dropdown.Content>
+
                                 <Dropdown.Link href={route('logout')} method="post" as="button">
                                     Log Out
                                 </Dropdown.Link>
-                                {/* <form action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button type="submit">Logout</button>
-                            </form> */}
-
-                                {/* <Link href={route('logout')} method="post" as="button" type="button">Logout</Link> */}
-
-                                {/* <InertiaLink
-                                href={route("logout")}
-                            >
-                                <img src="/images/bombonTranparente.png" className="logo" />
-                            </InertiaLink>
-
-                            <form id="logout-form" action={route('logout')} method="POST" >
-                                Log Out
-                                @csrf
-                            </form> */}
-
-                                {/* <Dropdown.Link href={route('logout')} method="post" as="button">
-                                Log Out
-                            </Dropdown.Link> */}
-                                {/* <Link method="post" href={route('logout')} as="button">
-                                Log Out
-                            </Link> */}
-                                {/* <a href={ route('logout') } onClick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-
-                            <form id="logout-form" action={ route('logout') } method="POST" style={{ display: none }}>
-                                @csrf
-                            </form> */}
 
                             </Dropdown.Content>
 
                         </Dropdown>
 
-                        <Link href={route('dashboard')} className="text-sm text-gray-700 underline ">
-                            <img src={props.auth.user.imguser} className="logoUser" />
-                        </Link>
+                        {/* <Link href={route('recetas.index')} className="text-sm text-gray-700 underline "> */}
+                        <img src={props.auth.user.imguser} className="logoUser" />
+                        {/* </Link> */}
 
                     </div>
 

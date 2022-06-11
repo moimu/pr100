@@ -109,7 +109,7 @@ const Create = (props) => {
                                 <option value="América del Sur">América del Sur</option>
                                 <option value="América del Norte">América del Norte</option>
                                 <option value="Europa">Europa</option>
-                                <option value="Oceanía">Asia</option>
+                                <option value="Oceanía">Oceanía</option>
                             </select>
                             <span className="text-red-600">
                                 {errors.continente}

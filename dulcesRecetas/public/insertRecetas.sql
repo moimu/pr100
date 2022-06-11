@@ -1,11 +1,17 @@
-INSERT INTO dulcesrecetas.recetas ( created_at, updated_at, nombre, img, continente, descripcion, alergenos, 
-dificultad, tiempo, calorias, npersonas, ingreCantidad, procedimiento,  detalles ) VALUES (
+
+
+-- INSERT INTO dulcesrecetas.recetas ( created_at, updated_at, nombre, img, continente, descripcion, alergenos, 
+-- dificultad, tiempo, calorias, npersonas, ingreCantidad, procedimiento,  detalles ) VALUES (
+
+INSERT INTO dulcesrecetas.recetas ( created_at, updated_at, nombre, img, continente, descripcion,
+dificultad, tiempo, calorias, npersonas, ingreCantidad, procedimiento,  detalles, lacteos, huevo, gluten, soja, frutos, cacahuete, moluscos, crustaceos, pescado, mostaza )
+VALUES (
+
 '2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Tarta de queso y cerezas',
 '',
-'Europa',
+'Asia',
 'Esta Tarta de queso y cerezas es una de las más ricas que he probado, una tarta de queso muy suave, con una base de galleta, nueces y mantequilla y una cobertura de cerezas que quita el sentido, en este caso usaremos picotas del Jerte.',
-'Huevos',
 'Principiante',
 20, 1000, 4,
 '30 galletas, 70 gramos de mantequilla, 50 gramos de nueces, 600 gramos de queso crema para untar, 
@@ -19,14 +25,16 @@ Mientras la tarta está en el horno, vamos a preparar la cobertura. Deshuesamos 
 Añadimos un par de cucharadas de azúcar y un poco de agua, Dejamos cocinar a fuego muy suave unos 20 o 30 minutos, hasta que quede así. Enrique lo tritura todo y luego cuela, pero yo he preferido dejar la fruta así, 
 Añadimos unas cuantas cerezas deshuesadas y mezclamos, con el calor residual quedan perfectas, Sacamos la tarta del horno y desmoldamos, 
 cubrimos con la cobertura de cerezas y metemos en el frigorífico y una vez fría, Servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.',
+'','','','','','','','','','',  
+),  
+-- lacteos
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Tarta de requesón y almendra',
 '',
-'Europa',
+'Antártida',
 'Una mezcla de tarta de queso y tarta de almendra realmente deliciosa.',
-'Huevos',
 'Intermedio',
 40, 1000, 4,
 '4 huevos, 200 g de azúcar, 250 g almendra molida, Ralladura de 2 limones, 350 g de requesón de cabra,
@@ -36,14 +44,16 @@ Añadimos el aceite de oliva virgen extra de la variedad royal de Aceites Cazorl
 Y el anís dulce y lo batimos y mezclamos todo, Vertemos en un molde y cubrimos la superficie con las almendras laminadas,
 Y una o dos cucharadas de azúcar por encima listo para entrar en el horno que estará precalentado a 180º C 30 min,
 Desmoldamos y dejamos enfriar servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.',
+'','','','','','','','','','',
+),
+-- huevo
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Muffins superchocolatosos',
 '',
-'Europa',
+'América del Sur',
 'Muffins que como bien indica el nombre de esta receta con mucho sabor a chocolate, son muy esponjosos y jugosos',
-'Huevos',
 'Principiante',
 30, 1500, 4,
 '2 huevos,
@@ -65,14 +75,16 @@ Ponemos las cápsulas de papel en un molde rígido, llenamos dejando un dedo,
 Metemos en el horno, a 180º C unos 20 minutos,
 Sacamos del horno y en este momento podéis ponerle más pepitas de chocolate por encima como están calientes se fundirán,
 Desmoldamos y dejamos enfriar servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.',
+'','','','','','','','','','',
+),
+-- gluten
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Bizcocho de manzana y queso',
 '',
-'Europa',
+'América del Norte',
 'Un bizcocho riquísimo perfecto para el desayuno o la merienda, gustará a toda la familia.',
-'Huevos',
 'Principiante',
 60, 1800, 4,
 '4 huevos grandes,
@@ -93,14 +105,16 @@ Con el horno precalentado a 180º C horneamos 45 minutos,
 Aún en caliente pincelamos la superficie con mermelada de albaricoque,
 Desmoldamos y dejamos enfriar servir y disfrutar
 ',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.',
+'','','','','','','','','','',
+),
+-- soja
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Tarta de queso y turrón',
 '',
-'América',
+'Europa',
 'Muy suave y cremosa, con el sabor del turrón, es una delicia perfecta para rematar cualquier comida de fiesta',
-'Huevos',
 'Principiante',
 45, 2000, 4,
 '3 huevos,
@@ -115,14 +129,16 @@ Vertemos en un molde previamente engrasado,
 Metemos en el horno a 180º C unos 35-40 minutos,
 podemos añadir azúcar glass y almendra picada por encima,
 Desmoldamos y dejamos enfriar servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.'
+'','','','','','','','','','',
+),
+-- frutos
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Bizcochos en sandwichera',
 '',
 'Europa',
 'Una receta que arrasa en internet y que en mi casa triunfa, es tan fácil de hacer que la hacen hasta los niños',
-'Huevos',
 'Principiante',
 15, 600, 2,
 '3 huevos,
@@ -138,14 +154,15 @@ Añadimos el yogur el aceite la rayadura de limón y mezclamos,
 Tamizamos encima la harina y la levadura mezclando,
 Añadimos 2 cucharadas de masa a la sandwichera precalentada y contamos 3 minutos aprox,
 Desmoldamos y dejamos enfriar servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.'
+'','','','','','','','','','',),
+-- cacahuete
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Bizcocho de limón y arándanos',
 '',
-'América del Norte',
-'.',
-'Huevos',
+'Oceanía',
+'Refrescante y delicioso',
 'Principiante',
 45, 950, 4,
 '3 huevos,
@@ -164,14 +181,15 @@ Añadimos la ralladura el jugo de limón y mezclamos,
 Y por último harina y levadura tamizado y mezclamos bien,
 Ponemos los arándanos en la superficie y metemos al horno precalentado a 180º C 35 minutos,
 Desmoldamos y dejamos enfriar servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.'
+'','','','','','','','','','',),
+-- moluscos
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Tarta de zanahoria',
 '',
 'Europa',
 'Pastel originario de Europa que fue llevado hasta Estados Unidos por los emigrantes y que allí se ha convertido en uno de sus mejores postres',
-'Huevos',
 'Intermedio',
 50, 800, 4,
 '250 gr de zanahorias (ya peladas y limpias),
@@ -197,14 +215,15 @@ Ahora vamos con el relleno y cobertura,
 Batimos la nata sola y batimos el queso crema con el azúcar glass y la mantequilla,
 Mezclamos ambas preparaciones y cubrimos el pastel,
 Servir y disfrutar',
-'Comparte con tus amigos si te gustó.'),
+'Comparte con tus amigos si te gustó.'
+'','','','','','','','','','',),
+-- crustaceos
 
 ('2022-05-05 22:53:45','2022-05-05 22:53:45',
 'Tiramisú con requesón',
 '',
 'Europa',
 'Tiramisú italiano, pero sustiyendo el queso marcarpone tradicional de esta receta por el requesón',
-'Huevos',
 'principiante',
 20, 600, 4,
 'Café,
@@ -224,8 +243,10 @@ Y cubrimos con ellos la base de un molde extendemos la mitad de la crema,
 Ponemos otra capa de savoiardi mojados en el café extendemos el resto de crema,
 Espolvoreamos toda la superficie con cacao en polvo sin azúcar,
 Servir y disfrutar',
-'Comparte con tus amigos si te gustó.')
-;
+'Comparte con tus amigos si te gustó.'
+'','','','','','','','','','',
+);
+-- mostaza
 
   // plantilla
 
